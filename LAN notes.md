@@ -8,9 +8,19 @@
 > [[Agentic Chatroom]] since it runs entirely on this infra.
 
 -----
-New machine and server available on LAN this section is new  and must be upated:
-192.168.0.26
-Asus Zenbook hosten our large pasion project "The Axiom Engine"
+
+## Axiom Engine dev server (Asus Zenbook) — `192.168.0.26`
+
+Hosts AJ's passion project "The Axiom Engine". Hostname `openclaw-sandbox`,
+user `aj`.
+
+**SSH — working, confirmed 2026-09-09.** `ssh axiom-engine` connects
+non-interactively (dedicated key `~/.ssh/axiom-engine`, `Host axiom-engine`
+block in `~/.ssh/config`). AJ appended the public key to the server's
+`authorized_keys` manually and it worked first try. Full detail in the
+`home-lab-infrastructure` skill, `references/lan-inventory.md`.
+
+Services/processes on this box beyond SSH not yet surveyed.
 
 -----
 
