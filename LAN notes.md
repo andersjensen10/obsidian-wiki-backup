@@ -1,9 +1,10 @@
 # LAN Notes — Home Lab Infrastructure
 
-> Last updated: 2026-09-09 by AJ (FR-002: SSH + parallel slots). Full authoritative detail (SSH access,
+> Last updated: 2026-09-10 by Herm (Fish Speech benchmarking + dashboard build + hardware upgrade research). Full authoritative detail (SSH access,
 > ComfyUI model inventory, TTS API specifics, pitfalls) lives in the Hermes
 > skill `home-lab-infrastructure` (`references/lan-inventory.md` +
-> `references/reasoning-model-app-integration.md`) — this page is the
+> `references/reasoning-model-app-integration.md` +
+> `references/fish-speech-tts.md`) — this page is the
 > Obsidian-facing summary, kept in sync with it. Relevant to
 > [[Agentic Chatroom]] since it runs entirely on this infra.
 
@@ -39,7 +40,7 @@ service-level flakiness issue.
 |---|---|---|---|---|
 | llama.cpp (LLM) | 8014 | ✅ live | none | OpenAI-compatible. **Agora's LLM backend.** Model is swapped periodically — see below. |
 | ComfyUI (image/video) | 8188 | ✅ live | none | v0.26.0, CUDA 13.0, PyTorch 2.11.0. Checkpoints: `flux1-dev-fp8`, `ltx-2.3-22b-dev-fp8`, `ltx-2.3-22b-distilled-fp8`. **Agora's media generation backend.** Queue is often busy with AJ's own jobs — check `GET /queue` first. |
-| Fish Speech TTS | 8080 | ✅ live | none | S2-Pro 4B. Plain TTS works; voice cloning currently 500s (open bug). |
+| Fish Speech TTS | 8080 | ✅ live | none | S2-Pro 4B. Plain TTS + voice cloning both work. Steady-state ~13× realtime (GB10 memory bandwidth + kernel maturity bound). Full interactive dashboard at `192.168.0.148:7490`, incl. a **Voice Lab** tab (2026-09-10, backed by a new `voiceprep-api.service` on this box :8090) that automates YouTube → trim → vocal-separate → denoise → transcribe → chain → publish-as-Fish-voice. Full detail: [[Fish Speech TTS]]. |
 | Older LLM API server | 8000 | ⚠️ up but gated | HTTP Basic Auth | Credentials not obtained. Superseded by :8014. |
 | SSH | 22 | ✅ authorised (2026-09-09) | pubkey | Laptop key added to `authorized_keys` on the Spark. `ssh spark` logs in non-interactively — log-level diagnosis (journalctl, nvidia-smi) and remote maintenance are now unblocked. |
 
@@ -127,6 +128,7 @@ IP/hostname and access method not yet gathered — **do not probe or SSH in
 opportunistically**; AJ wants to walk Herm through it directly first.
 
 ## Related notes
+- [[Fish Speech TTS]] — dedicated benchmarking/tuning page for the TTS engine above.
 - [[Agentic Chatroom]] — the project this infra primarily serves right now.
 - [[Next Level Agentic Chatroom Project]] — active backlog; flags the wifi/ethernet
   situation above as a sprint risk.
