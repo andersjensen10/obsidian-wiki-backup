@@ -1,6 +1,6 @@
 ---
 tags: [project/agora, type/backlog]
-status: ready-for-development
+status: shipped
 origin: board-request
 source: "[[WO-005-onboarding-quick-start-wizard-ARCHIVE]]"
 criticality:
