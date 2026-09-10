@@ -10,8 +10,8 @@ type: chore
 
 Axiom Engine (AJ's Operations Console / "Playground", `~/playground` on
 `axiom-engine`) stalled ~2 months ago mid-hardening of the in-house Ralph
-Loop coding agent. Recon (2026-09-09, see `[[NOTES]]` and `[[Axiom
-Engine]]`) found the app is still deployed and running healthily — nothing
+Loop coding agent. Recon (2026-09-09, see [[NOTES]] and [[Axiom Engine]])
+found the app is still deployed and running healthily — nothing
 crashed — but local git is 61 commits ahead of `origin/main`, and the repo
 carries ~30 planning docs plus a large, only-partially-finished Ralph Loop
 implementation that AJ now wants to look at with fresh eyes ("bloated and

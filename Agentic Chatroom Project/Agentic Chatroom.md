@@ -88,8 +88,8 @@ get scoped into `Backlog` for near-term work, and ship into
   — Director/Immersion mode, floor control, branching tree, media studio,
   sentence-streaming TTS, full-duplex voice, tool cards, command palette,
   tabbed persona editor, mobile drawer, custom modals. Phases A–C shipped in
-  Sprint 1 (Week 37); Phase D deliberately parked — see [[Week 38 - Board
-  Vision]].
+  Sprint 1 (Week 37); Phase D deliberately parked — see
+  [[Week 38 - Board Vision]].
 - **Next-level vision:** [[Week 38 - Board Vision]] (`THE BOARD/Weekly
   Briefs`) — the active Board vision doc (AJ standing in for the Board role)
   covering what comes after the Sprint 1 baseline: Worlds & Scenes

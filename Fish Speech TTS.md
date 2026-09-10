@@ -1,5 +1,5 @@
 ---
-tags: [tts, fish-speech, spark, benchmarking, infra, dashboard, voice-cloning, voice-lab]
+tags: [benchmarking, dashboard, fish-speech, infra, infra/lan, infra/tts, spark, tts, voice-cloning, voice-lab]
 aliases: [Fish TTS, Fish Speech]
 ---
 
