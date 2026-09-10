@@ -6,13 +6,14 @@ aliases: [Fish TTS, Fish Speech]
 # Fish Speech TTS — Spark Benchmarking & Dashboard
 
 > Last updated: 2026-09-10 by Herm (hardware-upgrade research + dashboard
-> engineering + **Voice Lab**: automated YouTube-to-voiceclone pipeline).
-> AJ rates Fish's voice-acting quality highly and wants it fully tuned for
-> his pipeline. Full technical/API detail lives in the Hermes skill
+> engineering + **Voice Lab**: automated YouTube-to-voiceclone pipeline +
+> git repo live + Voice Lab playback bug fixed). AJ rates Fish's
+> voice-acting quality highly and wants it fully tuned for his pipeline.
+> Full technical/API detail lives in the Hermes skill
 > `home-lab-infrastructure` (`references/fish-speech-tts.md`); this page is
-> the Obsidian-facing summary. Runs on the [[LAN notes|Spark]]. **AJ plans
-> to test baseline functionality, set up a git repo for this project, and
-> lay out refinement wishes next session** — see Open items at the bottom.
+> the Obsidian-facing summary. Runs on the [[LAN notes|Spark]]. **For other
+> agents on the LAN:** see "Microservice access for other agents" below —
+> both backend services are directly callable, no dashboard needed.
 
 -----
 
@@ -375,20 +376,73 @@ every item above: Hermes skill `home-lab-infrastructure`,
 
 ## Open items for next session
 
-- **AJ will test baseline functionality himself** when back from shopping —
-  expect bug reports on the Voice Lab flow specifically (it's brand new and
-  only machine-verified so far).
-- **Git repository — not yet set up.** `~/Desktop/Hermes/fish-tts-bench/`
-  has no git history at all yet (unlike [[Agentic Chatroom]], which is
-  already a local repo). AJ wants this done this session — decide local-only
-  vs. remote, author identity, `.gitignore` (definitely exclude
-  `public/data/` outputs/cache if any, node_modules, and anything under
-  `/home/aj/voiceprep/` on the Spark side since that's a separate host/repo
-  concern, not this repo's).
-- **AJ will lay out refinement wishes** after testing — likely candidates
-  given what's already flagged as "not yet built" above: multi-video batch
-  import, finer waveform precision, in-UI tag insertion for transcripts.
-  Don't assume these are the asks — wait for AJ's actual list.
+- **Git repository — live.** `~/Desktop/Hermes/fish-tts-bench/` is now a
+  git repo, pushed to `github.com/andersjensen10/fishtts` over SSH
+  (same key/identity as AJ's other repos — `AJ
+  <andersjensen10@users.noreply.github.com>`). Not yet on the nightly
+  auto-backup cron job (AJ may want manual control while actively testing) —
+  ask before adding.
+- **Voice Lab playback bug — found and fixed (2026-09-10).** AJ tested the
+  baseline and correctly suspected the Separate/Denoise stages weren't
+  audibly showing their effect. Confirmed via `ffmpeg volumedetect` that the
+  **backend was processing audio correctly the whole time** (raw -25.5dB →
+  vocals -26.4dB → denoised -18.4dB, three genuinely different files) — the
+  bug was purely in the frontend: the main preview player never advanced
+  past the "raw" stage, and the "Compare stages" row had a stage-key
+  mismatch (`vocals`/`denoised` vs. the real `separate`/`denoise` keys) so
+  two of its three players silently never rendered. Both fixed, re-verified
+  live in a real browser session, committed as `ebb35e0`.
+- **Refinement wishes from AJ** — not yet gathered; flagged last session as
+  likely candidates: multi-video batch import, finer waveform precision,
+  in-UI tag insertion for transcripts. Still just guesses — ask AJ directly.
+
+## Microservice access for other agents (added 2026-09-10)
+
+Both backend services are directly callable over plain HTTP from any device
+on the LAN — **no dashboard dependency, no auth, no API key.** Confirmed
+bound to `0.0.0.0` (not loopback-restricted) on the Spark. Any other agent
+waking up on the LAN can integrate against these endpoints directly.
+
+### Fish Speech TTS — `http://192.168.0.139:8080`
+
+| Endpoint | Method | Purpose |
+|---|---|---|
+| `/v1/health` | GET | Liveness check. **Known limitation:** this can report healthy while the TTS worker thread is actually dead — see "silently dead for 3 days" in the engineering log above. For anything that matters, do a real `/v1/tts` call, not just health. |
+| `/v1/tts` | POST | Generate speech. Body: `{text, references?: [{audio, text}], ...}` — `references[]` supports **multiple** entries for one-shot extra vocal range (confirmed via Fish's own docs). |
+| `/v1/references/list` | GET | List saved voice names. **Replies `application/msgpack`, not JSON** — decode with `@msgpack/msgpack` regardless of the `Accept` header sent. |
+| `/v1/references/add` | POST (multipart) | Save a named voice. Fields: `id`, `audio` (file), `text` (exact transcript). **Exactly one audio+text pair per call** — no array/multi-clip support (confirmed via its 422 schema). |
+| `/v1/references/delete` | POST | Body: `{reference_id}`. |
+
+No server-side text chunking exists (confirmed from Fish's own source) —
+a single request is always one uninterruptible batch, capped at 30,720
+prompt tokens and 1024 output tokens by default. Any chunking an agent
+needs must happen client-side.
+
+### Voice Lab prep pipeline — `http://192.168.0.139:8090`
+
+Built 2026-09-10 for the dashboard's Voice Lab tab, but fully usable
+standalone by any agent that wants YouTube→clean-audio→transcript without
+going through the UI:
+
+| Endpoint | Method | Purpose |
+|---|---|---|
+| `/download` | POST | `{url, startSec, endSec, label?}` → fetches+caches the YouTube audio, trims, returns a job object with an `id`. |
+| `/trim/{jobId}` | POST | `{startSec, endSec}` → re-cuts from the cached source (fast, no re-download). Clears downstream stages. |
+| `/separate/{jobId}` | POST | Demucs GPU vocal isolation. |
+| `/denoise/{jobId}` | POST | Light noise reduction on the isolated vocal stem. |
+| `/transcribe/{jobId}` | POST | faster-whisper transcript (runs on **CPU** — no aarch64 CUDA wheel for ctranslate2 yet). |
+| `/audio/{jobId}/{stage}` | GET | Fetch a stage's wav (`stage` = `source`/`raw`/`vocals`/`denoised`). |
+| `/jobs` | GET | List all jobs + stage status. |
+| `/jobs/{jobId}` | DELETE | Remove a job's working files. |
+| `/concat` | POST | `{snippets: [{jobId, text}], gapMs?}` → concatenates several cleaned snippets (with silence gaps) into one combined wav + joined transcript, ready to hand to Fish's `/v1/references/add`. |
+| `/voiceprint/{id}/audio` | GET | Fetch the concatenated wav from `/concat`. |
+
+Full job-state machine, key names, and setup pitfalls (Rust toolchain for
+`sphn`, systemd PATH gotchas, the `.pth`-based torch reuse trick) are in the
+Voice Lab section above and the Hermes skill
+`home-lab-infrastructure`/`references/fish-speech-tts.md` — read that before
+building against this service, the endpoint table above is intentionally
+just the contract, not the implementation detail.
 
 ## Related notes
 
