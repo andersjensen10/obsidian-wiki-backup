@@ -7,7 +7,10 @@ aliases: [Fish TTS, Fish Speech]
 
 > Last updated: 2026-09-10 by Herm (hardware-upgrade research + dashboard
 > engineering + **Voice Lab**: automated YouTube-to-voiceclone pipeline +
-> git repo live + Voice Lab playback bug fixed). AJ rates Fish's
+> git repo live + Voice Lab playback bug fixed + real-world voice-cloning
+> test run: two real-person clones built then deleted on consent grounds,
+> Chiana attempt failed on multi-speaker contamination, pending retry).
+> AJ rates Fish's
 > voice-acting quality highly and wants it fully tuned for his pipeline.
 > Full technical/API detail lives in the Hermes skill
 > `home-lab-infrastructure` (`references/fish-speech-tts.md`); this page is
@@ -373,6 +376,76 @@ features stacked on each other.
 Full technical detail, code-level rationale, and verification steps for
 every item above: Hermes skill `home-lab-infrastructure`,
 `references/fish-speech-tts.md`.
+
+## Voice-cloning ethics guardrail (2026-09-10)
+
+AJ asked for three test voice clones: a professional newscast voice, a
+"classic voice-cloning benchmark" film performance, and a fictional TV
+character. Built the first two (real, identifiable people — a named living
+journalist and a named actress's film performance) before stopping to flag
+that a working voice clone of a real person is a tool that can generate
+them saying anything, in their actual voice — the harm lands on *them*,
+not on whoever runs the tool, so their consent can't be substituted by
+AJ's. **Decision: both real-person clones were deleted** (from Fish's
+reference list and the prep pipeline's job store) rather than used further,
+and Herm will not build real-person voice clones going forward. Fictional
+characters remain fine — no consent gap.
+
+Also worth remembering: a full copyrighted episode was downloaded from
+archive.org to mine for clips before this was caught — switched to sourcing
+only short official-channel clips going forward (AJ pointed to
+`youtube.com/@FarscapeOfficial` as the correct source for Farscape
+material specifically), and stopped keeping full downloaded
+episodes/videos on disk once the needed short clip is extracted.
+
+## Voice Lab real-world test run (2026-09-10) — Chiana clone failed, pending retry
+
+First attempt at cloning Chiana (Gigi Edgley, Farscape — fictional
+character, no consent issue) used a 17s clip from an official
+`@FarscapeOfficial` "Best Moments" compilation. **Result: broken** — AJ
+reported the generated voice sounded male. Root cause, confirmed by
+checksum tracing: **not a pipeline bug** — Demucs vocal separation
+isolates vocals *from instrumental/score*, it does **not** separate
+speaker-from-speaker. The clip picked had another character (Scorpius)
+also speaking within the 17s window, so his voice was baked into the
+"isolated vocals" stem right alongside Chiana's. `/concat`/`/separate`/
+`/denoise` all worked correctly on the data they were given — the mistake
+was clip selection, not code.
+
+**Fix for next attempt: only pick clips where the target character is the
+sole speaker for the entire trimmed window.** Checked before trusting a
+clip in future: read the transcript for other-speaker cues/names before
+committing to separate+denoise+register.
+
+The broken `ChianaHappy` reference and its job data were deleted; Fish is
+back to its original 5 stock references. **AJ owes Herm a better
+solo-Chiana clip/timestamp** — reminder is tracked in Herm's memory.
+
+### Friction points + improvement ideas surfaced by this session
+
+- **Multi-speaker contamination is invisible until you listen** — the
+  dashboard has no automated warning for it; only caught because AJ
+  listened critically to the output.
+- **Clip discovery is slow and manual** — scrubbing YouTube search results
+  and auto-caption transcripts by hand to find solo stretches is tedious
+  and error-prone (as demonstrated).
+- **Chunking/concatenation is turning out to be the less critical piece.**
+  AJ's own words: one clean 60–90s solo take already produced his
+  best-ever local TTS output. The bottleneck is clip *selection quality*,
+  not clip *combination* — the chaining machinery works but may see less
+  real use than expected.
+- **No consent/rights gate exists in the tool** — nothing stopped cloning
+  a real journalist or actress; this was caught by discussion, not by the
+  software. Worth a design conversation independent of any single session.
+- **Ideas for later:** (1) a cheap post-transcription speaker-count
+  heuristic or lightweight diarization pass (e.g. pyannote) to flag
+  "this clip may contain 2+ speakers"; (2) auto-suggest long
+  uninterrupted single-speaker windows from a transcript instead of manual
+  scrubbing; (3) a "fictional character" vs "real person" tag on reference
+  creation, with extra confirmation required for the latter; (4) a
+  laugh/giggle onset-detection pass (rapid pitch modulation, short breathy
+  bursts have a distinctive spectral signature) to help jump straight to
+  candidate moments in long source audio instead of scrubbing by ear.
 
 ## Open items for next session
 
