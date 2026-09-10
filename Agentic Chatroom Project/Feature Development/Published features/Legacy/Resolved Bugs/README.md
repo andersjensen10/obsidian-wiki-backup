@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/readme, type/resolved-bug]
+---
+
 # Resolved Bugs — Agora QA Report (2026-09-06)
 
 This folder documents the resolution of every issue in `../bug_report.md`
@@ -32,4 +36,12 @@ rewritten to use the non-destructive path the backend already exposed).
   `node scripts/live-bugfix-check.mjs` covers BUG-02, BUG-09, and BUG-12
   end-to-end, including the WebSocket regeneration path.
 
-Per-bug detail is in the numbered files in this folder.
+Per-bug detail is in the numbered files in this folder: [[BUG-01-idle-status]],
+[[BUG-02-strict-mention]], [[BUG-03-mobile-drawer]], [[BUG-04-modal-dialogs]],
+[[BUG-05-tts-error-feedback]], [[BUG-06-persona-dirty-guard]],
+[[BUG-07-image-tts-caption]], [[BUG-08-sticky-savebar]],
+[[BUG-09-inband-cancel-gpu]], [[BUG-10-skill-trace-ui]],
+[[BUG-11-media-lightbox]], [[BUG-12-nondestructive-regeneration]].
+
+## Related notes
+- [[Agentic Chatroom]] — project status snapshot, links back to this pass.

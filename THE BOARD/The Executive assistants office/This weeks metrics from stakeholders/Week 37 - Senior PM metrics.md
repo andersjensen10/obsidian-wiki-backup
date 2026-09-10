@@ -1,3 +1,7 @@
+---
+tags: [governance/board, type/stakeholder-metrics]
+---
+
 # Senior PM Metrics Report — Week 37 (Sprint 1)
 
 ## Executive Summary

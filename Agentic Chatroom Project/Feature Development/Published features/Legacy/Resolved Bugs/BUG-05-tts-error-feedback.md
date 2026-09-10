@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-05 — TTS failures were silent
 
 - **Severity:** Medium · **Category:** Functional / error handling
@@ -17,3 +21,7 @@ toast, and the message's speaker icon reflects an error state
 ## Verification
 - `grep` confirms `toast.fail` in `speech.ts` error path.
 - `npm run check` clean.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

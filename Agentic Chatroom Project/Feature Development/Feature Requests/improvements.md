@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/feature-request]
+---
+
 # Agora: Architectural & Interaction Improvements Blueprint
 ### Elevating the Local Agentic Multi-Persona & Media Studio
 

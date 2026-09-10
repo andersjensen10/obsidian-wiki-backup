@@ -1,4 +1,5 @@
 ---
+tags: [governance/board, type/vision-brief]
 status: filed
 origin: board-vision
 authored_by: AJ (CEO, standing in for the Board — role not yet built)
@@ -217,3 +218,6 @@ belongs instead.
 - [[Agenti Chatroom long term]] — original founding vision doc; the Worlds & Scenes framing above supersedes its room-scoped narrator/roleplay section.
 - [[NOTES]] — running technical session log.
 - `Feature Development/Project Team/Senior Product Manager.md` — Loop 1 process this document feeds.
+- [[Notes on Vision]] — AJ's raw CEO-office notes this Board Vision was drafted from (Worlds & Scenes, Narrator, media studio, Farscape pilot, rebrand).
+- [[Week 38 - Scrummaster friction notes]] — this week's downstream Scrummaster maturation run against this vision.
+- [[Week 37 - Senior PM metrics]] — Sprint 1 (Week 37) throughput/quality metrics preceding this vision doc.

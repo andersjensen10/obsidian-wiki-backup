@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-12 — Regeneration destructively truncated the transcript
 
 - **Severity:** Low (report) — but a genuine data-loss bug
@@ -77,3 +81,7 @@ the room WebSocket so the regenerated reply streams like a normal turn.
 This was the only bug from the report still unresolved in the running app; the
 other 11 were already fixed (8 in `10db5e6`, plus BUG-03/07/10/11 in the
 front-end pass that preceded this session).
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

@@ -1,3 +1,7 @@
+---
+tags: [infra/lan]
+---
+
 # LAN Notes — Home Lab Infrastructure
 
 > Last updated: 2026-09-10 by Herm (Fish Speech benchmarking + dashboard build + hardware upgrade research). Full authoritative detail (SSH access,
@@ -130,6 +134,6 @@ opportunistically**; AJ wants to walk Herm through it directly first.
 ## Related notes
 - [[Fish Speech TTS]] — dedicated benchmarking/tuning page for the TTS engine above.
 - [[Agentic Chatroom]] — the project this infra primarily serves right now.
-- [[Next Level Agentic Chatroom Project]] — active backlog; flags the wifi/ethernet
+- [[Next Level Agentic Chatroom Project-ARCHIVE]] — archived sprint-1 backlog; flagged the wifi/ethernet
   situation above as a sprint risk.
 - [[NOTES]] — Agora-specific session log referencing this same infra.

@@ -1,3 +1,7 @@
+---
+tags: [project/axiom-engine]
+---
+
 # Axiom Engine — Current State
 
 > Last updated: 2026-09-09 by Herm. Source of truth for day-to-day dev
@@ -147,6 +151,7 @@ the portfolio: raw ideas land in `Feature Requests`, get matured into
 
 ## Related notes
 
-- [[NOTES]] — running session log.
+- [[NOTES]] — running technical session log.
+- [[README — Reusing this scaffold]] — scaffold-cloning provenance for this project.
 - [[improvements]] — full blueprint & phasing (stub, needs work).
 - [[GOAL]] — current north-star pointer (not yet set).

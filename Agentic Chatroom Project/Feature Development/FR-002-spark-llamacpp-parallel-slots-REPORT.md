@@ -1,4 +1,5 @@
 ---
+tags: [project/agora]
 story: "[[FR-002-spark-llamacpp-parallel-slots]]"
 date: 2026-09-09
 author: AJ
@@ -67,3 +68,8 @@ would need to shrink, or headroom would shrink further).
 - The `home-lab-infrastructure` Hermes skill inventory (source of truth this
   Obsidian page summarizes) was updated directly on the Spark session — see
   that skill for the authoritative low-level detail.
+
+## Related notes
+- [[FR-002-spark-llamacpp-parallel-slots]] — the hypercare story this report closes out.
+- [[LAN notes]] — Spark parallel-slots facts this report feeds.
+- [[Agentic Chatroom]] — project status snapshot.

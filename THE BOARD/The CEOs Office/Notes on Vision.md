@@ -1,3 +1,7 @@
+---
+tags: [governance/board, type/ceo-note]
+---
+
 Configuration Wizards to assist an Quick Start but with full fledged detail efiting maintained In the Agent Profile.
 
 Rooms to be replaced by "Scenes" that are nested in "Worlds". There defenetly still will be a lot of single room scenraios on the site. But It should be posible to To create a World setting curated by the Narator populated with both dynamicaly situationally needed "NPCs" but also giving the user the posibility to root their Agentic Creations and personlities in a more routed world enabling the posibilty off acting out a whole series of scenes scenarios  deepening the shared memories and bonds developed by the end users and te simulated agentic personlities.
@@ -16,5 +20,6 @@ For this we will start with a "Farscape World". Make a loca Farscape Wiki with r
 Posbile good sources for this: 
 https://farscape.fandom.com/wiki/Farscape_Encyclopedia_Project:Main_Page
 https://en.wikipedia.org/wiki/Farscape
+https://www.youtube.com/@FarscapeOfficial
 
 Rebranding on the Horizon "Agora" and "Agentic Chatroom Project" just isnt going to sell this site to anybody. At some point we need to rebrand. Preferably early to minimize impact on future sprints.

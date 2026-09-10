@@ -1,3 +1,7 @@
+---
+tags: [project/agora, status/archived, type/backlog]
+---
+
 # Next Level Agentic Chatroom Project — Sprint Plan [ARCHIVE]
 
 > **ARCHIVED & MATURED:** 2026-09-08 by Scrummaster.  

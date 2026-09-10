@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-11 — Images opened as raw browser tabs, no lightbox
 
 - **Severity:** Low · **Category:** UX / media gallery
@@ -20,3 +24,7 @@ back. No zoom, no metadata.
 - `npm run check` clean.
 - No remaining `<a href={api.mediaUrl(...)} target="_blank">` in the transcript
   render; clicks route through `openLightbox`.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

@@ -1,3 +1,7 @@
+---
+tags: [project/agora]
+---
+
 # Agentic Chatroom (Agora) — Current State
 
 > Last updated: 2026-09-07 by Herm. Source of truth for day-to-day dev detail
@@ -77,7 +81,7 @@ Work now flows through `Feature Development/`: raw ideas land in
 `Feature Requests` ([[improvements]] — the full architecture/UX blueprint),
 get scoped into `Backlog` for near-term work, and ship into
 `Published features/Sprint N - Week WW` once done.
-- **Active backlog:** [[Next Level Agentic Chatroom Project]] (`Feature Development/Backlog`)
+- **Active backlog (archived, sprint 1 shipped):** [[Next Level Agentic Chatroom Project-ARCHIVE]] (`Feature Development/Backlog/Ready for development`)
   — Sprint 1 (Week 37) plan: real Phase B UX (media lightbox/composer, tabbed
   persona editor), the thinking-off quality eval, and Spark LLM concurrency.
 - **Full blueprint:** [[improvements]] (`Feature Development/Feature Requests`)
@@ -97,9 +101,12 @@ get scoped into `Backlog` for near-term work, and ship into
 ## Related notes
 - [[NOTES]] — running session log: infra facts, browser-automation gotchas,
   bugs found/fixed, process-hygiene lessons.
-- [[Next Level Agentic Chatroom Project]] — active backlog/sprint plan.
+- [[Next Level Agentic Chatroom Project-ARCHIVE]] — sprint-1 backlog/plan (archived, shipped).
 - [[improvements]] — full UX/architecture blueprint & phasing.
 - [[Week 38 - Board Vision]] — active next-level vision (Worlds & Scenes, Narrator, media studio, Farscape pilot, rebrand).
 - [[GOAL]] — current north-star pointer.
 - [[Agenti Chatroom long term]] — original vision doc.
 - [[LAN notes]] — hardware/services this project depends on (Spark, MSI laptop).
+- [[Agentic Scrum Pipeline — Overview]] — Scrum pipeline this project runs on.
+- [[FR-001-eval-thinking-off-quality-REPORT]] — thinking-mode quality eval.
+- [[Coder -  Sprint start]] — coding-agent instructions for working a story out of `Backlog/Active Sprint`.

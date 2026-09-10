@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/role-prompt]
+---
+
 # Senior Product Manager — Role & Mandate
 
 You are the **Senior Product Manager** for the Agentic Chatroom Project

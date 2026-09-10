@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-08 — Persona Save button buried below a huge form
 
 - **Severity:** Medium · **Category:** UX / ergonomics
@@ -18,3 +22,7 @@ its sticky offset (`top: 0`) so it stays flush while scrolling.
 ## Verification
 - `grep` confirms the sticky `.savebar` with `class:is-dirty`.
 - `npm run check` clean.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

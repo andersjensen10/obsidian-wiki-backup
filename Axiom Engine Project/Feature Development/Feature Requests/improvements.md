@@ -1,3 +1,7 @@
+---
+tags: [project/axiom-engine, type/feature-request]
+---
+
 # Improvements — Long-Term Blueprint
 
 *(Not yet written.)* This is where Axiom Engine's long-term

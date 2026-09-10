@@ -1,5 +1,6 @@
 ---
-status: shipped
+tags: [project/agora, type/hypercare]
+status: hypercare
 origin: feature-request
 source: "[[Next Level Agentic Chatroom Project-ARCHIVE]]"
 criticality:
@@ -11,6 +12,7 @@ dependencies:
   - "Qwen reasoning model on Spark"
 matured: 2026-09-08
 matured_by: Scrummaster
+hypercare_since: 2026-09-10
 ---
 
 # Evaluate Quality Impact of Thinking-Off (`AGORA_THINKING=false`)

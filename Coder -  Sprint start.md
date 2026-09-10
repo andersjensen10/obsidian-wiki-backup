@@ -1,3 +1,7 @@
+---
+tags: [scratch]
+---
+
 # Agora — Instructions for Finishing a Story
 
 ## Where things live

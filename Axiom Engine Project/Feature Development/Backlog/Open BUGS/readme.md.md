@@ -1,3 +1,11 @@
+---
+tags: [project/axiom-engine, type/open-bug, type/readme]
+---
+
 Bug intake — one of the Scrummaster's two doors into maturation (the other is `Backlog` root). Anything landing here, from any source (a QA sweep, AJ, `QA/User feedback`), gets matured into a SMART bug story in `Ready for development`.
 
 Starts empty.
+
+## Related notes
+- [[Scrummaster]] — matures bug intake from this folder.
+- [[Axiom Engine]] — project status snapshot.

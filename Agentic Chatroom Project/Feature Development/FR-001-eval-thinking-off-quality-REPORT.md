@@ -1,4 +1,5 @@
 ---
+tags: [project/agora]
 story: "[[FR-001-eval-thinking-off-quality]]"
 date: 2026-09-09
 author: Claude (subagent)
@@ -95,3 +96,8 @@ AGORA_SPARK=http://192.168.0.139:8014/v1 AGORA_MODEL=qwen3.8-27b-aggressive-q5 \
 ```
 
 Raw per-turn data (all 24 real generations from this run) is at `scripts/.eval-thinking-quality-results.json` in the repo working tree.
+
+## Related notes
+- [[FR-001-eval-thinking-off-quality]] — the hypercare story this report evaluates.
+- [[LAN notes]] — thinking-mode token throughput summary this report feeds.
+- [[Agentic Chatroom]] — project status snapshot.

@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-01 — Status bar showed `· replying: <persona>` when idle
 
 - **Severity:** High · **Category:** UX / Status feedback
@@ -23,3 +27,7 @@ state instead. See the `BUG-01` comment around the status line in
 - `npm run check` clean.
 - Visual: an idle room no longer shows a "replying" suffix; it appears only
   while a persona streams.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

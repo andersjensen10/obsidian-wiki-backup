@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/run-log]
+---
+
 # Agora — session notes (2026-09-01)
 
 Facts worth carrying forward. (Hermes memory hit its char cap this session;

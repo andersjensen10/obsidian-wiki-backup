@@ -1,3 +1,7 @@
+---
+tags: [project/axiom-engine, type/role-prompt]
+---
+
 # Senior QA Manager — Role & Mandate
 
 You are the **Senior QA Manager** for the Axiom Engine project — a trusted

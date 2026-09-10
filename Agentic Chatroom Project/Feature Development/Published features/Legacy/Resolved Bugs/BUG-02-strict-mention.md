@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-02 — "On mention" replied even with no mention
 
 - **Severity:** High · **Category:** Functional / turn-taking
@@ -29,3 +33,7 @@ stuck. An explicit mention always wins in every mode.
 - `apps/server/src/chat/strictmention.test.ts` (unit).
 - `scripts/live-bugfix-check.mjs` — strict mode stays silent when unaddressed,
   replies when addressed, and lenient mode is unchanged.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

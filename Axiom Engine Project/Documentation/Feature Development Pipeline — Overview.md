@@ -1,3 +1,7 @@
+---
+tags: [project/axiom-engine, type/documentation]
+---
+
 # Feature Development Pipeline — Overview
 
 > A living description of the AI-agent Scrum pipeline governing Axiom
@@ -138,7 +142,7 @@ until then, the CEO plays the Board's role directly for this project too.
 - [[Axiom Engine]] — current project status snapshot
 - [[improvements]] — long-term product blueprint (feeds Feature Requests)
 - [[NOTES]] — running technical session log
-- `Feature Development/Project Team/Scrummaster.md`
-- `Feature Development/Project Team/Senior Product Manager.md`
-- `Feature Development/Project Team/Senior QA Manager.md`
-- `THE BOARD/readme.md.md`
+- [[Scrummaster]]
+- [[Senior Product Manager]]
+- [[Senior QA Manager]]
+- [[THE BOARD/readme.md|readme.md]] (`THE BOARD/readme.md.md`) — Board governance description

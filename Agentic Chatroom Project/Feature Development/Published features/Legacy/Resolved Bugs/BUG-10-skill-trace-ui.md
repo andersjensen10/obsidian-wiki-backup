@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-10 — `skill_used` events had no UI
 
 - **Severity:** Low · **Category:** Functional / extensibility
@@ -20,3 +24,7 @@ event entirely — tool use was invisible.
 - `npm run check` clean.
 - `onSkillUsed` → `mergeInvocations` → `invocationsByMessage` → `<SkillTrace>`
   path is wired in both the narration and ordinary-bubble render sites.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

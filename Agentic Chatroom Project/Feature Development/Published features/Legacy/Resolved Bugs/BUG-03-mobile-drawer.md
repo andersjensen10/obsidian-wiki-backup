@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-03 — Mobile sidebar hard-hidden with no drawer
 
 - **Severity:** High · **Category:** Visual / responsive
@@ -26,3 +30,7 @@ All in `apps/web/src/routes/+page.svelte` (see the `BUG-03` comments and the
 - `npm run check` clean (a11y + types).
 - The drawer element and toggle are wired to `drawerOpen`; desktop layout
   unchanged above the breakpoint.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

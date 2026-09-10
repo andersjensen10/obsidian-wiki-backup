@@ -1,4 +1,5 @@
 ---
+tags: [project/axiom-engine, type/readme]
 purpose: template-metadata
 ---
 
@@ -37,3 +38,7 @@ this one. To onboard a future project the same way:
 - `THE BOARD` itself wasn't duplicated — it's shared across the whole
   portfolio, same Board, same CEO (AJ). Both projects file into the one
   copy that already exists.
+
+## Related notes
+- [[Axiom Engine]] — the project this scaffold was filled in for.
+- [[Agentic Chatroom]] — the sibling project this scaffold was copied from.

@@ -1,4 +1,5 @@
 ---
+tags: [project/axiom-engine, type/backlog]
 status: ready
 type: chore
 ---
@@ -60,3 +61,8 @@ This is scaffolding work, not a sprint story from the Board — filed
 directly by AJ/Herm per his ask to "get familiarized with the state of the
 project and get the corresponding folder structure in the vault
 populated."
+
+## Related notes
+- [[Axiom Engine]] — project status snapshot this story feeds.
+- [[NOTES]] — running session log with the recon that produced this story.
+- [[Getting the Axiom Engine back in action]] — AJ's CEO-office ask that started this.

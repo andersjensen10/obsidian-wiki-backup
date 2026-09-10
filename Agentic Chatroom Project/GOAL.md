@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/goal-pointer]
+---
+
 # Project Goal
 
 The project GOAL is a revised set of both concrete and abstract high level

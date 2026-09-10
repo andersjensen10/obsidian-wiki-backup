@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-06 — Persona editor discarded unsaved edits on navigation
 
 - **Severity:** Medium · **Category:** Functional / data integrity
@@ -20,3 +24,7 @@ silently discarded all unsaved changes — no dirty tracking, no guard.
 ## Verification
 - `grep` confirms `beforeNavigate`, the `dirty` derived, and the guard.
 - `npm run check` clean.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

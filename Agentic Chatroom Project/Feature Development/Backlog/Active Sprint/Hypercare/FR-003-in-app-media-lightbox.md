@@ -1,5 +1,6 @@
 ---
-status: shipped
+tags: [project/agora, type/hypercare]
+status: hypercare
 origin: feature-request
 source: "[[Next Level Agentic Chatroom Project-ARCHIVE]]"
 criticality:
@@ -10,6 +11,7 @@ dependencies:
   - "ComfyUI up at 192.168.0.139:8188"
 matured: 2026-09-08
 matured_by: Scrummaster
+hypercare_since: 2026-09-10
 ---
 
 # In-App Media Studio Lightbox with HUD, Variations, and Actions

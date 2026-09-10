@@ -1,5 +1,6 @@
 ---
-status: shipped
+tags: [project/agora, type/hypercare]
+status: hypercare
 origin: feature-request
 source: "[[Next Level Agentic Chatroom Project-ARCHIVE]]"
 criticality:
@@ -9,6 +10,7 @@ size: M
 dependencies: []
 matured: 2026-09-08
 matured_by: Scrummaster
+hypercare_since: 2026-09-10
 ---
 
 # Tabbed Persona Studio Redesign

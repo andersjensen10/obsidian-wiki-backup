@@ -1,3 +1,7 @@
+---
+tags: [project/axiom-engine, type/run-log]
+---
+
 # Axiom Engine — Running Notes
 
 > Running technical session log: infra facts, gotchas, bugs found/fixed,

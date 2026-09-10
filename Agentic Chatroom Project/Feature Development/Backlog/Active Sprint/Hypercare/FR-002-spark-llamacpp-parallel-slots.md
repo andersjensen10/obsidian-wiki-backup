@@ -1,5 +1,6 @@
 ---
-status: shipped
+tags: [project/agora, type/hypercare]
+status: hypercare
 origin: feature-request
 source: "[[Next Level Agentic Chatroom Project-ARCHIVE]]"
 criticality:
@@ -10,6 +11,7 @@ dependencies:
   - "SSH on Spark (AJ console access to authorize laptop key)"
 matured: 2026-09-08
 matured_by: Scrummaster
+hypercare_since: 2026-09-10
 ---
 
 > [!note] CEO deferral — 2026-09-09 (superseded same day, see below)

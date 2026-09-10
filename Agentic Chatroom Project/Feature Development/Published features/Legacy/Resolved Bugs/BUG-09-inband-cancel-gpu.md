@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-09 — Aborting a turn dropped the socket and leaked the GPU job
 
 - **Severity:** Medium · **Category:** System architecture / resources
@@ -22,3 +26,7 @@ VRAM.
 - `scripts/live-bugfix-check.mjs` — the server accepts an in-band cancel, the
   socket survives, and the ComfyUI queue depth drains after cancelling (a leaked
   job would leave it higher).
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.

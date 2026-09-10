@@ -1,3 +1,7 @@
+---
+tags: [project/agora, type/resolved-bug]
+---
+
 # BUG-04 — Blocking native `prompt()` / `confirm()` dialogs
 
 - **Severity:** Medium · **Category:** UX / security
@@ -25,3 +29,7 @@ Call sites across `+page.svelte`, `settings/+page.svelte`, and
   bare `prompt(`/`confirm(` calls in `apps/web/src` (only the helper docstrings
   mention them).
 - `npm run check` clean.
+
+## Related notes
+- [[README]] — full Resolved Bugs index for this QA pass.
+- [[Agentic Chatroom]] — project status snapshot.
