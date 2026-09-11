@@ -61,7 +61,7 @@ Most of these panels are **per-project** — they need a project switcher or an 
 
 - **Projection mapping** — needs a calibration workflow (manual or camera-assisted) and a mapping tool or custom WebGL/canvas approach. The throw distance and surface choice above directly bound how ambitious the mapped geometry can be, so this is probably a later phase once the physical setup is settled.
 - **Generative agentic doodling app (Wacom input)** — architecturally: Wacom strokes → local input handler on the compute node → an image-generation agent, either cloud (OpenAI/Google, both already familiar) or local on the DGX Spark for lower latency. Worth an early decision on the interaction model — real-time collaborative generation vs. turn-based "agent responds after a stroke or a pause" — since that changes the latency budget and therefore whether local or cloud generation makes more sense.
-- **Virtual townhall for agents** — the most novel piece, and the one that most directly extends Agora rather than needing new infrastructure: surfacing the multi-persona chatroom (and eventually the not-yet-built Board governance role) as a visual "room" on the big screen, with active/planned agents represented as participants. Worth scoping an initial version as text/log-driven before reaching for voice or avatars.
+- **Townhall — a cross-agent bulletin board, NOT an Agora surface.** (Redefined 2026-09-11 — earlier drafts of this doc assumed Townhall = "surface Agora's persona chatroom on the big screen"; that's wrong.) Townhall is where **all of AJ's agents** — Herm, Agora's personas, the Axiom Engine's agents, any future project's agents — post knowledge, findings, and resources meant to help AJ, visible at a glance on the kitchen wall. Think shared bulletin board / knowledge feed, not a chatroom transcript. Agora may well be *discussed* there (e.g. an Agora persona posting something relevant), but Townhall itself is project-agnostic and multi-agent by design, same spirit as the project registry — it should NOT be Agora-only surface area. Needs its own lightweight schema (agent id, project id, timestamp, content, maybe a category/tag) distinct from Agora's chat data model. Scoping and data source still open — likely reuses the same push/aggregator pattern already designed for the dashboard's reporting schema (see System Architecture above) rather than inventing a new transport.
 
 ## Cross-Cutting Concerns
 
@@ -74,13 +74,147 @@ Most of these panels are **per-project** — they need a project switcher or an 
 1. **Phase 0 — Physical setup.** Projector and NUC (with its new PSU) both arrive in the same shipment in a couple of days. Mount the projector, pick and prep the projection surface, settle on throw distance/image size, get the NUC driving a test pattern over HDMI.
 2. **Phase 1 — MVP dashboard.** Stand up the compute node and kiosk browser; ship the one or two panels with data that already exists — server health and LAN/fleet status are the obvious first candidates.
 3. **Phase 2 — Full dashboard suite, starting with the project registry and reporting schema.** Stand up the project registry and the common agent → aggregator reporting format first, then add sprint insights, token expenditure, milestones/roadmaps, and benchmarks per project (Agora first, since it already has the most structured data; Axiom Engine once its data sources are identified). Board meeting insights comes later, gated on the Agora Board role actually existing rather than on any privacy concern.
-4. **Phase 3 — Doodling app.** Wire up the Wacom tablet and a first version of the generative doodling loop — likely the most self-contained "fun" build, good for validating the scene-manager and input-handling pattern before the harder playground modes.
-5. **Phase 4 — Virtual townhall.** Surface Agora onto the big screen.
-6. **Phase 5 — Projection mapping.** Most novel and most dependent on the physical setup being locked in; sequenced last on purpose.
+3.5. **Phase 3 — Doodling app.** Wire up the Wacom tablet and a first version of the generative doodling loop — likely the most self-contained "fun" build, good for validating the scene-manager and input-handling pattern before the harder playground modes.
+4. **Phase 4 — Townhall.** Cross-agent bulletin board: all agents (Herm, Agora personas, Axiom Engine agents, future projects) post knowledge/findings/resources for AJ, visible on the big screen.
+5. **Phase 5 — Projection mapping.** Most novel and most dependent on the physical setup being locked in; sequenced last on purpose.
+
+## Update — 2026-09-11: Mounting solved
+
+Mounting point decided: IKEA shelving unit. It'll double as the equipment shelf, hosting the broadband router, the Axiom Engine server, and — depending what state it arrives in — the Intel NUC too. So the shelving is both the projector mount and the de facto "kitchen rack" for the compute node(s) driving it, which simplifies the HDMI/power run considerably (short cable runs, everything co-located). Still want to sanity-check throw distance from the shelf position against the table above once it's placed.
+
+Projector package confirmed for delivery **16 September**.
+
+## Update — 2026-09-11: Dashboard dev started early
+
+Started the actual dashboard codebase ahead of hardware arrival — no reason to wait on the NUC to begin. Repo: `~/Desktop/Hermes/kitchen-dashboard` (SvelteKit, git-initialized, local only for now — same pattern as Agora/local-git-only). Dev server runs on this laptop at `0.0.0.0:5173`, will move to the NUC once it's confirmed working.
+
+Built so far:
+- **Fleet health panel** — live-probes known LAN services (ComfyUI, llama.cpp, Fish TTS, voiceprep-api on Spark; Axiom Engine node app; Fish TTS dashboard on this laptop), shows up/down + latency, auto-refreshes every 15s. Each card links out to that service's own web UI where one exists.
+- **Project registry** (`src/lib/server/projects.ts`) — the Phase 2 foundation the roadmap called for: project id/name/color, referenced by fleet checks instead of loose strings. Ready for future per-project panels to hang off it.
+- **Machine/project rollup strip** — up/total chip per project at the top of the dashboard.
+- **Smart-plug panel** — real control, not just display. Talks the raw Kasa protocol directly (same approach as the existing `~/.local/bin/kasa_plug.py`), currently only the living-room HS100 is wired in. Tap-to-toggle verified working against the real device. The **projector's own plug isn't registered yet** — add it once the projector's shelf setup is done and its plug is known.
+- **Kiosk mode** — fullscreen toggle, bigger type, hides the toggle button itself when active (tap to reveal). Matches AJ's fullscreen test on 2026-09-11 ("looks good, works great with full screen").
+- **Token expenditure panel** — deliberately left as an honest "not configured" placeholder. No local usage/cost data source was found (checked `~/.hermes`); needs AJ's steer on which API/ledger to read from before building it for real.
+
+Not yet done: per-machine CPU/RAM (beyond single-service liveness), sprint insights, board meeting insights, benchmarks, project milestones — all still gated on their underlying data sources per the original roadmap below.
+
+## Design convention: fixed 1920x1080, no scroll
+
+Set 2026-09-11 as a standing rule for "The Kitchen Wall" project (dashboard + playground alike): every scene should fit a **fullscreen 1920x1080 browser window with no page scrolling** — the projector is a fixed-size wall surface, not a normal scrolling webpage. Exceptions are allowed per-panel (e.g. a panel with unbounded content gets its own internal `overflow-y: auto` instead of growing the page), but the default assumption for any new panel/scene is "must fit the fixed viewport."
+
+Implementation pattern used on the dashboard (reusable for future scenes): `html`/`body` set `overflow: hidden`, `main` is `height: 100vh` flex column, the two-column content area (`flex: 1; min-height: 0`) is what actually absorbs the remaining space, and any individually-scrollable panel gets `overflow-y: auto` with a comment explaining why it's the sanctioned exception. Verified with real viewport measurement (CDP `Emulation.setDeviceMetricsOverride` to 1920x1080 + `getBoundingClientRect` checks), not just eyeballing — `document.documentElement.scrollHeight` must equal `clientHeight` and no element's bounding box should exceed the viewport.
+
+## Update — 2026-09-11: App shell, scenes, and design system
+
+Restructured the codebase around a persistent **nav rail** (84px, icon-only, left side, Lucide icons) + a `.scene` content area — every route (`/`, `/doodle`, `/townhall`, `/settings`, `/design-guide`) renders inside that shell and independently satisfies the fixed-1920x1080-no-scroll rule. `/doodle`, `/townhall`, `/settings` are intentional placeholders (icon + description + roadmap phase) until their real builds start.
+
+**Design tokens** now live in one file (`src/lib/styles/tokens.css`) as CSS custom properties — color (status semantics, project accents, surfaces, text, accent), type scale, spacing scale, radius. The dashboard page and project registry (`projects.ts`) were refactored to consume these vars instead of hardcoded hex, so a palette change is now a one-file edit.
+
+**`/design-guide` route** is a live, running reference (not a static mockup) — swatches pull real `var(--token)` values, includes a component gallery (status cards, project chips, buttons), the type scale, and the layout rules written out. Also hosts a **3-way icon pack comparison** (Lucide vs Phosphor vs Tabler, all installed as real deps) rendering the same 7 concepts (dashboard, users, settings, plug, server, activity, palette) side by side so AJ can pick a direction — Lucide is the current default in the nav, not yet a final decision.
+
+Verified for real: all 5 routes return 200, zero JS/console errors across all of them, and all 5 independently confirmed to exactly fill 1920x1080 with no scroll via headless Chrome + CDP (not just claimed).
+
+Not yet decided: which icon pack to commit to; still Lucide as placeholder.
+
+## Correction — 2026-09-11: Townhall redefined
+
+Earlier drafts (including the roadmap's Phase 4 description) assumed Townhall = surfacing Agora's persona chatroom on the big screen. **That's wrong.** Townhall is a **cross-agent bulletin board**: Herm, Agora's personas, the Axiom Engine's agents, and any future project's agents post knowledge, findings, and resources meant to help AJ — visible at a glance on the kitchen wall. It's project-agnostic by design, same spirit as the project registry, NOT an Agora-only surface. Agora may get discussed there, but Townhall itself doesn't belong to any one project. Data source/schema not yet built — likely reuses the same push/aggregator pattern already planned for the dashboard's reporting schema rather than inventing something new. Updated the roadmap section and the placeholder scene copy in the codebase to match.
+
+## Doodle: expanded scope and phased plan (2026-09-11)
+
+AJ sees real potential here beyond a toy — the projector + Wacom tablet combo as a genuine creative/iteration lever for current and future projects, not just a "fun" side scene. Agreed phased plan (each phase ships and gets used before the next starts):
+
+1. **Phase 0 — DONE (2026-09-11).** Doodle on the wall: a real fullscreen browser canvas at `/doodle`, drawing with mouse/touch/Wacom pen (pointer-events based, native pressure sensitivity via `PointerEvent.pressure` when `pointerType === 'pen'`). Small fixed palette (7 colors), brush size slider, eraser, undo, clear. Verified for real via CDP-driven synthetic pointer/mouse input + canvas pixel-data inspection (not just "the code runs") — draw/undo/redraw/clear all confirmed round-tripping correctly, zero JS console errors, fits the fixed 1920x1080 no-scroll rule.
+2. **Phase 1 — next.** Save/load canvas images (to disk, presumably PNG export + a simple gallery/picker to reload), and define how saved canvases get **tiled, stretched, or otherwise displayed** on the wall (i.e. a canvas isn't just ephemeral scratch space — it becomes content the dashboard/other scenes can show).
+3. **Phase 2 — generative feedback loop.** Send the canvas to custom ComfyUI templates on the Spark for an iterative generative loop between AJ's strokes and AI-generated imagery (img2img-style, presumably) — turn-based at first (stroke/pause → agent responds), matching the interaction-model question already flagged in the original playground section above.
+4. **Phase 3 — speed optimization.** Push the loop from turn-based toward real-time once Phase 2's basic version works, revisiting local (Spark) vs. cloud generation tradeoffs based on measured latency.
+
+Implementation note for whoever picks this up next: the canvas element and stroke history (`strokes: Stroke[]` in `+page.svelte`) are currently in-memory only — Phase 1's save/load will need to either serialize `strokes` (vector, resolution-independent, better for tiling logic) or rasterize to PNG (simpler, matches what ComfyUI Phase 2 will want as input anyway). Worth deciding which representation is canonical before building save/load, since it affects both.
+
+## Doodle Phase 1 — DONE (2026-09-11)
+
+Chose **rasterized PNG** as the canonical saved format (not vector strokes) — reasoning: it's what Phase 2's ComfyUI img2img loop will want as input anyway, and display-mode rendering (tile/stretch/contain/cover) is a solved problem for raster images (same semantics as CSS `background-size`), whereas doing it for vector strokes means re-deriving tiling math from scratch.
+
+Storage: `data/canvases/<id>.png` + `data/canvases/index.json` (metadata: id, name, createdAt, width, height, **displayMode**). Directory is gitignored (user content, not code) but kept in the repo via `.gitkeep`.
+
+Built: `src/lib/server/canvases.ts` (list/save/get/update/delete), REST at `/api/canvases` (GET list, POST save) and `/api/canvases/[id]` (GET raw PNG, PATCH metadata, DELETE). UI: Save button opens a modal (name + display-mode picker with 4 options: contain/cover/stretch/tile, each explained inline), gallery button opens a grid of saved thumbnails with click-to-load and per-item delete.
+
+Verified for real via CDP-driven UI clicks (not just calling the API directly) — save button → modal → confirm → real 40KB+ PNG landed on disk with valid PNG magic bytes, gallery correctly listed it, clicking loaded it back and canvas pixel data confirmed the image was actually redrawn (not just a toast claiming success), delete removed both the index entry and the on-disk PNG file. Zero JS console errors, still fits 1920x1080 no-scroll after the addition.
+
+Not yet built: the OTHER HALF of "define how these canvases are tiled/stretched/displayed" — i.e. some scene actually consuming a saved canvas + its displayMode to render it as wall content (the editor itself always just fits the image to the canvas viewport on load; display-mode is captured as metadata but nothing reads it yet to do tiling/cropping math). That's the natural next slice before or alongside Phase 2's ComfyUI loop.
+
+## Doodle Phase 1b — DONE (2026-09-11): displayMode consumer
+
+Closed the gap flagged above same day. New route `/doodle/present/[id]` fetches a saved canvas's metadata, then renders it fullscreen using plain CSS `background-*` properties mapped from its `displayMode` — `cover`→`background-size: cover`, `stretch`→`100% 100%`, `tile`→`background-repeat: repeat` at native size, `contain`→`background-size: contain` (letterboxed). Chose CSS background properties over a canvas/WebGL re-render: cheap, GPU-accelerated by the browser for free, and exactly matches the mental model already promised in the save dialog. A small monitor-icon "Present" link was added per gallery item (opens in a new tab) so this isn't a hidden/undiscoverable feature.
+
+Verified for real: saved a canvas with `displayMode: cover` through the actual UI, confirmed the resulting presentation page generated the correct `background-size: cover` CSS (not e.g. defaulting to contain); then independently POSTed 3 more test canvases via the API with `tile`/`stretch`/`contain` and confirmed each produced its own correct, distinct CSS output. Test data cleaned up afterward — disk is back to empty.
+
+## Wacom Intuos Pro M (2018) hooked up — driver + pressure fix (2026-09-11)
+
+AJ connected his Wacom Intuos Pro M (PTH-660, bought 2018) to the Hermes laptop. Kernel/udev detected it immediately and correctly (`ID_INPUT_TABLET=1`, separate Pen/Pad/Finger `evdev` devices) — no USB/driver issue there. Two real bugs found and fixed:
+
+1. **No pressure sensitivity, drawing itself worked.** Root cause: this laptop's desktop session is Wayland (GNOME), and Chrome on native Wayland has a known upstream bug (chromium issue 40282832 class of issues) around stylus/pressure handling for some tablets. **Dead-end explored first:** tried forcing Chrome onto XWayland (`--ozone-platform=x11`) — this actually broke drawing entirely (pen motion tracked but no clicks/strokes registered), because GNOME's rootless XWayland doesn't route through the legacy X11 Wacom driver the normal way; `xsetwacom`/`xinput` failed with "Wayland devices found but this tool is incompatible with Wayland." **Real fix:** installed `xserver-xorg-input-wacom` (`sudo apt install xserver-xorg-input-wacom`) system-wide anyway — even though it doesn't hook into XWayland the way expected, having the driver present appears to be what native-Wayland Chrome needed to correctly report pen pressure via libinput. Required a full logout/login (X11 driver load happens at session start, doesn't hot-load) — a `systemctl --user restart` equivalent doesn't cut it here, this is a session-level driver stack. After relogin, plain native-Wayland Chrome (no ozone flag) correctly draws AND reports real pressure. **Lesson for next similar bug: try the driver-install + relogin path before chasing ozone-platform flags — the X11 route was a red herring for GNOME/Wayland.**
+2. **Pressure "blob" bug at stroke start/end.** `pointFromEvent()` was treating any near-zero `e.pressure` reading from the pen as "unknown data" and substituting a mid-pressure fallback (0.5) — but near-zero pressure right at initial pen contact and at lift-off is genuine, correct data from the hardware, not a missing-data signal. This produced a flash of full-diameter ink exactly where the pen touches down/lifts, before the real pressure curve caught up. Fixed in `src/routes/doodle/+page.svelte`: pen input now trusts `e.pressure` as-is (0 included); the 0.5 fallback still applies to mouse/touch only, since those genuinely never report real pressure. Confirmed via `npm run check` (0 errors) and live HMR — AJ to re-verify by feel next time he's drawing.
+
+Both fixes committed. Doodle Phase 0/1/1b are now validated against real Wacom hardware, not just synthetic CDP mouse events.
+
+## Doodle: left-side rail matching the Intuos Pro's physical layout (2026-09-11)
+
+Rebuilt the toolbar from a top-center floating pill into a vertical rail on the left edge, matching the Intuos Pro M's real button layout: 4 buttons, mod wheel (with center button), 4 more buttons.
+
+Mapping (AJ approved the proposed default): top 4 = Undo / Clear / Save / Gallery. Middle = a working brush-size dial (drag around the rim or scroll — SVG arc renders a 270° sweep readout, live px label underneath) with the **center button = Eraser toggle**, same physical position as the tablet's real center button. Bottom group = 3 most-used colors (white/teal/red) + a "more colors" (•••) button that pops the other 4 open above it.
+
+One real bug found and fixed during build/verify: the wheel's outer div calls `setPointerCapture` on drag-start to support rim-dragging, which was swallowing the center button's own click event (pointer capture redirects all subsequent pointer events to the capturing element). Fixed by checking `e.target.closest('.wheel-center')` in the wheel's pointerdown handler and bailing out before starting a drag — verified via CDP that both interactions work independently afterward (eraser toggles correctly, wheel-drag still changes brush size).
+
+Verified for real: rail confirmed positioned left-edge, vertically centered (`centerY` = exact viewport center); more-colors popover shows exactly the remaining 4 swatches; a real synthetic drag gesture from top-of-wheel to right-of-wheel changed brush size 6px→40px; zero console/JS errors; still fits 1920x1080 no-scroll.
+
+**Backlog AJ flagged for later (not built yet):**
+- Pressure sensitivity **scaling** — a way to adjust how strongly pen pressure maps to line width (some pens/users want a flatter or steeper curve than the current linear `0.4 + pressure` mapping).
+- **Stroke smoothing / motion assistance** — an optional toggle to smooth jittery pen movement into cleaner lines, standard "stroke stabilizer" feature in drawing apps.
+
+## Clarification — 2026-09-11: physical Intuos Pro buttons are NOT wired to the app
+
+After the rail redesign, AJ reported clicking on-screen Red/Green color buttons broke drawing, with the tablet's 4 ring LEDs visibly cycling. Traced this to a misunderstanding, not a bug: AJ was pressing the **physical hardware buttons on the Intuos Pro itself** (its onboard express-keys + touch ring), not the on-screen web buttons. Those physical controls are a separate `/dev/input` device (`Wacom Intuos Pro M Pad`, registers as a **joystick** `js1`, not a keyboard) handled entirely by the OS/driver layer — nothing in the SvelteKit app listens to them, and the LED cycling is the tablet's own onboard firmware indicator. Confirmed once AJ used only the pen tip on the tablet surface (not the hardware buttons): the on-screen rail works great.
+
+**Takeaway for later:** if AJ ever wants the physical express-keys/ring mapped to app actions (e.g. hardware button 1 = Undo), that's a GNOME Settings → Wacom Tablet configuration task (or a udev/libwacom mapping), a different project from the web app itself — flag this as a possible future nice-to-have, not a current bug.
+
+Two real bugs *were* found and fixed in the same debugging pass before this was traced to the physical-button misunderstanding — both legitimate and worth keeping:
+1. `.side-rail` was missing `touch-action: none` (present on the canvas but not the new rail container) — could cause a real pen/touch tap to be swallowed by default touch-gesture handling instead of registering as a click. Fixed.
+2. Erase mode had no visual indicator (same cursor as draw mode) — added an amber outline + `cursor: cell` on the canvas so accidentally toggling the eraser is immediately obvious rather than looking like "drawing stopped working."
+
+## Physical express-key mapping — app side done, GNOME side AJ's to configure (2026-09-11)
+
+AJ wants the Intuos Pro's 8 physical express-keys + ring center-click actually wired to app actions — flagged as "key for productivity." Two halves to this:
+
+**App side (done):** the doodle page now listens for a fixed set of keyboard shortcuts and triggers the matching action, so once GNOME sends any of these combos, the app responds:
+
+| Shortcut | Action |
+|---|---|
+| `Ctrl+Alt+Shift+U` | Undo |
+| `Ctrl+Alt+Shift+X` | Clear canvas |
+| `Ctrl+Alt+Shift+S` | Open save dialog |
+| `Ctrl+Alt+Shift+G` | Toggle gallery |
+| `Ctrl+Alt+Shift+E` | Toggle eraser |
+| `Ctrl+Alt+1` | Color: white/default ink |
+| `Ctrl+Alt+2` | Color: teal |
+| `Ctrl+Alt+3` | Color: red |
+
+Implementation note: for the top group and eraser, `Ctrl+Alt+Shift+<letter>` is used. For the bottom 3 digit shortcuts, `Shift` was dropped to `Ctrl+Alt+<digit>` because GNOME's "Send Keystroke" capture modal intercepts Shift+1 as "!" (exclamation point) rather than capturing the digit combo. Both `Ctrl+Alt+<digit>` and `Ctrl+Alt+Shift+<digit>` are registered in the app for compatibility. Tested via CDP Input.dispatchKeyEvent.
+
+Only 8 combos chosen, matching the 8 physical express-keys — the ring's **rotation** isn't mapped to anything (GNOME's pad-button panel only binds discrete button presses, not continuous rotation, so the physical ring can't drive brush size the way the on-screen wheel does — flagged as a known limitation, not a bug). The ring's **center click** can still be mapped to one of the 8 combos above (Eraser toggle is the natural pick, mirroring the on-screen wheel's center button).
+
+**GNOME side (AJ's to do, one-time setup):** Settings → search "Wacom" → Graphics Tablets panel → "Map Buttons." With the panel open, physically press each express-key/ring-click on the tablet to identify it in the list, then set its action to "Send Keystroke" and enter the matching combo from the table above. Do this for all 8 keys + the ring's center click (9 total mappable inputs). The ring's rotate gesture has no equivalent slot to fill (see limitation above).
+
+Not yet verified end-to-end with the real hardware mapping in place — AJ to configure via GNOME Settings, then test each physical button in the doodle app.
+
+## Update — 2026-09-11: Icon pack decided (for now)
+
+AJ likes both Lucide and Phosphor — going with **Phosphor** as the active pack. Explicitly flagged as revisitable: AJ wants a themable/skinnable system eventually so swapping icon packs (or offering multiple skins) is a config change, not a rewrite. Keep icon usage centralized (e.g. the nav's icon imports) rather than scattered, so a future theme layer has one place to redirect.
 
 ## Open Questions
 
-- Final projection surface and mounting point — needs an actual measurement of the candidate wall against the throw-distance table above.
+- Exact throw distance from the IKEA shelf position — confirm against the table above once the shelf is placed.
+- Data source for the token expenditure panel — Anthropic/OpenAI usage API, a local ledger, or the Spark's own request logs as a proxy?
 - NUC role: thin client pointed at `openclaw-sandbox`, or local server host for resilience against network/server downtime?
 - Whether the NUC also runs its own Hermes Agent instance, making it a fleet workstation rather than just a display.
 - Timeline for the Agora Board governance role, since Board Meeting Insights has no data to show until it exists.
