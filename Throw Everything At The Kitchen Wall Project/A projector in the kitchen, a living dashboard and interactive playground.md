@@ -150,16 +150,20 @@ Closed the gap flagged above same day. New route `/doodle/present/[id]` fetches 
 ## Doodle Phase 2 — DONE (2026-09-11): Generative Feedback Loop with Spark ComfyUI
 
 Closed Phase 2's generative loop between AJ's Wacom strokes and AI-generated imagery:
-- **Backend:** `src/lib/server/comfy.ts` and `POST /api/doodle/remix`. Accepts the doodle canvas PNG (scaled down to 1024x576 16:9 with dark background padding), uploads to ComfyUI on the Spark (`192.168.0.139:8188/upload/image`), builds and executes a Flux img2img graph (`flux1-dev-fp8.safetensors`, CheckpointLoaderSimple, VAEEncode, KSampler with cfg=1.0 and user-controlled denoise/steps, VAEDecode, SaveImage), polls history, downloads the output PNG, and auto-saves it into the canvas gallery.
+- **Backend:** `src/lib/server/comfy.ts` and `POST /api/doodle/remix`. Supports two engines on the Spark GPU (`192.168.0.139:8188`):
+  1. **Qwen Image Edit (2509)** (`qwen_image_edit_2509_fp8_e4m3fn.safetensors` + `qwen_2.5_vl_7b_fp8_scaled.safetensors` CLIP + `qwen_image_vae.safetensors` + `Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors` + `ModelSamplingAuraFlow` + `CFGNorm` + `TextEncodeQwenImageEditPlus`): Instruction-guided sketch editing in just 4 steps. Follows natural-language prompts to transform and edit sketches directly.
+  2. **Flux Dev (fp8)** (`flux1-dev-fp8.safetensors`, CheckpointLoaderSimple, VAEEncode, KSampler with cfg=1.0 and user-controlled denoise/steps, VAEDecode, SaveImage): Diffusion img2img reinterpretation.
+  Outputs are downloaded and auto-saved into the canvas gallery.
 - **Frontend:** floating "Spark AI Remix" pill button in the top-right corner of the canvas (and keyboard/express-key shortcut `Ctrl+Alt+Shift+R` / `Ctrl+Alt+R`) opens a remix dialog. Features:
+  - Model switcher between **Qwen Image Edit (2509)** and **Flux Dev (fp8)**.
   - Text prompt input with quick style preset chips (Fantasy Art, Dark Riso, Cyberpunk, Ghibli Anime, Oil Painting).
   - Denoise slider (20% to 95%, default 65%) with plain descriptions of AI freedom.
   - Generative status readout during processing.
-  - Automatically loads the resulting image as the canvas `baseImage`, resetting the stroke layer so the user can immediately continue drawing over the AI art with their Wacom pen.
+  - Automatically loads the resulting image as the canvas `baseImage` (unproxied raw image to avoid Svelte 5 runes Canvas2D type errors), resetting the stroke layer so the user can immediately continue drawing over the AI art with their Wacom pen.
   - Re-drawing preserves `baseImage` across resize and stroke undo.
 - **Verification:**
-  - Full end-to-end run verified against the live Spark GPU: test doodle submitted, executed through Flux in ~34s, and returned valid 1024x576 PNG (273KB) saved into the gallery.
-  - CDP automated test verified 1920x1080 no-scroll bounds, trigger button click, preset chip injection, and `Ctrl+Alt+Shift+R` keyboard shortcut trigger.
+  - Full end-to-end run verified against the live Spark GPU for both models: Flux test completed in ~34s (273KB PNG), Qwen 2509 test completed in ~48s (606KB PNG).
+  - CDP automated test verified 1920x1080 no-scroll bounds, model switcher toggle between Qwen and Flux, preset chip injection, and `Ctrl+Alt+Shift+R` keyboard shortcut trigger.
   - `npm run check` clean (0 errors).
 
 Verified for real: saved a canvas with `displayMode: cover` through the actual UI, confirmed the resulting presentation page generated the correct `background-size: cover` CSS (not e.g. defaulting to contain); then independently POSTed 3 more test canvases via the API with `tile`/`stretch`/`contain` and confirmed each produced its own correct, distinct CSS output. Test data cleaned up afterward — disk is back to empty.
