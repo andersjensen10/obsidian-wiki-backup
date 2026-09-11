@@ -147,6 +147,21 @@ Not yet built: the OTHER HALF of "define how these canvases are tiled/stretched/
 
 Closed the gap flagged above same day. New route `/doodle/present/[id]` fetches a saved canvas's metadata, then renders it fullscreen using plain CSS `background-*` properties mapped from its `displayMode` — `cover`→`background-size: cover`, `stretch`→`100% 100%`, `tile`→`background-repeat: repeat` at native size, `contain`→`background-size: contain` (letterboxed). Chose CSS background properties over a canvas/WebGL re-render: cheap, GPU-accelerated by the browser for free, and exactly matches the mental model already promised in the save dialog. A small monitor-icon "Present" link was added per gallery item (opens in a new tab) so this isn't a hidden/undiscoverable feature.
 
+## Doodle Phase 2 — DONE (2026-09-11): Generative Feedback Loop with Spark ComfyUI
+
+Closed Phase 2's generative loop between AJ's Wacom strokes and AI-generated imagery:
+- **Backend:** `src/lib/server/comfy.ts` and `POST /api/doodle/remix`. Accepts the doodle canvas PNG (scaled down to 1024x576 16:9 with dark background padding), uploads to ComfyUI on the Spark (`192.168.0.139:8188/upload/image`), builds and executes a Flux img2img graph (`flux1-dev-fp8.safetensors`, CheckpointLoaderSimple, VAEEncode, KSampler with cfg=1.0 and user-controlled denoise/steps, VAEDecode, SaveImage), polls history, downloads the output PNG, and auto-saves it into the canvas gallery.
+- **Frontend:** floating "Spark AI Remix" pill button in the top-right corner of the canvas (and keyboard/express-key shortcut `Ctrl+Alt+Shift+R` / `Ctrl+Alt+R`) opens a remix dialog. Features:
+  - Text prompt input with quick style preset chips (Fantasy Art, Dark Riso, Cyberpunk, Ghibli Anime, Oil Painting).
+  - Denoise slider (20% to 95%, default 65%) with plain descriptions of AI freedom.
+  - Generative status readout during processing.
+  - Automatically loads the resulting image as the canvas `baseImage`, resetting the stroke layer so the user can immediately continue drawing over the AI art with their Wacom pen.
+  - Re-drawing preserves `baseImage` across resize and stroke undo.
+- **Verification:**
+  - Full end-to-end run verified against the live Spark GPU: test doodle submitted, executed through Flux in ~34s, and returned valid 1024x576 PNG (273KB) saved into the gallery.
+  - CDP automated test verified 1920x1080 no-scroll bounds, trigger button click, preset chip injection, and `Ctrl+Alt+Shift+R` keyboard shortcut trigger.
+  - `npm run check` clean (0 errors).
+
 Verified for real: saved a canvas with `displayMode: cover` through the actual UI, confirmed the resulting presentation page generated the correct `background-size: cover` CSS (not e.g. defaulting to contain); then independently POSTed 3 more test canvases via the API with `tile`/`stretch`/`contain` and confirmed each produced its own correct, distinct CSS output. Test data cleaned up afterward — disk is back to empty.
 
 ## Wacom Intuos Pro M (2018) hooked up — driver + pressure fix (2026-09-11)
