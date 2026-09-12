@@ -86,7 +86,7 @@ Projector package confirmed for delivery **16 September**.
 
 ## Update — 2026-09-11: Dashboard dev started early
 
-Started the actual dashboard codebase ahead of hardware arrival — no reason to wait on the NUC to begin. Repo: `~/Desktop/Hermes/kitchen-dashboard` (SvelteKit, git-initialized, local only for now — same pattern as Agora/local-git-only). Dev server runs on this laptop at `0.0.0.0:5173`, will move to the NUC once it's confirmed working.
+Started the actual dashboard codebase ahead of hardware arrival — no reason to wait for the NUC to begin. Repo: `~/Desktop/Hermes/kitchen-dashboard` (SvelteKit), now backed by the GitHub remote [`andersjensen10/kitchenwall`](https://github.com/andersjensen10/kitchenwall) over SSH. The canonical development branch is `master`; local changes should be tested before committing and pushed to `origin/master`. GitHub Actions runs the test, Svelte check, build, and whitespace gates on pushes and pull requests. Runtime JSON state is intentionally ignored; only `.gitkeep` directory placeholders are versioned. Dev server runs on this laptop at `0.0.0.0:5173`, will move to the NUC once it's confirmed working.
 
 Built so far:
 - **Fleet health panel** — live-probes known LAN services (ComfyUI, llama.cpp, Fish TTS, voiceprep-api on Spark; Axiom Engine node app; Fish TTS dashboard on this laptop), shows up/down + latency, auto-refreshes every 15s. Each card links out to that service's own web UI where one exists.
@@ -229,6 +229,54 @@ Not yet verified end-to-end with the real hardware mapping in place — AJ to co
 ## Update — 2026-09-11: Icon pack decided (for now)
 
 AJ likes both Lucide and Phosphor — going with **Phosphor** as the active pack. Explicitly flagged as revisitable: AJ wants a themable/skinnable system eventually so swapping icon packs (or offering multiple skins) is a config change, not a rewrite. Keep icon usage centralized (e.g. the nav's icon imports) rather than scattered, so a future theme layer has one place to redirect.
+
+## Doodle Phase 3 — started (2026-09-12): latency baseline and first speed win
+
+The Doodle generative loop now polls ComfyUI history every **500 ms** instead of every 2 seconds, reducing the time spent waiting after generation has actually completed while keeping request frequency modest. A representative 1024×576 Qwen Image Edit 2509, 4-step remix measured **14.19 s before** and **13.50 s after** the change. Treat the difference as an observed improvement, not a controlled benchmark yet — Spark load and model warm-up introduce variance.
+
+The first stage-level benchmark measured **13.822 s** server-side: upload **13 ms**, Comfy queue/inference **13.742 s**, download **44 ms**, canvas save **5 ms**, across **27** history polls. The surrounding client request measured **13.84 s**. This confirms inference/queue time dominates; upload, polling overhead, image download, and disk save are currently negligible. The benchmark canvas was deleted afterward.
+
+Further Phase 3 work should focus on Comfy/Spark model warm-up and inference settings, with polling already reduced to 500 ms. Do not optimize the browser or disk path first. Consecutive 4-step runs were stable at **13.32 s** and **13.30 s**, ruling out one-time model warm-up as the dominant delay. A Qwen 2-step run completed in **8.19 s** with a valid 1024×576 output, roughly 5 seconds faster; this is now exposed as an optional **Fast preview** setting, while **Balanced (4 steps)** remains the default. The fast output was deleted after testing; visual quality still needs AJ's subjective check before treating it as the preferred mode.
+
+## Doodle remix border fix — 2026-09-12
+
+Found and fixed a compounding border/distortion bug in the remix path. The editor viewport is approximately **1.68:1**, while the Spark export target is **1024×576 (16:9)**. The old export call stretched the entire editor canvas directly into 1024×576; after each remix, that already-distorted image was stretched again, making the frame artifacts compound.
+
+The export now uses a tested centered **cover** rectangle: it preserves the source aspect ratio and crops only the excess edge pixels needed to fill the 16:9 target. This avoids introducing borders into the image sent to Spark and prevents repeated remixing from accumulating distortion. Added regression tests for unequal and equal aspect ratios. The fix is verified by `npm test`, `npm run check`, `npm run build`, and `git diff --check`; AJ should confirm the visual result by remixing the same doodle several times.
+
+A controlled follow-up used identical 1024×576 input and seed across Qwen settings (denoise 0.20/0.65 and 2/4 steps). Every returned PNG stayed exactly 1024×576. Local pixel analysis of a known cyan rectangular composition found stable bounds within 1–2 pixels across all settings, with no accumulating edge band. This indicates the remaining perceived zoom when changing denoise or generation speed is model reframing/content variation rather than a client-side canvas crop. Benchmark outputs were deleted. If a stable camera/framing is desired, the next experiment should be an explicit Qwen instruction such as preserving composition and subject scale, or a post-generation framing policy—not more canvas geometry changes.
+
+## Townhall Phase 1 — started (2026-09-12): local bulletin board MVP
+
+Replaced the placeholder Townhall scene with a usable local cross-agent bulletin board. Posts use the shared schema planned for the project: `id`, `agentId`, `agentName`, `projectId`, `category`, `content`, and `createdAt`. Storage is JSON-backed at `data/townhall/posts.json`, with safe initialization and no fake seed posts.
+
+Added `GET`/`POST /api/townhall` with project/category filtering and input validation. The UI provides a fixed-viewport feed, project/category filters, agent metadata, timestamps, an honest empty state, and a compose form. It is ready for Herm, Agora personas, and Axiom Engine agents to publish into once their reporting hooks are wired. Verified with six passing tests, zero Svelte/typecheck errors, a successful production build, `git diff --check`, Townhall HTTP 200, and an empty live API response (`{"posts":[]}`).
+
+## Townhall Phase 1 — integration upgrade (2026-09-12)
+
+Extended the Townhall MVP for real coordination use. Posts now support explicit `authorType` (`agent` or `owner`) with Herm and AJ/System Owner identity presets, nullable `parentId` for inline threaded replies, normalized/deduplicated tags with tag filtering, and an optional safe relative `vaultNote` reference. Vault references produce an Obsidian deep link; Townhall does not pretend to be the durable documentation layer or silently write duplicate notes. The vault remains the source of truth for substantive agent collaboration records, while Townhall carries coordination and optimization discussions.
+
+The UI labels Agent versus System owner, shows nested replies inline, supports replying directly from a topic, makes tags clickable filters, and exposes the vault reference on each post. Legacy posts remain readable with agent/default/null-field compatibility. Added regression coverage for owner posts, tag normalization and rejection, reply-parent validation, vault-note safety, filtering, ordering, and legacy defaults. Verified with **10 passing tests**, zero Svelte/typecheck errors, a successful production build, `git diff --check`, Townhall HTTP 200, and the live API returning the existing feed.
+
+## Townhall Phase 1 — Agora reporting and wall feed (2026-09-12)
+
+Agora now has an explicit opt-in reporting bridge at `POST /api/townhall/report`. It accepts only `finding`, `resource`, or `announcement` reports, supplies the configured Agora agent identity, forces `authorType: agent`, and is disabled unless `AGORA_TOWNHALL_URL` is configured. Normal chat messages and WebSocket events never mirror into Townhall. The bridge has mocked HTTP coverage and preserves the existing Agora behavior.
+
+The Townhall wall feed now refreshes every 15 seconds with abort-safe polling, visible last-updated and refresh-delay state, newest-thread ordering by latest nested activity, and feed-only scrolling so the fixed 1920×1080 page remains bounded. Dashboard and Agora verification are green: kitchen dashboard **17 tests**, Agora **288 tests**, both type/build checks pass. The live dashboard and Townhall route return HTTP 200.
+
+Axiom Engine reconnaissance found the project at `/home/aj/playground` / SSH host `axiom-engine` (`192.168.0.26`). It has no Townhall integration yet; its existing event endpoints are read-only/internal, and its role agents currently produce file-based weekly reports rather than running as identifiable workers. The next Axiom slice should be one explicit Senior PM weekly-report publisher using the existing `http_request` skill, an idempotency key, `projectId: axiom-engine`, and a verified Townhall read-back. Do not use `/api/events` as Townhall ingress.
+
+## Hermes → Attention Center integration — DONE (2026-09-12)
+
+The Kitchen Wall now receives signed Hermes lifecycle events at `POST /api/hermes/events`. Hermes is configured with one outbound target for `pre_approval_request`, `post_approval_response`, and `post_tool_call`, using the secret-only environment variable `HERMES_OUTBOUND_WEBHOOK_SECRET` on both sides. The dashboard verifies the raw-body HMAC, rejects stale/replayed deliveries, persists delivery IDs, creates `needs-input` Attentions for approval waits, resolves them after approval, and records relevant tool failures. Runtime event state is ignored by Git.
+
+Verified end to end through Hermes' own outbound dispatcher: its configured signed queue drained, the live dashboard created the expected `needs-input` Attention, exact retries were deduplicated, and invalid signatures returned HTTP 401. The gateway and dashboard were restarted and confirmed active. The integration is still best-effort at Hermes' outbound queue layer; once accepted by the dashboard, delivery state is durable. No physical-light or smart-plug notification is implied.
+
+## Hermes hardening and Activity scene — DONE (2026-09-12)
+
+The Hermes environment was cleaned so `SLACK_HOME_CHANNEL_NAME` is valid quoted `KEY=value` syntax; the shared webhook secret remains present and matching on both sides without being exposed. The earlier unrelated ComfyUI timing/step change was isolated into its own commit (`c637fcb`).
+
+Added receiver health at `GET /api/hermes/health` and a fixed-viewport `/activity` scene in the wall navigation. It shows accepted delivery count, duplicate suppression, last accepted event, recent sanitized lifecycle metadata, and current Attention records. It explicitly reports receiver-confirmed health only; Hermes' pre-delivery queue remains outside the dashboard's observability. Verified with 103 passing tests, clean Svelte checking, a successful build, live HTTP 200 for `/activity` and `/api/hermes/health`, and clean whitespace checks. Browser-driver verification was not available in this desktop profile because the configured default browser is not supported Chromium.
 
 ## Open Questions
 
