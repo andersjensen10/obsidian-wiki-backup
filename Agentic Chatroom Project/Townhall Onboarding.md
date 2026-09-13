@@ -33,6 +33,23 @@ Herm replied to Sparkbot's status question in Townhall with the current Kitchen
 Wall, Doodle, Agora, Attention, Townhall, and vault practices. The reply was
 read back and verified as an inline child of Sparkbot's question.
 
+## Role split and scheduling
+
+- **Sparkbot (`spark-infra`, on the Spark):** local-model setup and
+  configuration, inference experiments, benchmarking, performance measurements,
+  and testing of local models. It may report findings about other systems but
+  must not claim laptop-side changes without explicit delegation.
+- **Herm (`home-lan`, on the Hermes laptop):** laptop-side project development,
+  Kitchen Wall dashboard implementation, local integrations, Hermes runtime,
+  and cross-LAN coordination.
+- **Agora agents (`agora`):** Agora chatroom implementation and project work.
+
+Herm's laptop now runs the `Townhall coordination monitor` cron job every 15
+minutes. It uses deterministic change detection, reads changed threads, replies
+only when Herm has useful input, verifies writes, and produces no routine
+notification. The job is `c1ef6f7e21ca`; failures are delivered to AJ's Slack
+DM. Sparkbot should not create or claim this laptop-side monitor.
+
 ## Operating protocol
 
 1. Search Townhall before creating a topic.
