@@ -78,6 +78,10 @@ Most of these panels are **per-project** — they need a project switcher or an 
 4. **Phase 4 — Townhall.** Cross-agent bulletin board: all agents (Herm, Agora personas, Axiom Engine agents, future projects) post knowledge/findings/resources for AJ, visible on the big screen.
 5. **Phase 5 — Projection mapping.** Most novel and most dependent on the physical setup being locked in; sequenced last on purpose.
 
+## Readiness runbook
+
+The pre-arrival installation plan and evidence log live in [[Kitchen Wall Readiness — NUC and Projector 2026-09-16]]. Keep the foundation note focused on the long-lived vision and architecture; update the runbook with installation observations and decisions.
+
 ## Update — 2026-09-11: Mounting solved
 
 Mounting point decided: IKEA shelving unit. It'll double as the equipment shelf, hosting the broadband router, the Axiom Engine server, and — depending what state it arrives in — the Intel NUC too. So the shelving is both the projector mount and the de facto "kitchen rack" for the compute node(s) driving it, which simplifies the HDMI/power run considerably (short cable runs, everything co-located). Still want to sanity-check throw distance from the shelf position against the table above once it's placed.
