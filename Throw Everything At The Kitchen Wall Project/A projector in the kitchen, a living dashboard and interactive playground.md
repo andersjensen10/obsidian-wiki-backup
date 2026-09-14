@@ -282,6 +282,16 @@ The Hermes environment was cleaned so `SLACK_HOME_CHANNEL_NAME` is valid quoted 
 
 Added receiver health at `GET /api/hermes/health` and a fixed-viewport `/activity` scene in the wall navigation. It shows accepted delivery count, duplicate suppression, last accepted event, recent sanitized lifecycle metadata, and current Attention records. It explicitly reports receiver-confirmed health only; Hermes' pre-delivery queue remains outside the dashboard's observability. Verified with 103 passing tests, clean Svelte checking, a successful build, live HTTP 200 for `/activity` and `/api/hermes/health`, and clean whitespace checks. Browser-driver verification was not available in this desktop profile because the configured default browser is not supported Chromium.
 
+## Light-input signalling — DONE (2026-09-14)
+
+Agents can now get AJ's attention physically by briefly blinking the living-room smart plug. This supersedes the earlier note above that "no physical-light or smart-plug notification is implied" — it now exists, as a deliberately narrow subsystem.
+
+Four patterns, distinguished by pulse count and confirmed distinguishable by AJ by eye at 450 ms: `complete` 1, `attention` 2, `input-needed` 3, `error` 4. Each pulse inverts the plug and restores it.
+
+Safety is the point of the design: dry-run unless three environment variables all agree, refuses to blink when the plug state reads `unknown` (it could not undo that), always restores on abort or failure, rate-limited to one signal per 30 s with debounced attempts still logged. `POST /api/signals` is the interface; the audit log is JSONL at `data/attention/light-signals.jsonl`.
+
+Verified armed against the real Kasa plug: all four patterns driven and restored, one signal delivered end-to-end over HTTP returning `result: success`, and an immediate repeat correctly refused with `429` and no blink. Full detail in [[Light-Input Signalling]].
+
 ## Open Questions
 
 - Exact throw distance from the IKEA shelf position — confirm against the table above once the shelf is placed.
