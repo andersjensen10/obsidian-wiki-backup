@@ -7,7 +7,7 @@ status: policy-v1
 
 ## Goal
 
-Select one general-use model per night for a full benchmark, prioritizing local agentic coding capability without losing the qualities AJ values in Qwen 3.8: strong general chat, compactness, and permissive behavior.
+Build a capability-aware local model library over time, with a strong local coding/agentic model as the highest-priority track. Select one eligible candidate per cycle for a full benchmark, while maintaining separate tracks for general/agentic text, MoE efficiency, image understanding/generation, audio and video transcription, and other modalities that are useful to AJ. Optimize for the most capable models that fit the available local hardware, not for one universal leaderboard.
 
 ## Eligibility
 
@@ -17,6 +17,20 @@ Select one general-use model per night for a full benchmark, prioritizing local 
 - Evidence of current Hugging Face momentum: recent release/update, meaningful downloads/likes/discussion, or credible trend placement. Record the evidence and date; never rely on an uncited ranking.
 - Fits available Toshiba storage with at least 20% free space retained.
 - No candidate may displace the production model automatically.
+
+## Capability tracks and scoring
+
+Every research snapshot must classify each candidate by capability track and record the evidence separately:
+
+- **General/agentic text:** chat, coding, debugging, planning, tool use, structured output, reasoning mode, and context retention.
+- **MoE efficiency:** total parameters, active parameters, expert count/routing, memory footprint, prompt throughput, generation throughput, and concurrency scaling. MoE is an efficiency/capability attribute, not an automatic quality advantage.
+- **Vision/image:** image understanding, OCR, chart/screenshot interpretation, image generation or editing where supported, supported local runtime, and tested VRAM/RAM requirements.
+- **Audio/video:** speech recognition, diarization, timestamps, translation, long-file handling, and video-audio extraction/transcription throughput. Keep ASR/TTS/video models as separate roles when they are not one model.
+- **Operational fit:** format/runtime compatibility, quantization, context or input limits, model size, license, revision, checksum, hardware fit, and maintenance momentum.
+
+Use a track-specific 0-5 score rather than forcing modalities into the text score. Record `capabilities`, `parameters_total`, `parameters_active`, `modalities`, `runtime`, `quantization`, `size_bytes`, `context_or_input_limits`, `hardware_fit`, and `last_verified_at` in the candidate record. A candidate can be the best model for one track without being a daily-driver replacement.
+
+The library should retain a verified champion and at least one fallback per useful track, with immutable model/revision/checksum manifests and a clear `active`, `candidate`, `fallback`, `superseded`, or `blocked` lifecycle state. Re-test a champion when a material release, quantization, runtime, or hardware change justifies it; do not churn the library merely because a new model is trending.
 
 ## Selection score
 

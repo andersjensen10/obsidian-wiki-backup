@@ -38,13 +38,20 @@ not conventions:
 The first run rendering as "not scored / one verified run so far" is the scene
 working correctly, not an unfinished state.
 
-## Current data (as of 2026-09-14)
+## Current data (as of 2026-09-15)
 
-One run: `2026-09-14-e2e-verified`, Sparkbot's harness-validation E2E.
-410 ms C1 TTFT p50, 8.23 tok/s, 100% answer reliability, suite v1.0.0,
-SHA-256 `a11f21f5…`, promotion state `not-evaluated`, quality unscored.
-C4 carries `stressOnly: true` — it showed queueing on the one-slot profile and
-is explicitly not a promotion gate.
+Three stored runs: two verified complete runs and one blocked readiness attempt.
+The new verified candidate `2026-09-15-candidate-qwen3-coder` has 85 ms C1
+TTFT p50, 59.29 tok/s, 100% answer reliability, suite v1.0.0, and score 4.8.
+The baseline remains `2026-09-14-e2e-verified` at 410 ms and 8.23 tok/s.
+The blocked `2026-09-15-0400` run records missing candidate/checksum/profile
+artifacts plus a Toshiba NTFS MFT warning. Quality remains unscored for all
+runs; C4 remains `stressOnly: true` and is not a promotion gate.
+
+With two verified runs and two distinct completed models, the trend line and
+head-to-head leaderboard are now meaningful. The interaction verifier was
+updated to assert the live latest metrics and history id rather than yesterday's
+single-run fixture, so nightly growth does not create false failures.
 
 ## Ingest
 
