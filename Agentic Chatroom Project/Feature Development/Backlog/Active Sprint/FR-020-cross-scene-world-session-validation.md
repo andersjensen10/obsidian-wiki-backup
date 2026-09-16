@@ -1,5 +1,5 @@
 ---
-status: ready-for-development
+status: shipped
 origin: board-request
 source: "[[WO-012-cross-scene-experience-validation-ARCHIVE]]"
 criticality:
