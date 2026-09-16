@@ -1,5 +1,5 @@
 ---
-status: ready-for-development
+status: shipped
 origin: board-request
 source: "[[WO-011-world-adaptive-design-system-ARCHIVE]]"
 criticality:
