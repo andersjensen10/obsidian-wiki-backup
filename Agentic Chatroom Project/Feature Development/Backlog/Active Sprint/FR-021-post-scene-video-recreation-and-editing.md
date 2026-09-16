@@ -1,5 +1,5 @@
 ---
-status: ready-for-development
+status: shipped
 origin: board-request
 source: "[[WO-013-scene-media-studio-layer-two-ARCHIVE]]"
 criticality:
