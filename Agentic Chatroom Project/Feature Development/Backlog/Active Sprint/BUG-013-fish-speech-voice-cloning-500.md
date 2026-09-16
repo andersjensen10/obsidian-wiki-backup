@@ -1,6 +1,6 @@
 ---
 tags: [project/agora, type/active-sprint]
-status: resolved
+status: shipped
 origin: bug
 source: "[[Next Level Agentic Chatroom Project-ARCHIVE]]"
 criticality:
