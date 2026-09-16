@@ -1,5 +1,5 @@
 ---
-status: ready-for-development
+status: shipped
 origin: board-request
 source: "[[WO-010-narrator-agency-and-npc-development-ARCHIVE]]"
 criticality:
