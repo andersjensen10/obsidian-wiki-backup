@@ -7,7 +7,38 @@ status: active
 
 # Farscape Curator Log
 
-## 2026-09-15 — Chiana first-pass dossier
+## 2026-09-16 — Durka Returns episode dossier
+
+Scope: bounded first-pass note for season 1 episode 15, covering episode identity, Chiana's introduction, Nebari mental cleansing as presented in the episode, the unresolved Salis murder, the freely available YouTube viewing lead, and the production history of Chiana's revised ending.
+
+Existing-vault check: inspected the Farscape research plan, season/character/production/worldbuilding/media/fandom indexes, source register, curator log, and existing Chiana notes. No dedicated [[Episodes/Durka Returns]] note existed.
+
+Sources consulted:
+
+- Farscape Encyclopedia Project episode page, used as a discovery lead and cross-checked.
+- Thinkum's episode guide.
+- Archived BBC Online episode guide.
+- The Companion interview/report with Gigi Edgley and Dave Elsey.
+- SYFY WIRE retrospective corroboration.
+- YouTube episode upload and exposed opening transcript timestamps.
+- Farscape Continues recap, used only as a fandom interpretation/scene-order lead.
+
+Created:
+
+- [[Episodes/Durka Returns]]
+
+Updated:
+
+- [[Episodes/Season Index]]
+- [[Production/Production Index]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: complete timestamp audit; authoritative credit reconciliation; primary documentation of the decision to retain Chiana; separate [[Nebari]], [[Mind Cleansing]], and [[Nebari Prime]] notes.
+
+Next suggested slice: [[Nebari]] — episode-grounded species, mind cleansing, resistance, contagion, and Nebari Prime dossier.
+
+
 
 Scope: canonical Chiana identity, verified appearance roster, arc, relationships, Nebari context, performer and production credits, makeup/costume/movement evidence, analysis boundaries, provenance leads, and research gaps.
 

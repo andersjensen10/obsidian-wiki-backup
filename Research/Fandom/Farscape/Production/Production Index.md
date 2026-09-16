@@ -13,4 +13,4 @@ type: index
 - Costumes and makeup — [[Chiana]]; dedicated note pending
 - Visual effects and miniatures — pending
 - Music and sound — pending
-- Interviews and commentary — [[Chiana]]; transcript/timestamps pending
+- Interviews and commentary — [[Chiana]]; [[Episodes/Durka Returns]] production-history note; transcript/timestamps pending

@@ -31,3 +31,4 @@ It must keep research artifacts inside this tree unless AJ explicitly asks other
 ## Run log
 
 - 2026-09-15: Research Scout created and verified with an official Hermes Bot Mode research test.
+- 2026-09-16: Compared Qwen3-TTS and Fish Audio S2 for AJ’s local voice pipeline; report saved as `2026-09-16 — Qwen3-TTS vs Fish Audio S2 for AJ's Voice Pipeline.md`.
