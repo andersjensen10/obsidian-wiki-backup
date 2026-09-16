@@ -1,6 +1,7 @@
 ---
 tags: [project/agora, type/backlog]
-status: shipped
+status: hypercare
+hypercare_since: 2026-09-16
 origin: board-request
 source: "[[WO-006-validating-the-experience-ARCHIVE]]"
 criticality:

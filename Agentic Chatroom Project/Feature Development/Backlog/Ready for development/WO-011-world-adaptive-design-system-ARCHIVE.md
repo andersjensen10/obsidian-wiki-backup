@@ -20,3 +20,4 @@ Users can recognize and switch between distinct World presentations while comple
 ## Related notes
 - [[Agentic Chatroom — Near-Term Vision]] — source (§ Interaction and visual design direction; § Design and quality bar).
 - [[FR-010-worlds-and-scenes-ui — Part 2 of 2]] — shipped navigation surface this work develops into a coherent system.
+- [[FR-019-world-adaptive-design-system-and-review]] — matured implementation story.

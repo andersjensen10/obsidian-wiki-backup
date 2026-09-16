@@ -20,3 +20,4 @@ A user can inspect and adjust every stated narrative dimension in an active Worl
 ## Related notes
 - [[Agentic Chatroom — Near-Term Vision]] — source (§ Configurable narrative control surface).
 - [[FR-011-narrator-pacing-intelligence]] — shipped pacing slice that this consolidates into a complete control model.
+- [[FR-017-narrative-control-surface]] — matured implementation story.

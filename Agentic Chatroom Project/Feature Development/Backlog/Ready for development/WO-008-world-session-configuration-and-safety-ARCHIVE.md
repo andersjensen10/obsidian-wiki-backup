@@ -21,3 +21,4 @@ A new user completes configuration and begins a scene with a player character an
 - [[Agentic Chatroom — Near-Term Vision]] — source (§§ Intended experience, Interaction and visual design direction).
 - [[FR-009-worlds-and-scenes-data-model — Part 1 of 2]] — shipped World/Scene foundation.
 - [[FR-014-onboarding-quickstart-wizard]] — shipped thin persona/room wizard to extend rather than replace.
+- [[FR-016-world-session-setup-player-sheet-and-safety]] — matured implementation story.

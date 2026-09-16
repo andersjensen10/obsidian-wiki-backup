@@ -21,3 +21,4 @@ In a multi-scene scenario, the narrator produces contextually grounded events an
 - [[Agentic Chatroom — Near-Term Vision]] — source (§§ Worlds, scenes, and characters; Narrator agency).
 - [[FR-011-narrator-pacing-intelligence]] — shipped pacing prerequisite, not the full agency outcome.
 - [[FR-015-experience-validation-scenarios]] — shipped harness to extend for evaluation.
+- [[FR-018-guided-narrator-agency-and-persistent-npcs]] — matured implementation story.

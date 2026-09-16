@@ -20,3 +20,4 @@ A repeatable scenario covers configuration through multiple scenes and measures 
 ## Related notes
 - [[Agentic Chatroom — Near-Term Vision]] — source (§§ Three-month expectation; Design and quality bar).
 - [[FR-015-experience-validation-scenarios]] — shipped baseline harness to extend.
+- [[FR-020-cross-scene-world-session-validation]] — matured implementation story.

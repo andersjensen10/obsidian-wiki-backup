@@ -21,3 +21,5 @@ A completed scene can produce a retrievable video recreation that opens into an 
 - [[Agentic Chatroom — Near-Term Vision]] — source (§§ Narrator agency; Interaction and visual design direction).
 - [[FR-012-scene-media-and-library]] — shipped layer-one image request and library foundation.
 - [[FR-013-flexible-comfyui-workflows]] — shipped workflow import foundation.
+- [[FR-021-post-scene-video-recreation-and-editing]] — matured implementation story.
+- [[FR-023-scene-voice-path-evaluation]] — matured evidence-comparison story.
