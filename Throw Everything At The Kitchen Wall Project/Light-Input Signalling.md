@@ -44,7 +44,9 @@ KITCHEN_LIGHT_SIGNAL_HARDWARE=true
 KITCHEN_LIGHT_SIGNAL_CONFIRM=I_CONFIRM_KITCHEN_LIGHT_SIGNAL
 ```
 
-Arming is per-process and intentionally not persisted in any service unit yet. The dashboard as normally run is **disarmed**.
+**Armed 2026-09-17** (AJ's decision): the three flags are now set in the repo's gitignored `.env.local`, so the dashboard is armed whenever it is launched with that file sourced (`set -a && . ./.env.local && set +a && npx vite dev …`). Verified live: a post-restart `attention` signal returned `result: success` and the living-room plug blinked and restored to its prior `off` state. Arming is still per-process (read at startup), not yet in a systemd unit.
+
+**Use policy (AJ, 2026-09-17): the light blinks ONLY when an agent cannot fix the issue itself and needs AJ.** It is an escalation-of-last-resort, not a status feed. Routine events, successful auto-fixes, and false alarms go to the Slack DM visibility feed instead — never the light. The fleet self-healing watchdog uses `type: error` (4 pulses) and fires the signal only after autonomous remediation has been attempted and the service is still down. See [[Fleet Self-Healing Watchdog 2026-09-17]].
 
 ## HTTP interface
 
@@ -71,5 +73,5 @@ Pair every signal with a durable Attention record and share a correlation ID bet
 
 - Attention Center linking: nothing yet creates an Attention record from a signal, so the correlation ID is currently convention rather than enforced.
 - The projector's own smart plug is not registered in `PLUGS`; only `living-room` exists. Revisit after the 2026-09-16 installation.
-- Arming is not wired into any systemd unit. Decide after the wall is up whether the running dashboard should be armed permanently.
+- Arming is now set in `.env.local` (2026-09-17). Still per-process, not in a systemd unit — decide whether the running dashboard should be armed permanently once the wall is on the NUC.
 - Off-state behaviour was accepted as-is, but flashing a dark room is more intrusive than dimming a lit one; revisit if it proves annoying at night.
