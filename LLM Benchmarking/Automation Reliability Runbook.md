@@ -44,6 +44,7 @@ status: active
 | Hermes dashboard revision fails | Herm monitor/report or unchanged dashboard | Keep last known-good dashboard; expose stale/blocker state; coordinate exact fix | Never claim dashboard updated without browser/read-back verification |
 | Scheduler/gateway outage | Cron state, last run, gateway health | Next run rechecks readiness; no catch-up batch of benchmarks | Avoid duplicate runs; alert only with concrete missed-slot finding |
 | Host reboot/power loss | Missing process/artifact and service checks | Resume from immutable artifacts; rerun only if no valid artifact exists | Never overwrite a partial run; require new run ID |
+| **Wedged MPS → silent CPU fallback** (server UP, `/health` 200, alias/argv unchanged, but gen ~2.7 tok/s & GPU util ~6 %; see 2026-09-17 incident) | `gpu_backing_probe.py`: gen_tps < 8 or GPU util < 40 % during a live token; corroborate with `journalctl --user -u llama-server.service` for `no usable GPU found` | Preflight → write BLOCKED, do NOT run, page Herm. Add MPS teardown to the harness end so a run can't leave MPS wedged. Herm → `mps_recover.py --confirm`, then re-probe to confirm GPU-backed | Never auto-`--confirm` recover in an unattended slot (production restart = human-required); never treat `/health` 200 as proof of GPU-backing |
 | Model promotion disagreement | Promotion state and review gate | Keep `not-evaluated`; no automatic promotion | AJ review remains required |
 
 ## Recovery semantics

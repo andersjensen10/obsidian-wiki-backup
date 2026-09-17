@@ -146,6 +146,11 @@ mock-LLM verification pattern: Hermes skill `home-lab-infrastructure`,
 - Consequence: any CUDA-only workload (TTS models, etc.) must run on the
   Spark instead.
 - LAN IP: `192.168.0.148` (wifi; wired NIC present but unplugged/no-carrier).
+- **Agora chatroom** runs here (dev): Vite web on `:7480`, Fastify API/WS on
+  `:7481`. As of 2026-09-17 the web server binds `0.0.0.0` (started with
+  `--host 0.0.0.0`) so it's reachable from the whole LAN — the kitchen-wall
+  dashboard's fleet panel probes `http://192.168.0.148:7480/api/health`. The
+  backend stays loopback-only; Vite proxies `/api`+`/ws` to it same-origin.
 
 ## RustDesk self-hosted server (2026-09-11) — runs on the Hermes laptop, `192.168.0.148`
 
