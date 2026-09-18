@@ -7,6 +7,34 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-18 — Nebari species and Establishment dossier
+
+Scope: bounded worldbuilding slice covering the Nebari as presented in “A Clockwork Nebari”: Establishment governance, temporary and long-form mind-cleansing, Chiana and Nerri’s contagion backstory, the resistance, Nebari physiology/technology leads, and evidence boundaries.
+
+Existing-vault check: inspected the research plan, home, worldbuilding/season/character/production/media/fandom indexes, source register, curator log, and existing Chiana and Durka Returns notes. No dedicated [[Worldbuilding/Nebari]] note existed.
+
+Sources consulted:
+
+- Thinkum’s episode guide and Snurcher’s episode dossier.
+- Farscape Encyclopedia Project pages for “A Clockwork Nebari,” “Nebari,” and “Mind cleanse,” used as fan-maintained discovery and continuity references.
+- A.V. Club critical essay, used only for interpretation.
+- Public YouTube upload of the episode, recorded as a viewing lead without timestamp or rights claims because extraction/transcript verification was unavailable.
+
+Created:
+
+- [[Worldbuilding/Nebari]]
+
+Updated:
+
+- [[Worldbuilding/Worldbuilding Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: scene-level authorized-video timestamp audit; primary documentation for the Establishment and contagion; reconciliation of the Zelbinion claim; separate [[Mind Cleansing]] and [[Nebari Prime]] notes.
+
+Next suggested slice: [[Mind Cleansing]] — episode-grounded technology note comparing the Durka Returns permanent process with the temporary process in A Clockwork Nebari.
+
 ## 2026-09-16 — Durka Returns episode dossier
 
 Scope: bounded first-pass note for season 1 episode 15, covering episode identity, Chiana's introduction, Nebari mental cleansing as presented in the episode, the unresolved Salis murder, the freely available YouTube viewing lead, and the production history of Chiana's revised ending.

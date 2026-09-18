@@ -42,6 +42,7 @@ status: growing
 ## Recently added
 
 - [[Characters/Chiana]]
+- [[Worldbuilding/Nebari]]
 - [[Media/Chiana makeup test provenance]]
 - [[Farscape — Curator Log]]
 - [[Farscape — Research Plan]]
