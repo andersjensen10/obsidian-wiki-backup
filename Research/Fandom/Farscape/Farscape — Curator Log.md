@@ -7,6 +7,34 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-19 — Mind Cleansing dossier
+
+Scope: bounded worldbuilding/technology slice comparing the long-form Nebari mental cleansing shown in “Durka Returns” with the temporary drug-induced process in “A Clockwork Nebari.”
+
+Existing-vault check: inspected the research plan, home, worldbuilding/season/character/production/media/fandom indexes, source register, curator log, and the existing [[Worldbuilding/Nebari]], [[Episodes/Durka Returns]], and [[Characters/Chiana]] notes. No dedicated mind-cleansing note existed.
+
+Sources consulted:
+
+- Snurcher’s independent episode guides for “Durka Returns” and “A Clockwork Nebari.”
+- Thinkum’s episode guide for episode identity and the Durka reversal.
+- Farscape Encyclopedia Project pages for scene and continuity leads.
+- A.V. Club critical essay for interpretation only.
+
+Created:
+
+- [[Worldbuilding/Mind Cleansing]]
+
+Updated:
+
+- [[Worldbuilding/Worldbuilding Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: primary-footage timestamp audit; authoritative technical definition; separate [[Nebari Prime]] and [[Nebari Resistance]] notes; clearer separation of contagion politics from cleansing mechanics.
+
+Next suggested slice: [[Nebari Prime]] — bounded location/politics dossier, with the Establishment, resistance, contagion program, and Chiana/Nerri context separated from the mind-cleansing technology note.
+
 ## 2026-09-18 — Nebari species and Establishment dossier
 
 Scope: bounded worldbuilding slice covering the Nebari as presented in “A Clockwork Nebari”: Establishment governance, temporary and long-form mind-cleansing, Chiana and Nerri’s contagion backstory, the resistance, Nebari physiology/technology leads, and evidence boundaries.

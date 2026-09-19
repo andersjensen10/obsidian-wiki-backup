@@ -43,6 +43,7 @@ status: growing
 
 - [[Characters/Chiana]]
 - [[Worldbuilding/Nebari]]
+- [[Worldbuilding/Mind Cleansing]]
 - [[Media/Chiana makeup test provenance]]
 - [[Farscape — Curator Log]]
 - [[Farscape — Research Plan]]

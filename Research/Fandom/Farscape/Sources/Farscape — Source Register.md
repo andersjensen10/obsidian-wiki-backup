@@ -33,6 +33,11 @@ Use this note as the canonical source ledger for the Farscape wiki. Register sou
 | FS-S020 | Farscape Encyclopedia Project, “Mind cleanse” — https://farscape.fandom.com/wiki/Mind_cleanse | Fan-maintained technology reference | temporary/permanent cleansing distinctions and species effects | discovery lead; cross-check against episodes | 2026-09-18 |
 | FS-S021 | A.V. Club, “Farscape: ‘A Clockwork Nebari’” — https://avclub.com/farscape-a-clockwork-nebari-1798177632 | Critical essay | interpretation of Nebari authoritarianism and expansionism | criticism; not an in-universe source | 2026-09-18 |
 | FS-S022 | YouTube, “Farscape S2E18 FULL EPISODE | A Clockwork Nebari” — https://www.youtube.com/watch?v=bC6Q7zMe8jI | Public video upload | viewing lead for episode audit | rights provenance and transcript unverified; no timestamp claims made | 2026-09-18 |
+| FS-S023 | Snurcher’s Guide, “Durka Returns” — http://snurcher.com/episodes/115.shtml | Independent episode guide | production data, mental cleansing terminology, neural realignment, cryonic suspension | strong secondary reference; not primary footage | 2026-09-19 |
+| FS-S024 | Snurcher’s Guide, “A Clockwork Nebari” — http://snurcher.com/episodes/217.shtml | Independent episode guide | episode identity, credits, mind-cleansing plot lead | strong secondary reference; not primary footage | 2026-09-19 |
+| FS-S025 | Farscape Encyclopedia Project, “Durka Returns” — https://farscape.fandom.com/wiki/Durka_Returns | Fan-maintained episode reference | episode identity and plot lead | discovery/cross-check source; page extract sparse | 2026-09-19 |
+| FS-S026 | Farscape Encyclopedia Project, “A Clockwork Nebari” — https://farscape.fandom.com/wiki/A_Clockwork_Nebari | Fan-maintained episode reference | temporary cleansing, contagion, Establishment, resistance, recovery sequence | discovery lead; cross-check before canon claims | 2026-09-19 |
+| FS-S027 | A.V. Club, “Farscape: ‘A Clockwork Nebari’” — https://avclub.com/farscape-a-clockwork-nebari-1798177632 | Critical essay | interpretation of Nebari authoritarianism and conformity | criticism; not an in-universe source | 2026-09-19 |
 
 ## Source handling rules
 
