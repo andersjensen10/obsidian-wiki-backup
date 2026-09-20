@@ -7,8 +7,8 @@ type: index
 
 - [[Farscape — Wiki Home]]
 - Species — [[Worldbuilding/Nebari]]; [[Characters/Chiana]] first-pass lead
-- Planets and locations — [[Nebari Prime]] planned
+- Planets and locations — [[Worldbuilding/Nebari Prime]]; [[Worldbuilding/Nebari]]
 - Factions and politics — [[Nebari Resistance]] planned
 - Technology and ships — [[Moya]]; Prowler details pending
-- Languages and terminology — [[Worldbuilding/Mind Cleansing]]; [[Nebari Prime]] planned
+- Languages and terminology — [[Worldbuilding/Mind Cleansing]]; [[Worldbuilding/Nebari Prime]]
 - Religion and culture — pending

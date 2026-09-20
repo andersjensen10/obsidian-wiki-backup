@@ -7,6 +7,34 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-20 — Nebari Prime location and politics dossier
+
+Scope: bounded worldbuilding/location slice for Nebari Prime, focused on its identity as Chiana and Nerri’s homeworld, the Establishment’s exit-permit and contagion program, and the evidence limits around the planet’s geography and institutions.
+
+Existing-vault check: inspected the research plan, home, worldbuilding/season/character/production/media/fandom indexes, source register, curator log, and existing [[Worldbuilding/Nebari]], [[Worldbuilding/Mind Cleansing]], and [[Characters/Chiana]] notes. No dedicated [[Worldbuilding/Nebari Prime]] note existed.
+
+Sources consulted:
+
+- Terra Firma Scapers transcript archive for episode dialogue and metadata.
+- Snurcher’s independent episode guide for episode structure, terminology, and production data.
+- Farscape Encyclopedia Project entries for Nebari Prime and “A Clockwork Nebari,” used as discovery/cross-check sources.
+- The Companion retrospective interview/report for Chiana’s Nebari Prime backstory and production context.
+
+Created:
+
+- [[Worldbuilding/Nebari Prime]]
+
+Updated:
+
+- [[Worldbuilding/Worldbuilding Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: authorized scene-level timestamp audit; primary production documentation for Nebari Prime’s visual/geographic design; full Establishment structure; resistance scale; later-episode additions, especially “Fractures.”
+
+Next suggested slice: [[Worldbuilding/Nebari Resistance]] — keep the resistance’s episode-canon evidence separate from fan extrapolations about its organization and scale.
+
 ## 2026-09-19 — Mind Cleansing dossier
 
 Scope: bounded worldbuilding/technology slice comparing the long-form Nebari mental cleansing shown in “Durka Returns” with the temporary drug-induced process in “A Clockwork Nebari.”

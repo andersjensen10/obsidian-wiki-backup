@@ -34,3 +34,4 @@ It must keep research artifacts inside this tree unless AJ explicitly asks other
 - 2026-09-16: Compared Qwen3-TTS and Fish Audio S2 for AJ’s local voice pipeline; report saved as `2026-09-16 — Qwen3-TTS vs Fish Audio S2 for AJ's Voice Pipeline.md`.
 - 2026-09-18: Researched Agora’s conversation lifecycle, WebSocket event contract, and non-destructive regeneration architecture; report saved as `2026-09-18 — Agora Conversation Lifecycle and Regeneration Architecture.md`.
 - 2026-09-19: Researched ROS 2 architecture for small robots and home-lab electronics, with lifecycle, composition, QoS, security, and Isaac ROS context; report saved as `2026-09-19 — ROS 2 Architecture for Small Robots and Home-Lab Electronics.md`.
+- 2026-09-20: Researched Hermes memory, session persistence, and context compression, with a continuity-drill recommendation; report saved as `2026-09-20 — Hermes Memory, Sessions, and Context Compression.md`.
