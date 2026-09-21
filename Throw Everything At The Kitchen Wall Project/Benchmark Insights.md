@@ -38,20 +38,34 @@ not conventions:
 The first run rendering as "not scored / one verified run so far" is the scene
 working correctly, not an unfinished state.
 
-## Current data (as of 2026-09-15)
+## Current data (as of 2026-09-21)
 
-Three stored runs: two verified complete runs and one blocked readiness attempt.
-The new verified candidate `2026-09-15-candidate-qwen3-coder` has 85 ms C1
-TTFT p50, 59.29 tok/s, 100% answer reliability, suite v1.0.0, and score 4.8.
-The baseline remains `2026-09-14-e2e-verified` at 410 ms and 8.23 tok/s.
-The blocked `2026-09-15-0400` run records missing candidate/checksum/profile
-artifacts plus a Toshiba NTFS MFT warning. Quality remains unscored for all
-runs; C4 remains `stressOnly: true` and is not a promotion gate.
+Nine stored runs: three verified complete runs and six blocked readiness/artifact
+attempts. The latest run, `2026-09-21-qc-0630`, is blocked/not-run: readiness
+fell back to 2026-09-18, no same-day report or raw artifacts were present, and
+systemd reported `llama-server.service` inactive while a separate PID served
+HTTP 200. The latest verified run remains `2026-09-16-qwen3.6-35b-a3b` at
+150 ms C1 TTFT p50, 60.71 tok/s, and 100% visible-response reliability.
+Quality remains unscored for all runs; C4 remains `stressOnly: true` and is not
+a promotion gate. All runs are suite v1.0.0, so no mixed-suite warning is
+needed.
 
-With two verified runs and two distinct completed models, the trend line and
-head-to-head leaderboard are now meaningful. The interaction verifier was
-updated to assert the live latest metrics and history id rather than yesterday's
-single-run fixture, so nightly growth does not create false failures.
+The scene now surfaces the trailing blocked streak as pipeline health: five
+consecutive blocked runs are visible separately from model ranking. This keeps
+the wall honest about the lack of fresh benchmark evidence without treating
+readiness failures as model scores.
+
+## Seven-day iteration summary (2026-09-15–2026-09-21)
+
+The scene progressed from a sparse single-run view to a trend/leaderboard with
+three verified points, adaptive interaction checks, run-health coverage, and
+explicit blocker visibility. The accumulated mechanical data shows the two
+newer verified candidates near 59–61 tok/s versus the qwen3.8 baseline at 8.23
+tok/s, with C1 TTFT improving from 410 ms to 85 ms and then 150 ms. Those
+numbers are harness measurements only: semantic quality is still unscored and
+no promotion decision is justified. The next priority is fixing the benchmark
+readiness/artifact pipeline and reconciling service-manager state with the
+serving PID before adding more visual metrics.
 
 ## Ingest
 

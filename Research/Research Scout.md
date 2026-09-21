@@ -35,3 +35,4 @@ It must keep research artifacts inside this tree unless AJ explicitly asks other
 - 2026-09-18: Researched Agora’s conversation lifecycle, WebSocket event contract, and non-destructive regeneration architecture; report saved as `2026-09-18 — Agora Conversation Lifecycle and Regeneration Architecture.md`.
 - 2026-09-19: Researched ROS 2 architecture for small robots and home-lab electronics, with lifecycle, composition, QoS, security, and Isaac ROS context; report saved as `2026-09-19 — ROS 2 Architecture for Small Robots and Home-Lab Electronics.md`.
 - 2026-09-20: Researched Hermes memory, session persistence, and context compression, with a continuity-drill recommendation; report saved as `2026-09-20 — Hermes Memory, Sessions, and Context Compression.md`.
+- 2026-09-21: Researched MCP Apps as an optional embedded-interface adapter for Agora, with a read-only inspector spike recommended; report saved as `2026-09-21 — MCP Apps and Agora Embedded Agent Interfaces.md`.

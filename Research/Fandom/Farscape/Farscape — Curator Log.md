@@ -7,6 +7,34 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-21 — Nebari Resistance faction dossier
+
+Scope: bounded faction slice for the Nebari resistance, separating episode-established facts about Nerri, the antibody source, resistance contacts, and the contagion operation from unsupported claims about organization, size, and strategy.
+
+Existing-vault check: inspected the research plan, wiki home, worldbuilding/season/character/production/media/fandom indexes, source register, curator log, and existing [[Worldbuilding/Nebari]], [[Worldbuilding/Nebari Prime]], [[Worldbuilding/Mind Cleansing]], and [[Characters/Chiana]] notes. No dedicated [[Worldbuilding/Nebari Resistance]] note existed.
+
+Sources consulted:
+
+- Snurcher’s Guide for “A Clockwork Nebari” episode evidence and continuity notes.
+- Farscape Encyclopedia Project entries for “Nebari,” “A Clockwork Nebari,” and “Fractures,” used as discovery and cross-check sources.
+- Terra Firma Scapers transcript archive for “Fractures” dialogue leads.
+- A.V. Club review for interpretation only, kept separate from canon claims.
+
+Created:
+
+- [[Worldbuilding/Nebari Resistance]]
+
+Updated:
+
+- [[Worldbuilding/Worldbuilding Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: authorized scene-level timestamp audit; resistance structure, scale, and objective; identity and motives of the Establishment antibody source; later continuity in “Fractures” and *The Peacekeeper Wars*.
+
+Next suggested slice: [[Episodes/Fractures]] — a bounded episode dossier focused on Hubero, the Nebari exclusion evidence, and the continuity limits around resistance membership.
+
 ## 2026-09-20 — Nebari Prime location and politics dossier
 
 Scope: bounded worldbuilding/location slice for Nebari Prime, focused on its identity as Chiana and Nerri’s homeworld, the Establishment’s exit-permit and contagion program, and the evidence limits around the planet’s geography and institutions.

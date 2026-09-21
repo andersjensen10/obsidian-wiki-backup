@@ -43,6 +43,11 @@ Use this note as the canonical source ledger for the Farscape wiki. Register sou
 || FS-S030 | Farscape Encyclopedia Project, “Nebari Prime” — https://farscape.fandom.com/wiki/Nebari_Prime | Fan-maintained location reference | homeworld identity for Chiana and Nerri | discovery lead; page is sparse | 2026-09-20 |
 || FS-S031 | Farscape Encyclopedia Project, “A Clockwork Nebari” — https://farscape.fandom.com/wiki/A_Clockwork_Nebari | Fan-maintained episode reference | episode plot, exit permits, contagion, Establishment, Nerri | discovery/cross-check source; not sole canon authority | 2026-09-20 |
 || FS-S032 | The Companion, “Chiana’s Shades of Grey: Gigi Edgley Speaks” — https://thecompanion.app/farscape-chiana-gigi-edgley/ | Interview/report | Chiana’s Nebari Prime backstory and production context | retrospective secondary publication with performer/production testimony | 2026-09-20 |
+|| FS-S033 | Snurcher’s Guide, “A Clockwork Nebari” — http://snurcher.com/episodes/217.shtml | Independent episode guide | Nerri, the Nebari resistance, antibody, message chips, contagion plan | strong secondary reference; not primary footage | 2026-09-21 |
+|| FS-S034 | Farscape Encyclopedia Project, “Nebari” — https://farscape.fandom.com/wiki/Nebari | Fan-maintained species reference | Establishment, revolutionary front, Nebari dissent and continuity | discovery lead; cross-check before canon claims | 2026-09-21 |
+|| FS-S035 | Farscape Encyclopedia Project, “Fractures” — https://farscape.fandom.com/wiki/Fractures | Fan-maintained episode reference | Hubero, Nebari exclusion, escape, and episode credits | discovery/cross-check source; not sole canon authority | 2026-09-21 |
+|| FS-S036 | Terra Firma Scapers, “Farscape Transcript — Fractures” — https://transcripts.terrafirmascapers.com/318.htm | Archived transcript | Hubero dialogue and episode scene leads | transcript archive; not an official studio script | 2026-09-21 |
+|| FS-S037 | A.V. Club, “Farscape: ‘A Clockwork Nebari’” — https://avclub.com/farscape-a-clockwork-nebari-1798177632 | Critical essay | interpretation of Establishment coercion and imperial threat | criticism; not an in-universe source | 2026-09-21 |
 
 ## Source handling rules
 
