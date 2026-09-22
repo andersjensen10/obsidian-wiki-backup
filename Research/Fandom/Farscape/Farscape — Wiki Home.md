@@ -46,6 +46,7 @@ status: growing
 - [[Worldbuilding/Mind Cleansing]]
 - [[Worldbuilding/Nebari Prime]]
 - [[Worldbuilding/Nebari Resistance]]
+- [[Episodes/Fractures]]
 - [[Media/Chiana makeup test provenance]]
 - [[Farscape — Curator Log]]
 - [[Farscape — Research Plan]]

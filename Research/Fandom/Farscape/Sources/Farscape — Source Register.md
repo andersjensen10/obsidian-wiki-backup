@@ -48,6 +48,10 @@ Use this note as the canonical source ledger for the Farscape wiki. Register sou
 || FS-S035 | Farscape Encyclopedia Project, “Fractures” — https://farscape.fandom.com/wiki/Fractures | Fan-maintained episode reference | Hubero, Nebari exclusion, escape, and episode credits | discovery/cross-check source; not sole canon authority | 2026-09-21 |
 || FS-S036 | Terra Firma Scapers, “Farscape Transcript — Fractures” — https://transcripts.terrafirmascapers.com/318.htm | Archived transcript | Hubero dialogue and episode scene leads | transcript archive; not an official studio script | 2026-09-21 |
 || FS-S037 | A.V. Club, “Farscape: ‘A Clockwork Nebari’” — https://avclub.com/farscape-a-clockwork-nebari-1798177632 | Critical essay | interpretation of Establishment coercion and imperial threat | criticism; not an in-universe source | 2026-09-21 |
+|| FS-S038 | Terra Firma Scapers, “Farscape Transcript — Fractures” — https://transcripts.terrafirmascapers.com/318.htm | Archived transcript | episode dialogue, Hubero, prisoner plot, reunion, and ending | transcript archive credited to Pure Pilot; not an official studio script | 2026-09-22 |
+|| FS-S039 | BBC Online, “Fractures” — https://www.bbc.co.uk/cult/farscape/story/fractures.shtml | Archived broadcaster episode guide/review | episode identity, plot framing, credits, reunion and season-arc commentary | contemporary broadcaster source; criticism separated from canon | 2026-09-22 |
+|| FS-S040 | Farscape Encyclopedia Project, “Fractures” — https://farscape.fandom.com/wiki/Fractures | Fan-maintained episode reference | episode identity, cast, production number, plot and continuity leads | discovery/cross-check source; not sole canon authority | 2026-09-22 |
+|| FS-S041 | Reactor, “Farscape Rewatch: ‘Fractures’” — https://tor.com/2013/06/26/farscape-rewatch-fractures | Critical rewatch | later synopsis and interpretation of character/crew fractures | criticism and recap; not primary canon authority | 2026-09-22 |
 
 ## Source handling rules
 

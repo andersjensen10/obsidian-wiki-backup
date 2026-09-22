@@ -7,6 +7,34 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-22 — “Fractures” episode dossier
+
+Scope: bounded episode slice for season 3 episode 18, focused on the Moya/Talyn reunion, the escaped-prisoner mystery, Hubero’s Nebari outcast status, Chiana’s incomplete precognition, and the episode’s closing decision to oppose Scorpius.
+
+Existing-vault check: inspected the research plan, wiki home, episode/character/production/worldbuilding/media/fandom indexes, source register, and existing [[Worldbuilding/Nebari Resistance]] and [[Worldbuilding/Nebari Prime]] notes. No dedicated [[Episodes/Fractures]] note existed.
+
+Sources consulted:
+
+- Terra Firma Scapers transcript archive for episode dialogue and scene-level plot evidence.
+- Archived BBC episode guide for contemporary episode framing, credits, and review commentary.
+- Farscape Encyclopedia Project for episode metadata and continuity cross-checking.
+- Reactor rewatch for clearly separated recap and interpretation.
+
+Created:
+
+- [[Episodes/Fractures]]
+
+Updated:
+
+- [[Episodes/Season Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: authorized scene-level video timestamp audit; primary screen-credit reconciliation; complete Nebari policy context for androgens; technical details of the Peacekeeper weapon and Boolite biology; later continuity implications for Hubero and the Nebari exclusion plot.
+
+Next suggested slice: [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved; otherwise a dedicated [[Episodes/I-Yensch, You-Yensch]] dossier to continue the season 3 continuity thread.
+
 ## 2026-09-21 — Nebari Resistance faction dossier
 
 Scope: bounded faction slice for the Nebari resistance, separating episode-established facts about Nerri, the antibody source, resistance contacts, and the contagion operation from unsupported claims about organization, size, and strategy.
