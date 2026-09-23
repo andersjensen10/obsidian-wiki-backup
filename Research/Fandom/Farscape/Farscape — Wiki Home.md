@@ -47,6 +47,7 @@ status: growing
 - [[Worldbuilding/Nebari Prime]]
 - [[Worldbuilding/Nebari Resistance]]
 - [[Episodes/Fractures]]
+- [[Episodes/I-Yensch, You-Yensch]]
 - [[Media/Chiana makeup test provenance]]
 - [[Farscape — Curator Log]]
 - [[Farscape — Research Plan]]

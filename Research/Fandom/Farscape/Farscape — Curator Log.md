@@ -7,6 +7,35 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-23 — “I-Yensch, You-Yensch” episode dossier
+
+Scope: bounded episode slice for season 3 episode 19, focused on the Scorpius negotiation, I-Yensch bracelets, the diner hostage/arson plot, Talyn’s hospital-ship attack and shutdown, Chiana’s warning about Jool, and John/Aeryn’s renewed operational cooperation.
+
+Existing-vault check: inspected the research plan, wiki home, episode/season/character/production/worldbuilding/media/fandom indexes, source register, and the existing [[Episodes/Fractures]] note. No dedicated [[Episodes/I-Yensch, You-Yensch]] note existed.
+
+Sources consulted:
+
+- Reactor rewatch for episode synopsis, production metadata, and clearly separated interpretation.
+- Archived BBC episode guide for contemporary framing, credits, and review commentary.
+- Farscape Encyclopedia Project for detailed plot, cast, continuity, and background leads.
+- Terra Firma Scapers transcript archive was discovered but blocked by Cloudflare; no transcript quotations or timestamps were used.
+- Public YouTube upload recorded only as an unaudited viewing lead.
+
+Created:
+
+- [[Episodes/I-Yensch, You-Yensch]]
+
+Updated:
+
+- [[Episodes/Season Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: authorized scene-level video timestamp audit; transcript access; primary screen-credit reconciliation; direct production documentation for the I-Yensch bracelet concept; exact casualty count and later continuity around Talyn’s restoration.
+
+Next suggested slice: [[Episodes/Into the Lion's Den - Lambs to the Slaughter]] to continue the season 3 Scorpius/wormhole arc, or [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved.
+
 ## 2026-09-22 — “Fractures” episode dossier
 
 Scope: bounded episode slice for season 3 episode 18, focused on the Moya/Talyn reunion, the escaped-prisoner mystery, Hubero’s Nebari outcast status, Chiana’s incomplete precognition, and the episode’s closing decision to oppose Scorpius.

@@ -53,6 +53,12 @@ Use this note as the canonical source ledger for the Farscape wiki. Register sou
 || FS-S040 | Farscape Encyclopedia Project, “Fractures” — https://farscape.fandom.com/wiki/Fractures | Fan-maintained episode reference | episode identity, cast, production number, plot and continuity leads | discovery/cross-check source; not sole canon authority | 2026-09-22 |
 || FS-S041 | Reactor, “Farscape Rewatch: ‘Fractures’” — https://tor.com/2013/06/26/farscape-rewatch-fractures | Critical rewatch | later synopsis and interpretation of character/crew fractures | criticism and recap; not primary canon authority | 2026-09-22 |
 
+|| FS-S042 | Reactor, “Farscape Rewatch: ‘I-Yensch, You-Yensch’” — https://reactormag.com/farscape-rewatch-yensch/ | Critical rewatch | episode synopsis, production metadata, interpretation | criticism/recap; not primary canon authority | 2026-09-23 |
+|| FS-S043 | BBC Online archive, “I - Yensch, You - Yensch” — https://bbclatestnews.pages.dev/cult/farscape/story/yensch.shtml | Archived broadcaster episode guide/review | episode framing, credits, plot overview, contemporary reception | contemporary broadcaster source; criticism separated from canon | 2026-09-23 |
+|| FS-S044 | Farscape Encyclopedia Project, “I-Yensch, You-Yensch” — https://farscape.fandom.com/wiki/I-Yensch,_You-Yensch | Fan-maintained episode reference | plot, cast, production metadata, continuity and background leads | discovery/cross-check source; not sole canon authority | 2026-09-23 |
+|| FS-S045 | Terra Firma Scapers, “Farscape Transcript — I-Yensch, You-Yensch” — https://transcripts.terrafirmascapers.com/319.htm | Archived transcript | transcript and episode metadata lead | Cloudflare-blocked during this run; no transcript quotations or timestamps used | 2026-09-23 |
+|| FS-S046 | YouTube, “Farscape S3E19 FULL EPISODE | I-Yensch, You-Yensch” — https://www.youtube.com/watch?v=aGwrxQzTJ2I | Public video upload | viewing lead for episode audit | uploader/rightsholder and transcript unverified; no timestamp claims | 2026-09-23 |
+
 ## Source handling rules
 
 - Record the exact URL, title, publisher/channel, creator when known, publication date when known, and access date.
