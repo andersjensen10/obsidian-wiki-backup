@@ -7,6 +7,35 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-24 — “Into the Lion's Den — Lambs to the Slaughter” episode dossier
+
+Scope: bounded episode slice for season 3 episode 20, focused on the Command Carrier truce, the I-Yensch bracelet link, Peacekeeper internal conflict, Grayza's challenge to Scorpius, Crichton's hesitation over wormhole sabotage, and the crew's separate objectives aboard the carrier.
+
+Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, and adjacent [[Episodes/I-Yensch, You-Yensch]] and [[Episodes/Fractures]] notes. No dedicated [[Episodes/Into the Lion's Den - Lambs to the Slaughter]] note existed.
+
+Sources consulted:
+
+- Archived BBC episode guide for contemporary framing, credits, plot overview, and review commentary.
+- Snurcher's Guide for episode metadata, detailed continuity, technical leads, and cast.
+- Farscape Encyclopedia Project for metadata and reference-term cross-checking.
+- Reactor retrospective for synopsis and clearly separated interpretation.
+- Public YouTube upload recorded only as an unaudited viewing lead; no timestamps or rights claims used.
+
+Created:
+
+- [[Episodes/Into the Lion's Den - Lambs to the Slaughter]]
+
+Updated:
+
+- [[Episodes/Season Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: authorized scene-level video timestamp audit; transcript access; primary screen-credit reconciliation; technical verification of the Command Carrier wormhole apparatus; exact status and motives of Larell's surveillance assignment; later continuity in “Wolf in Sheep's Clothing.”
+
+Next suggested slice: [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]] to complete the Command Carrier/Scorpius arc, or [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved.
+
 ## 2026-09-23 — “I-Yensch, You-Yensch” episode dossier
 
 Scope: bounded episode slice for season 3 episode 19, focused on the Scorpius negotiation, I-Yensch bracelets, the diner hostage/arson plot, Talyn’s hospital-ship attack and shutdown, Chiana’s warning about Jool, and John/Aeryn’s renewed operational cooperation.

@@ -48,6 +48,7 @@ status: growing
 - [[Worldbuilding/Nebari Resistance]]
 - [[Episodes/Fractures]]
 - [[Episodes/I-Yensch, You-Yensch]]
+- [[Episodes/Into the Lion's Den - Lambs to the Slaughter]]
 - [[Media/Chiana makeup test provenance]]
 - [[Farscape — Curator Log]]
 - [[Farscape — Research Plan]]
