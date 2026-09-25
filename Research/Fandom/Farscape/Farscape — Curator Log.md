@@ -7,6 +7,34 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-25 — “Into the Lion's Den — Wolf in Sheep's Clothing” episode dossier
+
+Scope: bounded episode slice for season 3 episode 21, focused on the Command Carrier destruction plan, Crais and Talyn's sacrifice, Crichton's wormhole diversion with Scorpius, the Aurora-chair intervention, and the crew's prospective separation.
+
+Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, and adjacent [[Episodes/Into the Lion's Den - Lambs to the Slaughter]], [[Episodes/I-Yensch, You-Yensch]], and [[Episodes/Fractures]] notes. No dedicated Wolf in Sheep's Clothing note existed.
+
+Sources consulted:
+
+- Snurcher's Guide for episode metadata, plot, guest cast, annotations, and transcript leads.
+- Archived BBC episode guide for contemporary framing, credits, plot, and review commentary.
+- Reactor retrospective for synopsis and clearly separated interpretation.
+- Farscape Encyclopedia Project for metadata, continuity, and background-term cross-checking.
+- Public YouTube upload recorded only as an unaudited viewing lead; no timestamps or rights claims used.
+
+Created:
+
+- [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]]
+
+Updated:
+
+- [[Episodes/Season Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: authorized scene-level video timestamp audit; transcript access; primary screen-credit reconciliation; complete technical explanation of Talyn's StarBurst collapse; definitive account of Scorpius's escape; later continuity around the crew's dispersal and “Dog with Two Bones.”
+
+Next suggested slice: [[Episodes/Into the Lion's Den - Dog with Two Bones]] to follow the immediate aftermath, or [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved.
 ## 2026-09-24 — “Into the Lion's Den — Lambs to the Slaughter” episode dossier
 
 Scope: bounded episode slice for season 3 episode 20, focused on the Command Carrier truce, the I-Yensch bracelet link, Peacekeeper internal conflict, Grayza's challenge to Scorpius, Crichton's hesitation over wormhole sabotage, and the crew's separate objectives aboard the carrier.

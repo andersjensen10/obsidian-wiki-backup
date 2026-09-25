@@ -49,6 +49,7 @@ status: growing
 - [[Episodes/Fractures]]
 - [[Episodes/I-Yensch, You-Yensch]]
 - [[Episodes/Into the Lion's Den - Lambs to the Slaughter]]
+- [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]]
 - [[Media/Chiana makeup test provenance]]
 - [[Farscape — Curator Log]]
 - [[Farscape — Research Plan]]
