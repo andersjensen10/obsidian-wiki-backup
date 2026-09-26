@@ -50,6 +50,7 @@ status: growing
 - [[Episodes/I-Yensch, You-Yensch]]
 - [[Episodes/Into the Lion's Den - Lambs to the Slaughter]]
 - [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]]
+- [[Episodes/Dog with Two Bones]]
 - [[Media/Chiana makeup test provenance]]
 - [[Farscape — Curator Log]]
 - [[Farscape — Research Plan]]

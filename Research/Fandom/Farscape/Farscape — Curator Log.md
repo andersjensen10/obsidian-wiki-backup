@@ -7,6 +7,35 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-26 — “Dog with Two Bones” episode dossier
+
+Scope: bounded episode slice for season 3 episode 22, focused on Talyn’s burial, the rogue Leviathan, the crew’s divergence, Crichton’s incompatible Earth/Moya futures, Aeryn’s departure, the pregnancy reveal, and the wormhole cliffhanger.
+
+Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, and adjacent [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]], [[Episodes/Into the Lion's Den - Lambs to the Slaughter]], [[Episodes/I-Yensch, You-Yensch]], and [[Episodes/Fractures]] notes. No dedicated Dog with Two Bones note existed.
+
+Sources consulted:
+
+- BBC Online episode guide for contemporary framing, credits, plot premise, and crew-separation framing.
+- Reactor retrospective for synopsis, continuity, and clearly separated interpretation.
+- epguides for season/episode placement and US airdate.
+- Farscape Encyclopedia Project for detailed plot, metadata, and continuity/production-trivia leads.
+- A public script-mirror result was blocked during extraction and was not used as evidence.
+
+Created:
+
+- [[Episodes/Dog with Two Bones]]
+
+Updated:
+
+- [[Episodes/Season Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]]
+- This curator log.
+
+Unresolved: authorized scene-level video timestamp audit; primary screen-credit reconciliation; full production documentation for the rogue Leviathan and the old woman/Noranti; exact mechanics and provenance of the season-ending wormhole; later continuity around Aeryn’s pregnancy and the crew’s separation.
+
+Next suggested slice: [[Episodes/Crichton Kicks]] to follow the wormhole aftermath, or [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved.
+
 ## 2026-09-25 — “Into the Lion's Den — Wolf in Sheep's Clothing” episode dossier
 
 Scope: bounded episode slice for season 3 episode 21, focused on the Command Carrier destruction plan, Crais and Talyn's sacrifice, Crichton's wormhole diversion with Scorpius, the Aurora-chair intervention, and the crew's prospective separation.
