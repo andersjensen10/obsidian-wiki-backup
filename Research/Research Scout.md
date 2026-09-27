@@ -45,6 +45,7 @@ It must keep research artifacts inside this tree unless AJ explicitly asks other
 - 2026-09-24: Researched llama.cpp speculative decoding, with emphasis on DSpark and a low-cost n-gram control condition for Spark; a disposable local A/B benchmark was recommended; report saved as `2026-09-24 — llama.cpp Speculative Decoding and DSpark for Spark.md`.
 - 2026-09-25: Researched MCP authorization hardening for a future Agora adapter, focusing on audience binding, token non-passthrough, PKCE/state, consent, exact redirects, and SSRF-resistant discovery; a local negative-test fixture was recommended; report saved as `2026-09-25 — MCP Authorization Hardening for Agora Adapter.md`.
 - 2026-09-26: Researched Godot 4.5 as an accessible agent-facing interaction shell for a future Agora companion, covering experimental screen-reader support, WebSocket boundaries, and NavigationAgent3D; a local fake-WebSocket read-only viewer was recommended; report saved as `2026-09-26 — Godot 4.5 as an Agent-Facing Interaction Shell.md`.
+- 2026-09-27: Researched the draft MCP Tasks extension as a durable async-job boundary for Agora, TTS, voice preparation, and regeneration; a local fake MCP Tasks/Agora adapter spike was recommended; report saved as `2026-09-27 — MCP Tasks for Agora Async Jobs.md`.
 
 ## Related notes
 - [[Research/Research Scout]] — research-hub context and curation mandate.

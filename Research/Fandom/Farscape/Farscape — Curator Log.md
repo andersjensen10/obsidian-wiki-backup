@@ -8,6 +8,34 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-27 — “Crichton Kicks” episode dossier
+
+Scope: bounded episode slice for season 4 episode 1, focused on John's isolation with Elack, Sikozu's introduction, the Grudek harvesting operation, the Brindz Hound pursuit, the partial crew reunion, and the wormhole-network objective.
+
+Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, and the existing placeholder [[Episodes/Crichton Kicks]]. No verified dossier existed, so the placeholder was upgraded rather than duplicated.
+
+Sources consulted:
+
+- Reactor rewatch for synopsis, production metadata, plot leads, and clearly separated criticism.
+- epguides for episode placement, airdate, writer/director, and guest-cast leads.
+- Farscape Encyclopedia Project for metadata and continuity cross-checking.
+- Forever Dreaming transcript mirror for dialogue and scene-order leads; treated as unofficial.
+- Public YouTube upload recorded as an exact viewing lead; no timestamps or rights claims used.
+
+Created/updated:
+
+- [[Episodes/Crichton Kicks]] — upgraded placeholder to researched dossier.
+- [[Episodes/Season Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]] with FS-S062–FS-S066.
+- This curator log.
+
+Verification passed: grounded-citations strict verification; 5 cited sources; 55% provenance coverage. No images or screenshots added.
+
+Unresolved: authorized scene-level timestamps; primary transcript/script access; primary screen-credit reconciliation; full production documentation for the Grudeks, Brindz Hound, and Sikozu's biological abilities; technical rules and provenance of the wormhole network.
+
+Next suggested slice: [[Episodes/John Quixote]] if the existing note is still only a placeholder, otherwise a bounded [[Production/Chiana makeup and costume]] audit with primary-credit and media-provenance improvements.
+
 ## 2026-09-26 — “Dog with Two Bones” episode dossier
 
 Scope: bounded episode slice for season 3 episode 22, focused on Talyn’s burial, the rogue Leviathan, the crew’s divergence, Crichton’s incompatible Earth/Moya futures, Aeryn’s departure, the pregnancy reveal, and the wormhole cliffhanger.

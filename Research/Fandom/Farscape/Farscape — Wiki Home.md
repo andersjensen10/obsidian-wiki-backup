@@ -52,6 +52,7 @@ status: growing
 - [[Episodes/Into the Lion's Den - Lambs to the Slaughter]]
 - [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]]
 - [[Episodes/Dog with Two Bones]]
+- [[Episodes/Crichton Kicks]]
 - [[Media/Chiana makeup test provenance]]
 - [[Farscape — Curator Log]]
 - [[Farscape — Research Plan]]
