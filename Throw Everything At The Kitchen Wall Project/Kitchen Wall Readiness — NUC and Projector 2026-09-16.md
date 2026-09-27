@@ -1,3 +1,7 @@
+---
+tags: [project/kitchen-wall]
+---
+
 # Kitchen Wall Readiness — NUC and Projector
 
 **Target date:** 2026-09-16  

@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: I-Yensch, You-Yensch
 type: episode-dossier
 fandom: Farscape

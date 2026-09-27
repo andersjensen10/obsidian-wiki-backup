@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Farscape Research Plan
 type: research-plan
 status: active

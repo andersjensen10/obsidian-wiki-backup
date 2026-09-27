@@ -1,4 +1,5 @@
 ---
+tags: [project/agora, type/backlog]
 status: ready-for-development
 origin: board-request
 source: "[[WO-014-farscape-world-pilot-ARCHIVE]]"

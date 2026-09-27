@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — MCP Authorization Hardening for an Agora Adapter
 
 **Run date:** 2026-09-25 08:00 CEST  
@@ -115,3 +119,6 @@ The best follow-up is the local negative-test fixture above. Deferred alternativ
 [1] https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization — MCP Authorization Specification
 [2] https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices — MCP Security Best Practices
 [3] https://godotengine.org/releases/4.5 — Godot 4.5 Release Notes
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

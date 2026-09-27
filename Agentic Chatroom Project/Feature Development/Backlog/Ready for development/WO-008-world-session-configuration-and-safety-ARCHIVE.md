@@ -1,4 +1,5 @@
 ---
+tags: [project/agora, status/archived, type/backlog]
 status: promoted-to-backlog
 origin: ceo-vision
 source: "[[Agentic Chatroom — Near-Term Vision]]"

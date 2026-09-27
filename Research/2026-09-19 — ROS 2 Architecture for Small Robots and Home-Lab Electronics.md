@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — ROS 2 Architecture for Small Robots and Home-Lab Electronics
 
 **Run date:** 2026-09-19  
@@ -154,3 +158,6 @@ The most useful follow-up would be either **ESPHome as a rapid sensor/voice endp
 [7] https://developer.nvidia.com/isaac-ros — NVIDIA Isaac ROS
 [8] https://developer.nvidia.com/blog?p=104879 — NVIDIA Jetson Thor
 [9] https://design.ros2.org/articles/node_lifecycle.html — ROS 2 Managed Nodes Design
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

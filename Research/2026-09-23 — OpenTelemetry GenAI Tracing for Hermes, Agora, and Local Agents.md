@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — OpenTelemetry GenAI Tracing for Hermes, Agora, and Local Agents
 
 **Run date:** 2026-09-23 08:00 CEST  
@@ -160,3 +164,6 @@ The best follow-up is the local GenAI trace fixture above. If AJ wants a differe
 [5] https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices — MCP security best practices
 [6] https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md — OpenTelemetry GenAI agent and framework spans
 [7] https://github.com/open-telemetry/semantic-conventions-genai — OpenTelemetry GenAI semantic conventions repository
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

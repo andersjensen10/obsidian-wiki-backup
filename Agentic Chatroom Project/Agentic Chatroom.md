@@ -110,3 +110,9 @@ get scoped into `Backlog` for near-term work, and ship into
 - [[Agentic Scrum Pipeline — Overview]] — Scrum pipeline this project runs on.
 - [[FR-001-eval-thinking-off-quality-REPORT]] — thinking-mode quality eval.
 - [[Coder -  Sprint start]] — coding-agent instructions for working a story out of `Backlog/Active Sprint`.
+- [[Agentic Chatroom Project/Feature Development/Backlog/Open BUGS/2026-09-16-narrator-turn-hard-fails-on-unstructured-output.md|2026-09-16-narrator-turn-hard-fails-on-unstructured-output]]
+- [[Agentic Chatroom Project/Feature Development/Backlog/Open BUGS/2026-09-17-persona-thinking-toggle-dead-control.md|2026-09-17-persona-thinking-toggle-dead-control]]
+- [[Agentic Chatroom Project/Feature Development/Published features/Sprint 2 - Week 39/Changelog.md|Changelog]]
+- [[Agentic Chatroom Project/Feature Development/QA-2026-09-10-onboarding-wizard-dogfood-REPORT.md|QA-2026-09-10-onboarding-wizard-dogfood-REPORT]]
+- [[Agentic Chatroom Project/Feature Development/Feature Requests/readme.md.md|Feature-request intake guide]]
+- [[Agentic Chatroom Project/Feature Development/Published features/readme.md.md|Published-features guide]]

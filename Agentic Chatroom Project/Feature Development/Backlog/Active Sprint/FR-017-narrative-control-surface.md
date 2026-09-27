@@ -1,4 +1,5 @@
 ---
+tags: [project/agora, type/active-sprint]
 status: shipped
 origin: board-request
 source: "[[WO-009-narrative-control-surface-ARCHIVE]]"

@@ -1,4 +1,5 @@
 ---
+tags: [project/agora, type/open-bug]
 found_by: Senior QA Manager
 found: 2026-09-16
 context: sprint-review

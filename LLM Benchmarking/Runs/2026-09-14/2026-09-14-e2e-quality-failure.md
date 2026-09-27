@@ -1,3 +1,7 @@
+---
+tags: [project/llm-benchmarking, type/benchmark-run]
+---
+
 # E2E benchmark failure report - 2026-09-14
 
 Status: FAILED QUALITY GATE

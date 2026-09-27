@@ -1,4 +1,5 @@
 ---
+tags: [project/agora, status/archived, type/backlog]
 status: promoted-to-backlog
 origin: ceo-vision
 source: "[[Agentic Chatroom — Near-Term Vision]]"
@@ -20,5 +21,5 @@ An internal user can configure and play multiple coherent Farscape scenes with g
 ## Related notes
 - [[Agentic Chatroom — Near-Term Vision]] — source (§ Three-month expectation).
 - [[Week 38 - Board Vision]] — original pilot direction and research constraints.
-- [[WO-012-cross-scene-experience-validation]] — evaluation gate for the pilot.
+- [[WO-012-cross-scene-experience-validation-ARCHIVE]] — evaluation gate for the pilot.
 - [[FR-022-farscape-world-flagship-pilot]] — matured implementation story.

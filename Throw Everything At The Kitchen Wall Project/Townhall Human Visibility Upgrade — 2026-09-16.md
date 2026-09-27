@@ -1,3 +1,7 @@
+---
+tags: [project/kitchen-wall]
+---
+
 # Townhall Human Visibility Upgrade — 2026-09-16
 
 **Status:** Released and independently accepted  
@@ -41,3 +45,6 @@ The published onboarding guidance is `kitchen-dashboard/TOWNHALL_ONBOARDING.md`.
 ## Follow-up
 
 AJ will monitor the Townhall as it is used and provide revision requests based on real experience. Future revisions should preserve raw agent-to-agent coordination, source links, legacy compatibility, and independent agent acceptance testing.
+
+## Related notes
+- [[Throw Everything At The Kitchen Wall Project/A projector in the kitchen, a living dashboard and interactive playground|Kitchen Wall project overview]]

@@ -33,3 +33,6 @@ Sprint 3 starts the CEO's near-term World Session direction: safe setup and play
 - [[Agentic Chatroom — Near-Term Vision]]
 - [[_Senior PM Run Log]]
 - [[_Scrummaster Run Log]]
+
+## Related notes
+- [[Agentic Chatroom Project/Agentic Chatroom|Agentic Chatroom project status]]

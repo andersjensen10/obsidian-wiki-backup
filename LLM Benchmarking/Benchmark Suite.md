@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, local-llm, locked-suite]
+tags: [benchmarking, local-llm, locked-suite, project/llm-benchmarking]
 status: locked-v1
 suite_version: 1.0.0
 ---

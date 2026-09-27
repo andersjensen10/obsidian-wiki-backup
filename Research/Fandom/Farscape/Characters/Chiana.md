@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Chiana
 aliases:
   - Chi

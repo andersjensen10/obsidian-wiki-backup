@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, automation, reliability, spark-infra, kitchen-wall]
+tags: [automation, benchmarking, kitchen-wall, project/llm-benchmarking, reliability, spark-infra]
 status: active
 ---
 

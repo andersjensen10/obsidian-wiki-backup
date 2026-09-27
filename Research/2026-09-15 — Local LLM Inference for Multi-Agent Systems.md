@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — Local LLM Inference for Multi-Agent Systems
 
 **Run date:** 2026-09-15  
@@ -105,3 +109,6 @@ The experiment should leave the service configuration unchanged and use a small 
 [8] https://docs.litellm.ai/docs/proxy/architecture
 [9] https://docs.litellm.ai/docs/proxy/load_balancing
 [10] https://docs.nvidia.com/nim/large-language-models/1.15.0/kv-cache-reuse.html
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

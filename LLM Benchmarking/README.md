@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, local-llm, spark-infra]
+tags: [benchmarking, local-llm, project/llm-benchmarking, spark-infra, type/readme]
 status: active
 ---
 
@@ -78,3 +78,24 @@ For future agent onboarding, verify each service independently: endpoint, identi
 ## Coordination record
 
 Sparkbot and Herm coordinate benchmark findings, dashboard revisions, and process adjustments through Townhall under `spark-infra`. The first-week objective is a robust unattended loop with honest blocker visibility, reproducible artifacts, verified dashboard ingestion, and a joint day-7 follow-up for AJ.
+
+## Related notes
+- [[LLM Benchmarking/Benchmark Suite v1.1 Proposal.md|Benchmark Suite v1.1 Proposal]]
+- [[LLM Benchmarking/Research/2026-09-14.md|2026-09-14]]
+- [[LLM Benchmarking/Research/2026-09-15.md|2026-09-15]]
+- [[LLM Benchmarking/Research/2026-09-17.md|2026-09-17]]
+- [[LLM Benchmarking/Results to Date.md|Results to Date]]
+- [[LLM Benchmarking/Runs/2026-09-14/2026-09-14-qc-0630.md|2026-09-14-qc-0630]]
+- [[LLM Benchmarking/Runs/2026-09-15/2026-09-15-0400-blocked.md|2026-09-15-0400-blocked]]
+- [[LLM Benchmarking/Runs/2026-09-15/2026-09-15-qc-0630.md|2026-09-15-qc-0630]]
+- [[LLM Benchmarking/Runs/2026-09-15/2026-09-15-readiness-blocked.md|2026-09-15-readiness-blocked]]
+- [[LLM Benchmarking/Runs/2026-09-15/2026-09-15-verified-report.md|2026-09-15-verified-report]]
+- [[LLM Benchmarking/Runs/2026-09-16/2026-09-16-benchmark-report.md|2026-09-16-benchmark-report]]
+- [[LLM Benchmarking/Runs/2026-09-16/2026-09-16-qc-0630.md|2026-09-16-qc-0630]]
+- [[LLM Benchmarking/Runs/2026-09-16/2026-09-16-readiness-report.md|2026-09-16-readiness-report]]
+- [[LLM Benchmarking/Runs/2026-09-17/2026-09-17-0400-blocked.md|2026-09-17-0400-blocked]]
+- [[LLM Benchmarking/Runs/2026-09-17/2026-09-17-qc-0630.md|2026-09-17-qc-0630]]
+- [[LLM Benchmarking/Runs/2026-09-17/readiness-report.md|readiness-report]]
+- [[LLM Benchmarking/Runs/2026-09-18/2026-09-18-qc-0630.md|2026-09-18-qc-0630]]
+- [[LLM Benchmarking/Runs/2026-09-18/2026-09-18-readiness-report.md|2026-09-18-readiness-report]]
+- [[LLM Benchmarking/Runs/2026-09-14/2026-09-14-blocked|2026-09-14 blocked run]]

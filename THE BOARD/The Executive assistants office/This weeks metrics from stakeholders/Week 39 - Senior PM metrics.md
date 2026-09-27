@@ -53,3 +53,7 @@ its coupled/parallel initiatives — into Active Sprint.
 - [[Week 38 - Scrummaster friction notes]] — maturation friction detail.
 - [[Week 37 - Senior PM metrics]] — Sprint 1 report.
 - [[Senior Product Manager]] — role prompt this report is filed under.
+
+## Related notes
+- [[THE BOARD/The Executive assistants office/This weeks metrics from stakeholders/Week 39 - Senior QA recommendations.md|Week 39 - Senior QA recommendations]]
+- [[THE BOARD/readme.md.md|Board governance overview]]

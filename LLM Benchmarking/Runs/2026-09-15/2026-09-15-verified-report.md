@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, complete, qwen3-coder, spark-infra]
+tags: [benchmarking, complete, project/llm-benchmarking, qwen3-coder, spark-infra, type/benchmark-run]
 status: complete
 run_id: 2026-09-15-candidate-qwen3-coder
 suite_version: 1.0.0
@@ -38,3 +38,6 @@ C4 is stress-only on the one-slot profile. Semantic coding quality, structured-o
 The verified model, manifest, and raw run remain on `/home/aj/llm-benchmark-local` on the internal SSD. Toshiba archival was not attempted because the NTFS MFT warning has not been cleared by a fresh filesystem-health gate. No unsafe write or forced repair was performed.
 
 Dashboard record: `2026-09-15-candidate-qwen3-coder`, status `complete`, idempotency key `spark-2026-09-15-candidate-qwen3-coder`; POST and GET read-back verified.
+
+## Related notes
+- [[LLM Benchmarking/README|LLM Benchmarking overview]]

@@ -137,3 +137,6 @@ Cache cleanup is preferable to deleting environments because it is reversible th
 ## Bottom line
 
 The biggest cleanup opportunity is the **296 GB dated ComfyUI backup**, followed by **23 GB of user caches**, **3.9 GB of logs**, **7.5 GB of Downloads**, and the **10 GB test image**. The safe approach is staged review and cache/log cleanup first, then an explicit model/archive decision. llama.cpp and ComfyUI should remain online and untouched until that decision is complete.
+
+## Related notes
+- [[LAN notes]] — home-lab inventory and operational context.

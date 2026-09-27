@@ -1,3 +1,7 @@
+---
+tags: [project/kitchen-wall]
+---
+
 # Light-Input Signalling
 
 **Status:** Implemented and verified against real hardware, 2026-09-14

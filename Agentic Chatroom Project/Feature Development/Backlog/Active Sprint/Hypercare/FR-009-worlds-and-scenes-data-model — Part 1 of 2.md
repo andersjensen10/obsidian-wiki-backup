@@ -1,5 +1,5 @@
 ---
-tags: [project/agora, type/backlog]
+tags: [project/agora, type/backlog, type/hypercare]
 status: hypercare
 hypercare_since: 2026-09-16
 origin: board-request

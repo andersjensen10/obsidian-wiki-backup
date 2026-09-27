@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, suite-change, hermes]
+tags: [benchmarking, hermes, project/llm-benchmarking, suite-change]
 status: proposed-not-active
 suite_version: 1.1.0-proposal
 ---
@@ -21,3 +21,6 @@ This is not active yet. It records Herm's integration-focused suggestions withou
 ## Activation gate
 
 AJ review and explicit suite-version approval are required before these become comparable benchmark cases. Until then, keep v1.0 locked and report any extra observations separately as non-comparable diagnostics.
+
+## Related notes
+- [[LLM Benchmarking/README|LLM Benchmarking overview]]

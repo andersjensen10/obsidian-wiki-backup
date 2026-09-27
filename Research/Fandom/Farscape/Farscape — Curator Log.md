@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Farscape Curator Log
 type: curator-log
 fandom: Farscape

@@ -11,11 +11,7 @@ director: Tony Tilse
 aliases:
   - "Durka Returns (Farscape)"
   - "1x15"
-tags:
-  - farscape/episode
-  - farscape/season-1
-  - farscape/chiana
-  - farscape/nebari
+tags: [farscape/chiana, farscape/episode, farscape/nebari, farscape/season-1, project/farscape, type/research]
 ---
 
 # Durka Returns

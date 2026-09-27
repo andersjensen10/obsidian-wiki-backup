@@ -1,3 +1,7 @@
+---
+tags: [project/llm-benchmarking, type/benchmark-run]
+---
+
 # Local-LLM readiness report — 2026-09-17
 
 **Status: BLOCKED**
@@ -26,3 +30,6 @@ The latest dated research note records `Qwen/Qwen3.6-35B-A3B` as the next candid
 Raw acquisition output and model files remain on the internal SSD. Production was not launched, restarted, or replaced. Benchmark slot was not consumed.
 
 Machine-readable status: [`readiness.json`](./readiness.json)
+
+## Related notes
+- [[LLM Benchmarking/README|LLM Benchmarking overview]]

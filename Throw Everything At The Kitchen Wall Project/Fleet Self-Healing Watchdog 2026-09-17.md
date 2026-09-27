@@ -1,3 +1,7 @@
+---
+tags: [project/kitchen-wall]
+---
+
 # Fleet Self-Healing Watchdog
 
 **Status:** Live and drill-tested, 2026-09-17

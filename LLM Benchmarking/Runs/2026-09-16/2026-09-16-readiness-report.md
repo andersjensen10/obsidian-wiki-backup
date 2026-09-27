@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, readiness, acquisition, spark-infra]
+tags: [acquisition, benchmarking, project/llm-benchmarking, readiness, spark-infra, type/benchmark-run]
 status: complete
 run_date: 2026-09-16
 ---
@@ -39,3 +39,6 @@ No candidate, run artifact, or log was written to Toshiba. Archival remains bloc
 The 04:00 benchmark stage may consume the single slot only if it keeps the active isolated profile, uses the internal SSD for raw artifacts/logs, and preserves production health. This readiness artifact does not claim benchmark quality or promotion.
 
 Machine-readable artifact: `Runs/2026-09-16/readiness.json`.
+
+## Related notes
+- [[LLM Benchmarking/README|LLM Benchmarking overview]]

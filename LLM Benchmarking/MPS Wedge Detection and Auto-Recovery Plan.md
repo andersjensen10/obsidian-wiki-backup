@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, automation, reliability, spark-infra, mps, cuda, incident-followup]
+tags: [automation, benchmarking, cuda, incident-followup, mps, project/llm-benchmarking, reliability, spark-infra]
 status: proposed
 owner: Herm + Sparkbot
 created: 2026-09-17

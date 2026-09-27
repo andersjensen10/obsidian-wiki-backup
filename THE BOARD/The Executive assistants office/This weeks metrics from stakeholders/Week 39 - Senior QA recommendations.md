@@ -1,4 +1,5 @@
 ---
+tags: [governance/board, type/stakeholder-metrics]
 author: Senior QA Manager
 week: 39
 filed: 2026-09-16
@@ -101,3 +102,6 @@ mis-wired. Not shippable to testers-beyond-AJ until bug #1 is fixed.
 ---
 *Filed by the Senior QA Manager. Bugs are in `Backlog/Open BUGS` for
 Scrummaster maturation; both flagged `escalate`.*
+
+## Related notes
+- [[THE BOARD/The Executive assistants office/This weeks metrics from stakeholders/Week 39 - Senior PM metrics|Week 39 Senior PM metrics]] — companion throughput and quality metrics.

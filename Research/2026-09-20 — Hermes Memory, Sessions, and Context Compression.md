@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — Hermes Memory, Sessions, and Context Compression
 
 **Run date:** 2026-09-20 08:00 CEST  
@@ -126,3 +130,6 @@ The strongest follow-up is the continuity drill above, using a disposable sessio
 [5] https://hermes-agent.nousresearch.com/docs/guides/automate-with-cron
 [6] https://hermes-agent.nousresearch.com/docs/developer-guide/context-compression-and-caching
 [7] https://hermes-agent.nousresearch.com/docs/user-guide/sessions
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

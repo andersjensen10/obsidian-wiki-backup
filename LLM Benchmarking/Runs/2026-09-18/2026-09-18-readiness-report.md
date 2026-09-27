@@ -1,3 +1,7 @@
+---
+tags: [project/llm-benchmarking, type/benchmark-run]
+---
+
 # Readiness and acquisition report — 2026-09-18 02:30
 
 ## Status: BLOCKED
@@ -17,3 +21,6 @@ The server log records a successful load and smoke response but also `common_fit
 Toshiba archival is separately blocked. The latest candidate-selection note records an unresolved NTFS MFT warning. The candidate and raw run artifacts remain on the internal SSD; no Toshiba write was attempted.
 
 Raw readiness JSON: `Runs/2026-09-18/readiness.json`.
+
+## Related notes
+- [[LLM Benchmarking/README|LLM Benchmarking overview]]

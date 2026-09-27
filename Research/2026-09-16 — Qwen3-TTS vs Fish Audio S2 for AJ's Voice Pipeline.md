@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — Qwen3-TTS vs Fish Audio S2 for AJ’s Voice Pipeline
 
 **Run date:** 2026-09-16  
@@ -99,3 +103,6 @@ This research does not justify a risky migration. It identifies a low-risk divis
 [3] https://github.com/fishaudio/fish-speech
 [4] https://arxiv.org/html/2603.08823v2
 [5] https://recipes.vllm.ai/fishaudio/s2-pro
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

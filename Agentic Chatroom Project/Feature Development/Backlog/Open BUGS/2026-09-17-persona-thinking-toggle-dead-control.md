@@ -1,4 +1,5 @@
 ---
+tags: [project/agora, type/open-bug]
 found_by: Herm
 found: 2026-09-17
 context: spark-throughput-investigation
@@ -77,3 +78,6 @@ Whichever way, keep the empty-reply retry forcing `thinking:false`.
 - Thinking-mode cost/behaviour: commit `366e7b1`
   ("Default personas to thinking-off for ~5x fewer tokens per turn").
 - Session context: [[Session Log 2026-09-17 — Spark MPS Wedge Incident]].
+
+## Related notes
+- [[Agentic Chatroom Project/Agentic Chatroom|Agentic Chatroom project status]]

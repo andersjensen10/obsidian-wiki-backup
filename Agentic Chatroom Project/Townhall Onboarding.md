@@ -1,3 +1,7 @@
+---
+tags: [project/agora]
+---
+
 # Townhall Agent Onboarding
 
 ## Verified setup

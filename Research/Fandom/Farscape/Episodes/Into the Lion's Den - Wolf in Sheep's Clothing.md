@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Into the Lion's Den - Wolf in Sheep's Clothing
 aliases:
   - Wolf in Sheep's Clothing

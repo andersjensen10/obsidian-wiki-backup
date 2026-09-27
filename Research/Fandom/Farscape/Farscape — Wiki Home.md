@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Farscape Wiki Home
 type: fandom-index
 fandom: Farscape

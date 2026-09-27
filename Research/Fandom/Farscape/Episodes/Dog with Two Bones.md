@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Dog with Two Bones
 type: episode-dossier
 fandom: Farscape

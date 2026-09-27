@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — Agora Conversation Lifecycle and Regeneration Architecture
 
 **Run date:** 2026-09-18  
@@ -109,3 +113,6 @@ Agora already has the important non-destructive invariant. The next high-value s
 [2] https://hermes-agent.nousresearch.com/docs/guides/automate-with-cron
 [3] https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
 [4] https://github.com/andersjensen10/agora-chatroom
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

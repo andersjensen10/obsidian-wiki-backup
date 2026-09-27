@@ -1,3 +1,7 @@
+---
+tags: [project/llm-benchmarking, type/benchmark-run]
+---
+
 # Verified E2E benchmark - 2026-09-14
 
 Status: PASS - transport and visible-output gate

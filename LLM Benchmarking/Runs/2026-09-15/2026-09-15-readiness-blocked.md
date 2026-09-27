@@ -1,3 +1,7 @@
+---
+tags: [project/llm-benchmarking, type/benchmark-run]
+---
+
 # 02:30 readiness — 2026-09-15
 
 Status: **BLOCKED**
@@ -24,3 +28,6 @@ Full machine-readable evidence: [`readiness.json`](readiness.json).
 ## Safety actions
 
 No download, repair, restart, production swap, benchmark, or catch-up scheduling was performed. No partial file is treated as a candidate.
+
+## Related notes
+- [[LLM Benchmarking/README|LLM Benchmarking overview]]

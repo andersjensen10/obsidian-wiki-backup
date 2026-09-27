@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Fractures
 aliases:
   - Farscape 3x18

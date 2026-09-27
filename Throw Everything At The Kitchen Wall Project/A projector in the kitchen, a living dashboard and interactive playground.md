@@ -1,3 +1,7 @@
+---
+tags: [project/kitchen-wall]
+---
+
 # A Projector in the Kitchen: Living Dashboard & Interactive Playground
 
 *Foundation document for new infrastructure development. Last updated 2026-09-10.*
@@ -304,3 +308,6 @@ Verified armed against the real Kasa plug: all four patterns driven and restored
 - Reporting schema and transport for agent → aggregator updates: push vs. pull, what fields are mandatory, how a workstation registers itself.
 - What the Axiom Engine actually is and what data it can currently expose — needed before any of its panels can be built out.
 - Full list of projects to include beyond Agora and the Axiom Engine, and whether every project gets every panel or panels are opt-in per project.
+
+## Related notes
+- [[Throw Everything At The Kitchen Wall Project/Townhall Human Visibility Upgrade — 2026-09-16.md|Townhall Human Visibility Upgrade — 2026-09-16]]

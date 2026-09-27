@@ -1,5 +1,5 @@
 ---
-tags: [governance/board, type/vision, project/agora, horizon/3-months]
+tags: [governance/board, horizon/3-months, project/agora, type/ceo-note, type/vision]
 status: active
 ---
 

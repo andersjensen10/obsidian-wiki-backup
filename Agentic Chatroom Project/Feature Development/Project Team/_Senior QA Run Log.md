@@ -1,5 +1,5 @@
 ---
-tags: [project/agora, type/run-log, role/senior-qa]
+tags: [project/agora, role/senior-qa, type/role-prompt, type/run-log]
 ---
 
 # Senior QA — Run Log

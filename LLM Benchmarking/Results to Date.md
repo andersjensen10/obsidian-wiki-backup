@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, local-llm, spark, results, decision-record]
+tags: [benchmarking, decision-record, local-llm, project/llm-benchmarking, results, spark]
 status: honest-summary
 updated: 2026-09-19
 ---
@@ -83,3 +83,6 @@ Then run a single matched comparison: baseline and candidate, same suite version
 - Raw Qwen 3.8 reasoning-on: `/home/aj/llm-benchmark-local/runs/2026-09-15/qwen38-baseline-reasoning-on.json` and `qwen38-baseline-reasoning-on-v1.1.json`
 - Admission record, no suite: `/home/aj/llm-benchmark-local/runs/2026-09-18/readiness.json`
 - Capacity-blocked recovery record: `/home/aj/llm-benchmark-local/runs/2026-09-19-recovery/readiness.json`
+
+## Related notes
+- [[LLM Benchmarking/README|LLM Benchmarking overview]]

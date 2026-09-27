@@ -177,3 +177,4 @@ navigation + silent broken-model bug (dogfood pass)".
 - [[FR-011-narrator-pacing-intelligence]] — pacing dropdown verified working in this pass.
 - [[FR-012-scene-media-and-library]] — POV picker + library verified working in this pass.
 - [[Agentic Chatroom]] — project status snapshot.
+- [[Agentic Chatroom Project/Agentic Chatroom|Agentic Chatroom project status]]

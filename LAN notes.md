@@ -264,3 +264,4 @@ remote access story, or a leftover from an earlier setup attempt.
 - [[Next Level Agentic Chatroom Project-ARCHIVE]] — archived sprint-1 backlog; flagged the wifi/ethernet
   situation above as a sprint risk.
 - [[NOTES]] — Agora-specific session log referencing this same infra.
+- [[Spark System Analysis — Housekeeping 2026-09-13.md|Spark System Analysis — Housekeeping 2026-09-13]]

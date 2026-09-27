@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — MCP Apps and Agora Embedded Agent Interfaces
 
 **Run date:** 2026-09-21 08:00 CEST  
@@ -139,3 +143,6 @@ The best follow-up is the read-only inspector spike above. If AJ wants to stay a
 [2] https://modelcontextprotocol.io/extensions/apps/overview
 [3] https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps
 [4] https://github.com/modelcontextprotocol/ext-apps/blob/main/README.md
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

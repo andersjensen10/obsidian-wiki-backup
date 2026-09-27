@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Into the Lion's Den — Lambs to the Slaughter
 aliases:
   - Lambs to the Slaughter

@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, complete, verification, spark-infra]
+tags: [benchmarking, complete, project/llm-benchmarking, spark-infra, type/benchmark-run, verification]
 status: complete
 run_date: 2026-09-16
 suite_version: 1.0.0
@@ -50,3 +50,6 @@ Production was captured healthy before launch and remained untouched. After the 
 A fresh Toshiba read-only preflight found the volume mounted at `/media/aj/TOSHIBA EXT1` with 977,833,627,648 bytes available, but kernel logs still contain repeated `ntfs3(sdb1): MFT: r=279cb, expect seq=1 instead of 0!` warnings. Archival is therefore **BLOCKED**. The verified SSD model and raw artifacts remain on internal SSD; no Toshiba writes were attempted.
 
 Dashboard ingest was not attempted because `/home/aj/.benchmark-dashboard.env` has no configured API URL. No dashboard record is claimed.
+
+## Related notes
+- [[LLM Benchmarking/README|LLM Benchmarking overview]]

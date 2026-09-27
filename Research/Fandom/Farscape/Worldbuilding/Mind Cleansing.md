@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Mind Cleansing
 aliases:
   - Nebari mind cleansing

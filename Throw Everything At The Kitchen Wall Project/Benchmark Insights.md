@@ -1,5 +1,5 @@
 ---
-tags: [kitchen-wall, benchmarking, insights, spark-infra]
+tags: [benchmarking, insights, kitchen-wall, project/kitchen-wall, spark-infra]
 status: live
 ---
 

@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout — Voice-Agent Turn-Taking, Barge-In, and Local Pipeline Design
 
 **Run date:** 2026-09-22 08:00 CEST  
@@ -140,3 +144,6 @@ The most useful follow-up is this fixture harness and a local benchmark of VAD/e
 [6] https://github.com/snakers4/silero-vad/blob/master/README.md
 [7] https://platform.openai.com/docs/guides/realtime
 [8] https://livekit.com/blog/turn-detection-and-interruption-handling
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.

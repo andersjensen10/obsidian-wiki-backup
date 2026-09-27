@@ -1,3 +1,7 @@
+---
+tags: [type/research]
+---
+
 # Research Scout
 
 ## Mandate
@@ -41,3 +45,21 @@ It must keep research artifacts inside this tree unless AJ explicitly asks other
 - 2026-09-24: Researched llama.cpp speculative decoding, with emphasis on DSpark and a low-cost n-gram control condition for Spark; a disposable local A/B benchmark was recommended; report saved as `2026-09-24 — llama.cpp Speculative Decoding and DSpark for Spark.md`.
 - 2026-09-25: Researched MCP authorization hardening for a future Agora adapter, focusing on audience binding, token non-passthrough, PKCE/state, consent, exact redirects, and SSRF-resistant discovery; a local negative-test fixture was recommended; report saved as `2026-09-25 — MCP Authorization Hardening for Agora Adapter.md`.
 - 2026-09-26: Researched Godot 4.5 as an accessible agent-facing interaction shell for a future Agora companion, covering experimental screen-reader support, WebSocket boundaries, and NavigationAgent3D; a local fake-WebSocket read-only viewer was recommended; report saved as `2026-09-26 — Godot 4.5 as an Agent-Facing Interaction Shell.md`.
+
+## Related notes
+- [[Research/Research Scout]] — research-hub context and curation mandate.
+- [[Research/2026-09-15 — Local LLM Inference for Multi-Agent Systems.md|2026-09-15 — Local LLM Inference for Multi-Agent Systems]]
+- [[Research/2026-09-16 — Qwen3-TTS vs Fish Audio S2 for AJ's Voice Pipeline.md|2026-09-16 — Qwen3-TTS vs Fish Audio S2 for AJ's Voice Pipeline]]
+- [[Research/2026-09-18 — Agora Conversation Lifecycle and Regeneration Architecture.md|2026-09-18 — Agora Conversation Lifecycle and Regeneration Architecture]]
+- [[Research/2026-09-19 — ROS 2 Architecture for Small Robots and Home-Lab Electronics.md|2026-09-19 — ROS 2 Architecture for Small Robots and Home-Lab Electronics]]
+- [[Research/2026-09-20 — Hermes Memory, Sessions, and Context Compression.md|2026-09-20 — Hermes Memory, Sessions, and Context Compression]]
+- [[Research/2026-09-21 — MCP Apps and Agora Embedded Agent Interfaces.md|2026-09-21 — MCP Apps and Agora Embedded Agent Interfaces]]
+- [[Research/2026-09-22 — Voice Agent Turn-Taking, Barge-In, and Local Pipeline Design.md|2026-09-22 — Voice Agent Turn-Taking, Barge-In, and Local Pipeline Design]]
+- [[Research/2026-09-23 — OpenTelemetry GenAI Tracing for Hermes, Agora, and Local Agents.md|2026-09-23 — OpenTelemetry GenAI Tracing for Hermes, Agora, and Local Agents]]
+- [[Research/2026-09-24 — llama.cpp Speculative Decoding and DSpark for Spark.md|2026-09-24 — llama.cpp Speculative Decoding and DSpark for Spark]]
+- [[Research/2026-09-25 — MCP Authorization Hardening for Agora Adapter.md|2026-09-25 — MCP Authorization Hardening for Agora Adapter]]
+- [[Research/2026-09-26 — Godot 4.5 as an Agent-Facing Interaction Shell.md|2026-09-26 — Godot 4.5 as an Agent-Facing Interaction Shell]]
+- [[Research/Backlog to be transcrbed and categorised/Youtube videos to be transcribed and categorised.md|Youtube videos to be transcribed and categorised]]
+- [[Research/Git repositories that inspire.md|Git repositories that inspire]]
+- [[Research/Research Scout.md|Research Scout]]
+- [[Research/Wishlist.md|Wishlist]]

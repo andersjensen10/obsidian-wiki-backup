@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, model-research, huggingface]
+tags: [benchmarking, huggingface, model-research, project/llm-benchmarking]
 status: policy-v1
 ---
 

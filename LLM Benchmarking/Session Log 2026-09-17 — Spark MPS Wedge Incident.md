@@ -1,5 +1,5 @@
 ---
-tags: [incident, spark-infra, mps, cuda, llama-server, benchmarking, agora, session-log]
+tags: [agora, benchmarking, cuda, incident, llama-server, mps, project/llm-benchmarking, session-log, spark-infra]
 date: 2026-09-17
 severity: high
 status: resolved

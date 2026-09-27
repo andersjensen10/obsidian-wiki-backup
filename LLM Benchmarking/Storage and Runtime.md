@@ -1,5 +1,5 @@
 ---
-tags: [benchmarking, storage, spark-infra]
+tags: [benchmarking, project/llm-benchmarking, spark-infra, storage]
 status: blocked
 ---
 

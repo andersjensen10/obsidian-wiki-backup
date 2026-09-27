@@ -1,4 +1,5 @@
 ---
+tags: [project/agora, type/open-bug]
 found_by: Senior QA Manager
 found: 2026-09-16
 context: sprint-review
@@ -90,3 +91,6 @@ parse/repair-retry and a reasoning-budget check.
 - Regresses shipped verification of: [[FR-017-narrative-control-surface]] (its `scripts/live-fr017-narrative-profile-check.mjs` now fails).
 - Regresses Hypercare items: [[FR-010-worlds-and-scenes-ui — Part 2 of 2]] (narrated scenes) and [[FR-011-narrator-pacing-intelligence]] (pacing narrator) — same `kind === 'narrator'` turn path.
 - Related, narrower bug: [[2026-09-16-live-model-npc-persistence]].
+
+## Related notes
+- [[Agentic Chatroom Project/Agentic Chatroom|Agentic Chatroom project status]]

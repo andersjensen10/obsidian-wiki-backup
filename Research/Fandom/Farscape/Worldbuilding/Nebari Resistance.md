@@ -1,4 +1,5 @@
 ---
+tags: [project/farscape, type/research]
 title: Nebari Resistance
 type: faction dossier
 series: Farscape

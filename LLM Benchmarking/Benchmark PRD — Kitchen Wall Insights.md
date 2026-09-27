@@ -1,5 +1,5 @@
 ---
-tags: [prd, benchmarking, kitchen-wall, spark-infra]
+tags: [benchmarking, kitchen-wall, prd, project/llm-benchmarking, spark-infra]
 status: draft-for-herm
 ---
 
