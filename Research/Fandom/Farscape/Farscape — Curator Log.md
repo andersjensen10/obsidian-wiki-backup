@@ -8,6 +8,35 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-09-28 — “John Quixote” episode dossier
+
+Scope: bounded episode slice for season 4 episode 7, focused on the organic-matrix game, Crichton's memory archive, Chiana's role in the simulation, Scorpius's parallel takeover of Moya, and the episode's production framing.
+
+Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, curator log, and the existing [[Episodes/John Quixote]] placeholder. The placeholder was upgraded rather than duplicated.
+
+Sources consulted:
+
+- Terra Firma Scapers transcript archive for dialogue and scene-order evidence; treated as unofficial.
+- Farscape Encyclopedia Project for metadata, plot, continuity, and visual-reference leads; treated as fan-maintained discovery material.
+- Reactor rewatch for synopsis and interpretation, kept separate from canon claims.
+- SciFiNow interview with Tony Tilse for director/production context.
+- Thinkum episode guide for episode placement, airdate, and credits.
+- Public YouTube uploads recorded as viewing/media leads; no timestamps or rights conclusions used.
+
+Created/updated:
+
+- [[Episodes/John Quixote]] — upgraded placeholder to researched dossier.
+- [[Episodes/Season Index]]
+- [[Farscape — Wiki Home]]
+- [[Sources/Farscape — Source Register]] with FS-S067–FS-S073.
+- This curator log.
+
+Verification passed: grounded-citations strict verification; 7 cited sources; 56% provenance coverage. No local images or screenshots added.
+
+Unresolved: authorized scene-level timestamps; primary transcript/script access; UK airdate discrepancy; primary production documentation for Yoti, the game design, and the *Spyro* comparison; fuller guest-credit and costume/makeup reconciliation.
+
+Next suggested slice: [[Production/Chiana makeup and costume]] for the pending primary-credit and media-provenance audit, or [[Episodes/We're So Screwed: Hot to Katratzi]] for the next episode placeholder.
+
 ## 2026-09-27 — “Crichton Kicks” episode dossier
 
 Scope: bounded episode slice for season 4 episode 1, focused on John's isolation with Elack, Sikozu's introduction, the Grudek harvesting operation, the Brindz Hound pursuit, the partial crew reunion, and the wormhole-network objective.

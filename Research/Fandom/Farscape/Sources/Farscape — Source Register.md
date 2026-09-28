@@ -79,6 +79,13 @@ Use this note as the canonical source ledger for the Farscape wiki. Register sou
 | FS-S064 | Farscape Encyclopedia Project, “Crichton Kicks” — https://farscape.fandom.com/wiki/Crichton_Kicks | Fan-maintained episode reference | metadata, plot, continuity, production-trivia leads | discovery/cross-check source; not sole canon authority | 2026-09-27 |
 | FS-S065 | Forever Dreaming, “04x01 - Crichton Kicks” — https://transcripts.foreverdreaming.org/viewtopic.php?t=97360 | Transcript mirror | dialogue and scene-order leads | unofficial transcript; not an official studio script | 2026-09-27 |
 | FS-S066 | YouTube, “Farscape S4E1 FULL Episode | Crichton Kicks” — https://www.youtube.com/watch?v=4XDttqbjwQg | Public video upload | exact viewing lead for episode audit | uploader/rightsholder and timestamps unverified; no rights assertion | 2026-09-27 |
+| FS-S067 | Terra Firma Scapers, “Farscape Transcript — John Quixote” — https://transcripts.terrafirmascapers.com/407.htm | Archived transcript | episode dialogue, game-matrix plot, Scorpius/Moya sequence, production metadata lead | unofficial transcript; primary script not established | 2026-09-28 |
+| FS-S068 | Farscape Encyclopedia Project, “John Quixote” — https://farscape.fandom.com/wiki/John_Quixote | Fan-maintained episode reference | plot, metadata, guest-character and visual-reference leads | discovery/cross-check source; not sole canon authority | 2026-09-28 |
+| FS-S069 | Reactor, “Farscape Rewatch: John Quixote” — https://reactormag.com/farscape-rewatch-john-quixote/ | Critical rewatch | synopsis and interpretation lead | criticism/recap; not primary canon authority | 2026-09-28 |
+| FS-S070 | SciFiNow, “Farscape director Tony Tilse interview” — https://www.scifinow.co.uk/tv/farscape-directing-pk-tech-girl-the-way-we-werent-and-muppet-melodrama/ | Interview | director/episode production context | secondary publication carrying interview testimony | 2026-09-28 |
+| FS-S071 | Thinkum, “Farscape (an Episode Guide)” — https://epguides.com/farscape/guide.shtml | Independent episode guide | episode placement, airdate, writer/director, production metadata | strong secondary reference; not primary footage | 2026-09-28 |
+| FS-S072 | YouTube, “Farscape official YouTube, John Quixote full episode” — https://www.youtube.com/watch?v=sUOlV-jp1cs | Public video upload | viewing lead for future timestamp audit | channel provenance recorded; timestamps not audited in this run | 2026-09-28 |
+| FS-S073 | YouTube, “The Jim Henson Company, John Quixote clip” — https://www.youtube.com/watch?v=tNX-e85iKTk | Public video clip | visual/media provenance lead | channel provenance recorded; rights/licence status not established | 2026-09-28 |
 
 ## Source handling rules
 
