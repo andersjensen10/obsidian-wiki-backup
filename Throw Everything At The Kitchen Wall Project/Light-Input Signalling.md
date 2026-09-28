@@ -60,7 +60,9 @@ KITCHEN_LIGHT_SIGNAL_CONFIRM=I_CONFIRM_KITCHEN_LIGHT_SIGNAL
 - `429` — rate-limited; still logged
 - `400` — unknown type, missing field, or malformed JSON
 
-There is no `GET`. The primary audit log is a server-side JSONL file at `data/attention/light-signals.jsonl` (gitignored). Every request now has a `traceId`; the audit stream records `request-accepted` before physical work, per-command attempts/results, pre/post plug state, and `request-finished`. Each line is fsynced and carries a monotonic sequence plus a SHA-256 hash chain. API-originated requests additionally record the socket client address, method, and user agent.
+There is no `GET`. The primary audit log is a server-side JSONL file at `data/attention/light-signals.jsonl` (gitignored). `POST /api/signals` is now fail-closed unless `X-Kitchen-Actuator-Token` exactly matches the mode-600 `KITCHEN_ACTUATOR_TOKEN` environment secret. Every authorized request has a `traceId`; the audit stream records `request-accepted` before physical work, per-command attempts/results, pre/post plug state, and `request-finished`. Each line is fsynced and carries a monotonic sequence plus a SHA-256 hash chain. API-originated requests additionally record the socket client address, method, and user agent.
+
+Direct `POST /api/plugs/[id]` control was disabled on September 28, 2026. It previously bypassed the signal trace and had no credential gate. The wall now presents plug status as read-only; physical changes from this dashboard must go through the authenticated light-signal workflow until a manual actuator with equivalent authorization and audit semantics is designed.
 
 ## Traceability and independent observation
 
