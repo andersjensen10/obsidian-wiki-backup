@@ -60,7 +60,17 @@ KITCHEN_LIGHT_SIGNAL_CONFIRM=I_CONFIRM_KITCHEN_LIGHT_SIGNAL
 - `429` — rate-limited; still logged
 - `400` — unknown type, missing field, or malformed JSON
 
-There is no `GET`. The audit log is a server-side JSONL file at `data/attention/light-signals.jsonl` (gitignored), one object per line with timestamp, type, requester, reason, requested action, result, and correlation ID.
+There is no `GET`. The primary audit log is a server-side JSONL file at `data/attention/light-signals.jsonl` (gitignored). Every request now has a `traceId`; the audit stream records `request-accepted` before physical work, per-command attempts/results, pre/post plug state, and `request-finished`. Each line is fsynced and carries a monotonic sequence plus a SHA-256 hash chain. API-originated requests additionally record the socket client address, method, and user agent.
+
+## Traceability and independent observation
+
+**Strengthened September 28, 2026 after an unexplained apparent one-pulse event.** The prior audit stream wrote only one terminal row *after* an action. A process interruption, direct/manual Kasa control, or a path outside `/api/signals` could therefore leave no attributable signal record.
+
+- `light-signals.jsonl` is now a durable operation trace: request acceptance is persisted before a command can be issued, each command/read is recorded, and the final state is re-read and verified. The sequence/hash chain makes removal or reordering within the post-change portion evident.
+- `kitchen-wall-light-observer.service` runs independently of the dashboard and polls the HS100 every 250 ms. Its own fsynced, hash-chained audit log is `data/attention/light-state-observer.jsonl`; it records a startup baseline and every state transition it observes.
+- Correlate both files and the observer's systemd journal. A state transition without a matching dashboard trace is explicitly **unattributed**; it is evidence of a direct/manual/external state change or an observer limitation, not evidence that an agent succeeded silently.
+
+The HS100 exposes no authenticated audit/event stream, and the laptop is not the LAN gateway. Therefore this observer cannot prove which network client changed the plug, nor guarantee seeing a pulse shorter than its 250 ms polling interval. A definitive LAN-actor attribution capability would require router/AP packet logging or network segmentation that restricts who can reach the plug's unauthenticated Kasa port.
 
 ## How agents should use it
 
