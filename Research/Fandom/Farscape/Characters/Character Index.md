@@ -10,10 +10,10 @@ type: index
 - John Crichton — pending
 - Aeryn Sun — pending
 - Ka D'Argo — pending
-- [[Chiana]] — first-pass dossier; appearance roster and production evidence
-- Pilot — pending
-- Moya — pending
+- [[Chiana]] — first-pass dossier; appearance roster, production evidence, and [[Episodes/Taking the Stone|“Taking the Stone”]] grief/autonomy episode slice
+- Pilot — [[Pilot species]] — researched; [[Moya]] covers bonded Pilot on Moya
+- [[Moya]] — researched character dossier; Leviathan biology, crew bond, reproduction
 - Rygel XVI — pending
 - Dominar Jothee — pending
-- Scorpius — pending
+- [[Scorpius]] — researched character dossier; actor Wayne Pygram, BBC Cult interview
 - Sikozu — pending

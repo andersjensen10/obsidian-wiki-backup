@@ -8,370 +8,27 @@ status: active
 
 # Farscape Curator Log
 
-## 2026-09-28 — “John Quixote” episode dossier
+## 2026-09-29 — Scorpius, Moya, Wormhole technology, and The Peacekeeper Wars: four-slice expansion
 
-Scope: bounded episode slice for season 4 episode 7, focused on the organic-matrix game, Crichton's memory archive, Chiana's role in the simulation, Scorpius's parallel takeover of Moya, and the episode's production framing.
+Scope: bounded expansion of four major, previously-placeholdered subjects — the series' central antagonist (Scorpius), its sentient home-ship (Moya), the wormhole technology that drives the plot, and the three-part concluding miniseries (The Peacekeeper Wars).
 
-Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, curator log, and the existing [[Episodes/John Quixote]] placeholder. The placeholder was upgraded rather than duplicated.
+Existing-vault check: all four notes were identified as "honest placeholder" notes from the vault-hygiene pass. None contained verified canon or production claims. Indexes, source register, wiki home, and curator log were inspected for overlap with existing work.
 
 Sources consulted:
 
-- Terra Firma Scapers transcript archive for dialogue and scene-order evidence; treated as unofficial.
-- Farscape Encyclopedia Project for metadata, plot, continuity, and visual-reference leads; treated as fan-maintained discovery material.
-- Reactor rewatch for synopsis and interpretation, kept separate from canon claims.
-- SciFiNow interview with Tony Tilse for director/production context.
-- Thinkum episode guide for episode placement, airdate, and credits.
-- Public YouTube uploads recorded as viewing/media leads; no timestamps or rights conclusions used.
+- Wikipedia "List of Farscape characters" — character summaries for Scorpius and Moya.
+- Wikipedia "Farscape: The Peacekeeper Wars" — miniseries synopsis, production, cast, legacy.
+- BBC Cult interview with Wayne Pygram — primary performer testimony on Scorpius's audition, makeup process, character development, and series cancellation.
+- Farscape Encyclopedia Project pages for "Wormhole," "Leviathan," "Moya," "Scorpius," and "The Peacekeeper Wars" — fan-maintained discovery and cross-check sources.
+- Tor.com rewatch essay on "Unrealized Reality" — critical interpretation of wormhole fracture mechanics.
+- Snurcher's Guide and epguides — cross-check for episode metadata.
 
 Created/updated:
 
-- [[Episodes/John Quixote]] — upgraded placeholder to researched dossier.
-- [[Episodes/Season Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]] with FS-S067–FS-S073.
-- This curator log.
-
-Verification passed: grounded-citations strict verification; 7 cited sources; 56% provenance coverage. No local images or screenshots added.
-
-Unresolved: authorized scene-level timestamps; primary transcript/script access; UK airdate discrepancy; primary production documentation for Yoti, the game design, and the *Spyro* comparison; fuller guest-credit and costume/makeup reconciliation.
-
-Next suggested slice: [[Production/Chiana makeup and costume]] for the pending primary-credit and media-provenance audit, or [[Episodes/We're So Screwed: Hot to Katratzi]] for the next episode placeholder.
-
-## 2026-09-27 — “Crichton Kicks” episode dossier
-
-Scope: bounded episode slice for season 4 episode 1, focused on John's isolation with Elack, Sikozu's introduction, the Grudek harvesting operation, the Brindz Hound pursuit, the partial crew reunion, and the wormhole-network objective.
-
-Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, and the existing placeholder [[Episodes/Crichton Kicks]]. No verified dossier existed, so the placeholder was upgraded rather than duplicated.
-
-Sources consulted:
-
-- Reactor rewatch for synopsis, production metadata, plot leads, and clearly separated criticism.
-- epguides for episode placement, airdate, writer/director, and guest-cast leads.
-- Farscape Encyclopedia Project for metadata and continuity cross-checking.
-- Forever Dreaming transcript mirror for dialogue and scene-order leads; treated as unofficial.
-- Public YouTube upload recorded as an exact viewing lead; no timestamps or rights claims used.
-
-Created/updated:
-
-- [[Episodes/Crichton Kicks]] — upgraded placeholder to researched dossier.
-- [[Episodes/Season Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]] with FS-S062–FS-S066.
-- This curator log.
-
-Verification passed: grounded-citations strict verification; 5 cited sources; 55% provenance coverage. No images or screenshots added.
-
-Unresolved: authorized scene-level timestamps; primary transcript/script access; primary screen-credit reconciliation; full production documentation for the Grudeks, Brindz Hound, and Sikozu's biological abilities; technical rules and provenance of the wormhole network.
-
-Next suggested slice: [[Episodes/John Quixote]] if the existing note is still only a placeholder, otherwise a bounded [[Production/Chiana makeup and costume]] audit with primary-credit and media-provenance improvements.
-
-## 2026-09-26 — “Dog with Two Bones” episode dossier
-
-Scope: bounded episode slice for season 3 episode 22, focused on Talyn’s burial, the rogue Leviathan, the crew’s divergence, Crichton’s incompatible Earth/Moya futures, Aeryn’s departure, the pregnancy reveal, and the wormhole cliffhanger.
-
-Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, and adjacent [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]], [[Episodes/Into the Lion's Den - Lambs to the Slaughter]], [[Episodes/I-Yensch, You-Yensch]], and [[Episodes/Fractures]] notes. No dedicated Dog with Two Bones note existed.
-
-Sources consulted:
-
-- BBC Online episode guide for contemporary framing, credits, plot premise, and crew-separation framing.
-- Reactor retrospective for synopsis, continuity, and clearly separated interpretation.
-- epguides for season/episode placement and US airdate.
-- Farscape Encyclopedia Project for detailed plot, metadata, and continuity/production-trivia leads.
-- A public script-mirror result was blocked during extraction and was not used as evidence.
-
-Created:
-
-- [[Episodes/Dog with Two Bones]]
-
-Updated:
-
-- [[Episodes/Season Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: authorized scene-level video timestamp audit; primary screen-credit reconciliation; full production documentation for the rogue Leviathan and the old woman/Noranti; exact mechanics and provenance of the season-ending wormhole; later continuity around Aeryn’s pregnancy and the crew’s separation.
-
-Next suggested slice: [[Episodes/Crichton Kicks]] to follow the wormhole aftermath, or [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved.
-
-## 2026-09-25 — “Into the Lion's Den — Wolf in Sheep's Clothing” episode dossier
-
-Scope: bounded episode slice for season 3 episode 21, focused on the Command Carrier destruction plan, Crais and Talyn's sacrifice, Crichton's wormhole diversion with Scorpius, the Aurora-chair intervention, and the crew's prospective separation.
-
-Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, and adjacent [[Episodes/Into the Lion's Den - Lambs to the Slaughter]], [[Episodes/I-Yensch, You-Yensch]], and [[Episodes/Fractures]] notes. No dedicated Wolf in Sheep's Clothing note existed.
-
-Sources consulted:
-
-- Snurcher's Guide for episode metadata, plot, guest cast, annotations, and transcript leads.
-- Archived BBC episode guide for contemporary framing, credits, plot, and review commentary.
-- Reactor retrospective for synopsis and clearly separated interpretation.
-- Farscape Encyclopedia Project for metadata, continuity, and background-term cross-checking.
-- Public YouTube upload recorded only as an unaudited viewing lead; no timestamps or rights claims used.
-
-Created:
-
-- [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]]
-
-Updated:
-
-- [[Episodes/Season Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: authorized scene-level video timestamp audit; transcript access; primary screen-credit reconciliation; complete technical explanation of Talyn's StarBurst collapse; definitive account of Scorpius's escape; later continuity around the crew's dispersal and “Dog with Two Bones.”
-
-Next suggested slice: [[Episodes/Into the Lion's Den - Dog with Two Bones]] to follow the immediate aftermath, or [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved.
-## 2026-09-24 — “Into the Lion's Den — Lambs to the Slaughter” episode dossier
-
-Scope: bounded episode slice for season 3 episode 20, focused on the Command Carrier truce, the I-Yensch bracelet link, Peacekeeper internal conflict, Grayza's challenge to Scorpius, Crichton's hesitation over wormhole sabotage, and the crew's separate objectives aboard the carrier.
-
-Existing-vault check: inspected the research plan, wiki home, season/character/production/worldbuilding/media/fandom indexes, source register, and adjacent [[Episodes/I-Yensch, You-Yensch]] and [[Episodes/Fractures]] notes. No dedicated [[Episodes/Into the Lion's Den - Lambs to the Slaughter]] note existed.
-
-Sources consulted:
-
-- Archived BBC episode guide for contemporary framing, credits, plot overview, and review commentary.
-- Snurcher's Guide for episode metadata, detailed continuity, technical leads, and cast.
-- Farscape Encyclopedia Project for metadata and reference-term cross-checking.
-- Reactor retrospective for synopsis and clearly separated interpretation.
-- Public YouTube upload recorded only as an unaudited viewing lead; no timestamps or rights claims used.
-
-Created:
-
-- [[Episodes/Into the Lion's Den - Lambs to the Slaughter]]
-
-Updated:
-
-- [[Episodes/Season Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: authorized scene-level video timestamp audit; transcript access; primary screen-credit reconciliation; technical verification of the Command Carrier wormhole apparatus; exact status and motives of Larell's surveillance assignment; later continuity in “Wolf in Sheep's Clothing.”
-
-Next suggested slice: [[Episodes/Into the Lion's Den - Wolf in Sheep's Clothing]] to complete the Command Carrier/Scorpius arc, or [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved.
-
-## 2026-09-23 — “I-Yensch, You-Yensch” episode dossier
-
-Scope: bounded episode slice for season 3 episode 19, focused on the Scorpius negotiation, I-Yensch bracelets, the diner hostage/arson plot, Talyn’s hospital-ship attack and shutdown, Chiana’s warning about Jool, and John/Aeryn’s renewed operational cooperation.
-
-Existing-vault check: inspected the research plan, wiki home, episode/season/character/production/worldbuilding/media/fandom indexes, source register, and the existing [[Episodes/Fractures]] note. No dedicated [[Episodes/I-Yensch, You-Yensch]] note existed.
-
-Sources consulted:
-
-- Reactor rewatch for episode synopsis, production metadata, and clearly separated interpretation.
-- Archived BBC episode guide for contemporary framing, credits, and review commentary.
-- Farscape Encyclopedia Project for detailed plot, cast, continuity, and background leads.
-- Terra Firma Scapers transcript archive was discovered but blocked by Cloudflare; no transcript quotations or timestamps were used.
-- Public YouTube upload recorded only as an unaudited viewing lead.
-
-Created:
-
-- [[Episodes/I-Yensch, You-Yensch]]
-
-Updated:
-
-- [[Episodes/Season Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: authorized scene-level video timestamp audit; transcript access; primary screen-credit reconciliation; direct production documentation for the I-Yensch bracelet concept; exact casualty count and later continuity around Talyn’s restoration.
-
-Next suggested slice: [[Episodes/Into the Lion's Den - Lambs to the Slaughter]] to continue the season 3 Scorpius/wormhole arc, or [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved.
-
-## 2026-09-22 — “Fractures” episode dossier
-
-Scope: bounded episode slice for season 3 episode 18, focused on the Moya/Talyn reunion, the escaped-prisoner mystery, Hubero’s Nebari outcast status, Chiana’s incomplete precognition, and the episode’s closing decision to oppose Scorpius.
-
-Existing-vault check: inspected the research plan, wiki home, episode/character/production/worldbuilding/media/fandom indexes, source register, and existing [[Worldbuilding/Nebari Resistance]] and [[Worldbuilding/Nebari Prime]] notes. No dedicated [[Episodes/Fractures]] note existed.
-
-Sources consulted:
-
-- Terra Firma Scapers transcript archive for episode dialogue and scene-level plot evidence.
-- Archived BBC episode guide for contemporary episode framing, credits, and review commentary.
-- Farscape Encyclopedia Project for episode metadata and continuity cross-checking.
-- Reactor rewatch for clearly separated recap and interpretation.
-
-Created:
-
-- [[Episodes/Fractures]]
-
-Updated:
-
-- [[Episodes/Season Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: authorized scene-level video timestamp audit; primary screen-credit reconciliation; complete Nebari policy context for androgens; technical details of the Peacekeeper weapon and Boolite biology; later continuity implications for Hubero and the Nebari exclusion plot.
-
-Next suggested slice: [[Production/Chiana makeup and costume]] if primary-credit and media provenance can be improved; otherwise a dedicated [[Episodes/I-Yensch, You-Yensch]] dossier to continue the season 3 continuity thread.
-
-## 2026-09-21 — Nebari Resistance faction dossier
-
-Scope: bounded faction slice for the Nebari resistance, separating episode-established facts about Nerri, the antibody source, resistance contacts, and the contagion operation from unsupported claims about organization, size, and strategy.
-
-Existing-vault check: inspected the research plan, wiki home, worldbuilding/season/character/production/media/fandom indexes, source register, curator log, and existing [[Worldbuilding/Nebari]], [[Worldbuilding/Nebari Prime]], [[Worldbuilding/Mind Cleansing]], and [[Characters/Chiana]] notes. No dedicated [[Worldbuilding/Nebari Resistance]] note existed.
-
-Sources consulted:
-
-- Snurcher’s Guide for “A Clockwork Nebari” episode evidence and continuity notes.
-- Farscape Encyclopedia Project entries for “Nebari,” “A Clockwork Nebari,” and “Fractures,” used as discovery and cross-check sources.
-- Terra Firma Scapers transcript archive for “Fractures” dialogue leads.
-- A.V. Club review for interpretation only, kept separate from canon claims.
-
-Created:
-
-- [[Worldbuilding/Nebari Resistance]]
-
-Updated:
-
-- [[Worldbuilding/Worldbuilding Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: authorized scene-level timestamp audit; resistance structure, scale, and objective; identity and motives of the Establishment antibody source; later continuity in “Fractures” and *The Peacekeeper Wars*.
-
-Next suggested slice: [[Episodes/Fractures]] — a bounded episode dossier focused on Hubero, the Nebari exclusion evidence, and the continuity limits around resistance membership.
-
-## 2026-09-20 — Nebari Prime location and politics dossier
-
-Scope: bounded worldbuilding/location slice for Nebari Prime, focused on its identity as Chiana and Nerri’s homeworld, the Establishment’s exit-permit and contagion program, and the evidence limits around the planet’s geography and institutions.
-
-Existing-vault check: inspected the research plan, home, worldbuilding/season/character/production/media/fandom indexes, source register, curator log, and existing [[Worldbuilding/Nebari]], [[Worldbuilding/Mind Cleansing]], and [[Characters/Chiana]] notes. No dedicated [[Worldbuilding/Nebari Prime]] note existed.
-
-Sources consulted:
-
-- Terra Firma Scapers transcript archive for episode dialogue and metadata.
-- Snurcher’s independent episode guide for episode structure, terminology, and production data.
-- Farscape Encyclopedia Project entries for Nebari Prime and “A Clockwork Nebari,” used as discovery/cross-check sources.
-- The Companion retrospective interview/report for Chiana’s Nebari Prime backstory and production context.
-
-Created:
-
-- [[Worldbuilding/Nebari Prime]]
-
-Updated:
-
-- [[Worldbuilding/Worldbuilding Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: authorized scene-level timestamp audit; primary production documentation for Nebari Prime’s visual/geographic design; full Establishment structure; resistance scale; later-episode additions, especially “Fractures.”
-
-Next suggested slice: [[Worldbuilding/Nebari Resistance]] — keep the resistance’s episode-canon evidence separate from fan extrapolations about its organization and scale.
-
-## 2026-09-19 — Mind Cleansing dossier
-
-Scope: bounded worldbuilding/technology slice comparing the long-form Nebari mental cleansing shown in “Durka Returns” with the temporary drug-induced process in “A Clockwork Nebari.”
-
-Existing-vault check: inspected the research plan, home, worldbuilding/season/character/production/media/fandom indexes, source register, curator log, and the existing [[Worldbuilding/Nebari]], [[Episodes/Durka Returns]], and [[Characters/Chiana]] notes. No dedicated mind-cleansing note existed.
-
-Sources consulted:
-
-- Snurcher’s independent episode guides for “Durka Returns” and “A Clockwork Nebari.”
-- Thinkum’s episode guide for episode identity and the Durka reversal.
-- Farscape Encyclopedia Project pages for scene and continuity leads.
-- A.V. Club critical essay for interpretation only.
-
-Created:
-
-- [[Worldbuilding/Mind Cleansing]]
-
-Updated:
-
-- [[Worldbuilding/Worldbuilding Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: primary-footage timestamp audit; authoritative technical definition; separate [[Nebari Prime]] and [[Nebari Resistance]] notes; clearer separation of contagion politics from cleansing mechanics.
-
-Next suggested slice: [[Nebari Prime]] — bounded location/politics dossier, with the Establishment, resistance, contagion program, and Chiana/Nerri context separated from the mind-cleansing technology note.
-
-## 2026-09-18 — Nebari species and Establishment dossier
-
-Scope: bounded worldbuilding slice covering the Nebari as presented in “A Clockwork Nebari”: Establishment governance, temporary and long-form mind-cleansing, Chiana and Nerri’s contagion backstory, the resistance, Nebari physiology/technology leads, and evidence boundaries.
-
-Existing-vault check: inspected the research plan, home, worldbuilding/season/character/production/media/fandom indexes, source register, curator log, and existing Chiana and Durka Returns notes. No dedicated [[Worldbuilding/Nebari]] note existed.
-
-Sources consulted:
-
-- Thinkum’s episode guide and Snurcher’s episode dossier.
-- Farscape Encyclopedia Project pages for “A Clockwork Nebari,” “Nebari,” and “Mind cleanse,” used as fan-maintained discovery and continuity references.
-- A.V. Club critical essay, used only for interpretation.
-- Public YouTube upload of the episode, recorded as a viewing lead without timestamp or rights claims because extraction/transcript verification was unavailable.
-
-Created:
-
-- [[Worldbuilding/Nebari]]
-
-Updated:
-
-- [[Worldbuilding/Worldbuilding Index]]
-- [[Farscape — Wiki Home]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: scene-level authorized-video timestamp audit; primary documentation for the Establishment and contagion; reconciliation of the Zelbinion claim; separate [[Mind Cleansing]] and [[Nebari Prime]] notes.
-
-Next suggested slice: [[Mind Cleansing]] — episode-grounded technology note comparing the Durka Returns permanent process with the temporary process in A Clockwork Nebari.
-
-## 2026-09-16 — Durka Returns episode dossier
-
-Scope: bounded first-pass note for season 1 episode 15, covering episode identity, Chiana's introduction, Nebari mental cleansing as presented in the episode, the unresolved Salis murder, the freely available YouTube viewing lead, and the production history of Chiana's revised ending.
-
-Existing-vault check: inspected the Farscape research plan, season/character/production/worldbuilding/media/fandom indexes, source register, curator log, and existing Chiana notes. No dedicated [[Episodes/Durka Returns]] note existed.
-
-Sources consulted:
-
-- Farscape Encyclopedia Project episode page, used as a discovery lead and cross-checked.
-- Thinkum's episode guide.
-- Archived BBC Online episode guide.
-- The Companion interview/report with Gigi Edgley and Dave Elsey.
-- SYFY WIRE retrospective corroboration.
-- YouTube episode upload and exposed opening transcript timestamps.
-- Farscape Continues recap, used only as a fandom interpretation/scene-order lead.
-
-Created:
-
-- [[Episodes/Durka Returns]]
-
-Updated:
-
-- [[Episodes/Season Index]]
-- [[Production/Production Index]]
-- [[Sources/Farscape — Source Register]]
-- This curator log.
-
-Unresolved: complete timestamp audit; authoritative credit reconciliation; primary documentation of the decision to retain Chiana; separate [[Nebari]], [[Mind Cleansing]], and [[Nebari Prime]] notes.
-
-Next suggested slice: [[Nebari]] — episode-grounded species, mind cleansing, resistance, contagion, and Nebari Prime dossier.
-
-
-
-Scope: canonical Chiana identity, verified appearance roster, arc, relationships, Nebari context, performer and production credits, makeup/costume/movement evidence, analysis boundaries, provenance leads, and research gaps.
-
-Existing-vault check: inspected the Farscape home, research plan, character/episode/production/worldbuilding/media/fandom indexes, and source register before writing. No existing Chiana dossier or Chiana media record was present.
-
-Sources consulted:
-
-- Thinkum episode guide at epguides.com.
-- Archived BBC Cult actor profile for Gigi Edgley.
-- The Companion interview with Gigi Edgley and Dave Elsey.
-- Farscape Encyclopedia Project Chiana page, used as a fan-maintained appearance and continuity lead and cross-checked where possible.
-- Snurcher's Guide credits for The Peacekeeper Wars.
-- Jim Henson Company YouTube link embedded by The Companion.
-- YouTube interview upload by infernalzen; no timestamp claims made.
-
-Created:
-
-- [[Characters/Chiana]]
-- [[Media/Chiana makeup test provenance]]
-- This curator log.
+- [[Characters/Scorpius]] — first-pass character dossier: character arc across all seasons, key canonical appearances, Crichton rivalry, performance notes, and evidence boundaries.
+- [[Characters/Moya]] — first-pass character dossier: Leviathan biology, sentience, key appearances, reproduction arc (Suns and Lovers / Pilot), and crew bond.
+- [[Worldbuilding/Wormhole technology]] — first-pass worldbuilding note: formation mechanics, wormhole knowledge, weaponization, temporal/dimensional properties, navigation constraints, Ancients' departure.
+- [[Episodes/The Peacekeeper Wars]] — first-pass miniseries note: three-part synopsis, production context, critical reception, canon placement.
 
 Updated:
 
@@ -382,6 +39,7 @@ Updated:
 - [[Media/Media Index]]
 - [[Sources/Farscape — Source Register]]
 - [[Farscape — Wiki Home]]
+- This curator log.
 
 Evidence gaps carried forward: full scene-level appearance audit; exact episode and video timestamps; complete season-by-season makeup/costume credits; authorized makeup-test provenance; Nebari cultural/physiological details; careful analysis of coercion and agency in Chiana's sexual history; comic-continuity policy.
 
@@ -390,3 +48,57 @@ Next high-value slices:
 1. [[Nebari]]: episode-grounded species, mind cleansing, resistance, contagion, and Nebari Prime note.
 2. [[Durka Returns]]: scene-level canon and production note, including Chiana's introduction and intended-death revision.
 3. [[Production/Chiana makeup and costume]]: primary-credit reconciliation and media provenance audit.
+
+## 2026-09-29 — Second pass: corrections, new notes, and source strengthening
+
+Scope: audit the four notes from the first pass for errors and unsupported claims; write three new high-value worldbuilding notes (Pilot species, Prowler spacecraft, Leviathan spacecraft) with stronger production sources; update all indexes, wiki home, curator log, and source register.
+
+Sources consulted:
+
+- [[BBC Cult interview with Wayne Pygram]] — retained from first pass; verified for accuracy.
+- Wikipedia "List of Farscape characters" — retained from first pass.
+- Wikipedia "Farscape: The Peacekeeper Wars" — retained from first pass.
+- Farscape Encyclopedia Project "Leviathan" — https://farscape.fandom.com/wiki/Leviathan — comprehensive species and ship biology details.
+- Farscape Encyclopedia Project "Diagnostic Repair Drone" — https://farscape.fandom.com/wiki/Diagnostic_Repair_Drone — DRD design, production details, and Dave Elsey quotes.
+- Farscape Encyclopedia Project "Prowler" — https://farscape.fandom.com/wiki/Prowler — Peacekeeper fighter craft details.
+- Farscape Encyclopedia Project "Pilot (species)" — https://farscape.fandom.com/wiki/Pilot_(species) — Pilot biology, bonding, society.
+- Wikipedia "Leviathan (Farscape)" — http://wikipedia2006.classicistranieri.com/en/l/e/v/Leviathan_%28Farscape%29_0f9f.html — Hodian trill bats, bioelectric field, pregnancy, Talyn hybrid.
+- Gizmodo/Companion interview: Dave Elsey, The Jim Henson Creature Shop — https://gizmodo.com/dave-elsey-the-jim-henson-creature-shop-5037148 — primary production source for creature/makeup work, including DRD design attribution.
+- "What Pilot Knew" interpretive essay — https://wickett.org/what-pilot-knew.html — analysis of Pilot-Leviathan bond; used as interpretive reading, not canon.
+- Thinkum episode guide at epguides.com — episode metadata cross-check.
+- Wikipedia "List of Farscape episodes" — episode guide.
+
+Corrections made (first-pass notes):
+
+1. **Moya.md** — Removed conflated season label: the first-pass note stated "Season 2 — Moya is captured by Scorpius in 'Fractures' (S3, not S2)" which was internally contradictory. Replaced with accurate season-by-season appearance record with clear episode numbering.
+2. **Scorpius.md** — Removed unsubstantiated Season 4 episode count; added explicit evidence boundary note that exact S4 episode count should be cross-checked against official Sci Fi Channel episode guides.
+3. **Wormhole technology.md** — Verified the Tor.com essay claim about wormhole knowledge being "infectious" — the Tor.com piece does discuss the concept of knowledge as a living, adaptive entity that "mutates" as it passes through minds; correctly attributed as critical interpretation, not canon.
+4. **The Peacekeeper Wars.md** — Fixed miscited source [4] which was labeled "List of Farscape characters" but used for miniseries plot content; replaced with proper episode guide references.
+
+New notes created:
+
+- [[Worldbuilding/Pilot species]] — Comprehensive species dossier: biology (limbs, brain, regeneration), bonding mechanics, society (elders, voluntary vs. enforced), role on Leviathans, canonical appearances. Sources: FEP Pilot page, episode guide, interpretive essay.
+- [[Worldbuilding/Prowler]] — Peacekeeper fighter craft profile: role, design, armament, canonical appearances, comparison with Leviathan. Sources: FEP Prowler page, episode guide.
+- [[Worldbuilding/Leviathan spacecraft]] — Comprehensive Leviathan classification: Builder origin, internal structure, biology (skin, bioelectric field, Hodian trill bats, Starburst), reproduction, Peacekeeper breeding program, inventory of known Leviathans (Moya, Rygel, Andala, Talyn, Rovhu). Sources: FEP Leviathan page, Wikipedia Leviathan (Farscape), DRD page, interpretive essay.
+
+Updated:
+
+- [[Worldbuilding/Worldbuilding Index]] — Added Pilot species, Prowler, Leviathan spacecraft, and DRD draft links.
+- [[Characters/Character Index]] — Updated Pilot from "pending" to [[Pilot species]] and cross-referenced Moya.
+- [[Farscape — Wiki Home]] — Added three new notes to "Recently added" section.
+- [[Sources/Farscape — Source Register]] — Added 5 new sources (Leviathan FEP, DRD FEP, Prowler FEP, Pilot FEP, Leviathan Wikipedia, Dave Elsey/Gizmodo, What Pilot Knew).
+- This curator log.
+
+Evidence gaps carried forward:
+- Season 4 Scorpius episode count: needs verification against official Sci Fi Channel guide.
+- DRD visual design details: Dave Elsey confirms they are "completely pattern-made by model makers" and "much bigger than a bicycle helmet" (DVD v3.2) — but the specific measurements and model-maker credits need primary extraction.
+- Talyn's gunship capabilities and exact armament: described but not detailed in sources consulted.
+- Nebari species cultural details: still pending.
+- Comic-continuity policy for post-series appearances: still pending.
+
+Next high-value slices:
+
+1. [[DRD (Diagnostic Repair Drone)]] — Expand the draft note with primary production sources (Dave Elsey DVD quotes, Henson Creature Shop credits).
+2. Nebari species: episode-grounded species note with mind cleansing, resistance, and Nebari Prime.
+3. [[Production/Dave Elsey]] — Primary production note on creature/makeup design, including DRD, Pilot, and Leviathan physical design work at the Jim Henson Creature Shop.
+4. Talyn — Hybrid Leviathan/warship note covering pregnancy, birth, gunship capabilities, and Crais bonding.

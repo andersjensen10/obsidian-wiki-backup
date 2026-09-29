@@ -11,7 +11,7 @@ fandom: Farscape
 status: first-pass
 canon_scope: television series and Farscape: The Peacekeeper Wars
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-29
 sources:
   - FS-S002
   - FS-S003
@@ -149,7 +149,7 @@ Over time, she moves from opportunistic passenger to emotionally invested crewma
 
 ### Grief, freedom, and self-determination
 
-“Taking the Stone” makes the death of her brother Nerri the major early rupture in her life on Moya. Her attempt to disappear into a youth community frames grief as both a desire for oblivion and a demand to control her own response to loss. Later stories return to her fear of being defined by other people's institutions, expectations, or romantic plans.
+[[Episodes/Taking the Stone|“Taking the Stone”]] makes the death of her brother Nerri the major early rupture in her life on Moya. Her attempt to disappear into a youth community frames grief as both a desire for oblivion and a demand to control her own response to loss. The dedicated episode note keeps its screen-derived plot evidence, interpretive reading, and unresolved scene-level questions separate. Later stories return to her fear of being defined by other people's institutions, expectations, or romantic plans.
 
 Her relationship with D'Argo exposes this conflict most clearly. Their intimacy can be read as one of the first relationships in which Chiana is not simply trading sex, information, or access for survival. Yet the relationship breaks when D'Argo's imagined future requires her to become a role—wife, farmer, and participant in his dream—rather than remain a self-determining person. Their friendship survives, and D'Argo's death and the transfer of his Qualta blade to Jothee leave Chiana carrying both grief and responsibility.
 
