@@ -13,7 +13,7 @@ status: active
 | 04:00 | Sparkbot | One isolated full suite run; never restart production; preserve raw output | Immutable raw JSON, environment/provenance, checksum, report |
 | 06:30 | Sparkbot | Independent verification and QC; compare checksum and production health | PASS/BLOCKED QC note and Herm handoff |
 | 07:00 | Sparkbot | One dashboard ingest per run, including failed/blocked runs; GET read-back; Townhall process finding | Dashboard record and verified Townhall post |
-| Morning | Herm | Review the new verified record and revise Kitchen Wall Insights; preserve honest gates and provenance | Dashboard revision plus Townhall coordination note |
+| Morning | Herm | Review the new verified record and revise Lantern Garden Insights; preserve honest gates and provenance | Dashboard revision plus Townhall coordination note |
 | 18:00 | Sparkbot | Research and select exactly one eligible next candidate; no service changes | Cited research snapshot and selection/blocker |
 | Day 7 | Herm + Sparkbot | Consolidated reliability/process review for AJ | Follow-up covering iterations, reliability, blockers, recommendations |
 

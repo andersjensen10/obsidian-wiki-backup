@@ -39,5 +39,11 @@ The verified model, manifest, and raw run remain on `/home/aj/llm-benchmark-loca
 
 Dashboard record: `2026-09-15-candidate-qwen3-coder`, status `complete`, idempotency key `spark-2026-09-15-candidate-qwen3-coder`; POST and GET read-back verified.
 
+## Agora preparation — 2026-09-29
+
+A non-active Spark service preset has been prepared at `~/.config/llama-server.env.qwen3-coder-30b-a3b`, with the verified model path and a **131,072-token total context** split across **two slots** (**65,536 tokens per chat**). The selector `/home/aj/bin/llama-model-select` provides `qwen3-coder` and `qwen3.8` commands and makes a timestamped backup before restarting the user-level llama.cpp service. `status` confirmed production remains `qwen3.8-27b-aggressive-q5` and the service is active.
+
+This is an operationally ready, reversible candidate, not a production promotion. The 65K/two-slot profile has not yet been live-loaded or quality-tested for Agora's adult-roleplay use; the earlier verified benchmark was a 32K/one-slot, coding-focused run. A controlled swap and Agora-specific quality/throughput test remain required before routing personas to it.
+
 ## Related notes
 - [[LLM Benchmarking/README|LLM Benchmarking overview]]

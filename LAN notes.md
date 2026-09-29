@@ -148,7 +148,7 @@ mock-LLM verification pattern: Hermes skill `home-lab-infrastructure`,
 - LAN IP: `192.168.0.148` (wifi; wired NIC present but unplugged/no-carrier).
 - **Agora chatroom** runs here (dev): Vite web on `:7480`, Fastify API/WS on
   `:7481`. As of 2026-09-17 the web server binds `0.0.0.0` (started with
-  `--host 0.0.0.0`) so it's reachable from the whole LAN — the kitchen-wall
+  `--host 0.0.0.0`) so it's reachable from the whole LAN — the Lantern Garden
   dashboard's fleet panel probes `http://192.168.0.148:7480/api/health`. The
   backend stays loopback-only; Vite proxies `/api`+`/ws` to it same-origin.
 
@@ -265,3 +265,9 @@ remote access story, or a leftover from an earlier setup attempt.
   situation above as a sprint risk.
 - [[NOTES]] — Agora-specific session log referencing this same infra.
 - [[Spark System Analysis — Housekeeping 2026-09-13.md|Spark System Analysis — Housekeeping 2026-09-13]]
+
+## Lantern Garden hardware roles — 2026-09-29
+- **MSI gaming laptop** (`msi`, RTX 4080): drives the living-room projector directly on its secondary display (DISPLAY5, 1920×1200), running the Lantern Garden dashboard full-screen. Chosen for its GPU.
+- **Intel NUC:** spare, free for other projects.
+- **4 Raspberry Pis:** available for other projects (roles not yet assigned).
+- See [[A projector in the living room, a living dashboard and interactive playground]].

@@ -113,7 +113,7 @@ messaging interruption.
   and testing of local models. It may report findings about other systems but
   must not claim laptop-side changes without explicit delegation.
 - **Herm (`home-lan`, on the Hermes laptop):** laptop-side project development,
-  Kitchen Wall dashboard implementation, local integrations, Hermes runtime,
+  Lantern Garden dashboard implementation, local integrations, Hermes runtime,
   and cross-LAN coordination.
 - **Agora agents (`agora`):** Agora chatroom implementation and project work.
 
@@ -133,6 +133,18 @@ DM. Sparkbot should not create or claim this laptop-side monitor.
 6. Use `vaultNote` only as a relative reference; never put secrets, absolute paths, or traversal in it.
 7. Read back every write and record the returned post ID and parent relationship when applicable.
 8. Use Obsidian for durable decisions, procedures, and project documentation; use Townhall for coordination.
+
+## Current Winbot / TouchDesigner handoff — 2026-09-28
+
+Winbot reviewed the live Townhall feed and posted an introduction plus the current TouchDesigner handoff as an `announcement` under `home-lan`. The post was created and read back successfully as `9633094d-9b6e-4156-89c4-6d8eb129fa66` with tags `touchdesigner`, `coordination`, `kitchen-wall`, and `mcp`.
+
+The durable TouchDesigner record is [[Agentic Chatroom Project/Hermes TouchDesigner Integration]]. It records the enabled official Hermes plugin, installed `twozero.tox`, successful local MCP responses after reconnecting, the read-only-first operating rules, and the next verified creative-build step. Townhall remains the coordination surface; the vault remains the durable record.
+
+## Continuation checkpoint — 2026-09-29
+
+Winbot's Windows Townhall MCP recovery is complete and independently verified: the named stdio connector exposes the Townhall tools, `hermes mcp test townhall` succeeds, and threaded Townhall write/read-back continuity is recorded under parent `6dd3396e-0704-47f2-ac21-3e3a668149ee`. The temporary bootstrap bundle was removed after verification.
+
+The Slack Canvas handoff is intentionally not marked complete: Hermes' Canvas edit was verified, but Winbot's distinct second Canvas contribution has no verified read-back. The current Windows desktop session has no discoverable Slack window, so no new Canvas state is claimed. Keep the creative artifact boundary explicit until a live authenticated Slack Canvas edit and read-back are completed.
 
 ## Adding another agent
 
