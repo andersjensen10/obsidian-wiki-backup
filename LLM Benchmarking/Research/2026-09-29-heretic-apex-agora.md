@@ -1,6 +1,6 @@
 ---
 tags: [agora, benchmarking, model-research, qwen3.6, uncensored, spark, type/research]
-status: active-evaluation
+status: primary-agora-model
 snapshot_date: 2026-09-29
 ---
 
@@ -38,7 +38,7 @@ Service profile:
 - `65,536` tokens usable per slot/chat
 - reasoning disabled for normal Agora persona chat
 - native MTP enabled with `--spec-type draft-mtp --spec-draft-n-max 2`
-- Qwen3.8 remains available through `/home/aj/bin/llama-model-select qwen3.8` as a reversible rollback
+- Qwen3.8 Aggressive was retired on September 29, 2026. Its complete package (Q4, Q5, FastMTP draft, provenance, release manifest, and checksums) was copied to `/media/aj/TOSHIBA EXT1/LLM Model Library/models/retired/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-retired-2026-09-29/`, verified file-by-file, and removed from internal SSD. The rollback preset now points to this external archive.
 
 All 18 personas using the primary Spark connection were updated to the active model ID. The Spark connection default was updated too.
 

@@ -43,7 +43,7 @@ The automation fails closed: unhealthy storage, missing/checksum-failed candidat
 
 ## Current baseline
 
-Production candidate: `qwen3.8-27b-aggressive-q5` on Spark llama.cpp at `192.168.0.139:8014`, currently configured with two parallel slots. AJ reports it is brilliant for its size, strong for general chat, and uncensored; the gap to investigate is local programming and agentic coding capability.
+Primary Agora model: `qwen3.6-35b-a3b-heretic-apex-i-quality` on Spark llama.cpp at `192.168.0.139:8014`, configured with two slots and 65,536 tokens per slot. It is the selected adult-theme-capable, character-led persona model after live context, concurrency, and roleplay testing on September 29, 2026. The retired Qwen3.8 Aggressive package is checksum-verified in the Toshiba model library; see [[Research/2026-09-29-heretic-apex-agora|the Agora deployment record]].
 
 ## Verified first E2E run
 

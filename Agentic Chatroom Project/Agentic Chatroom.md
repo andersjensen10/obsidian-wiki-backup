@@ -33,9 +33,7 @@ Server (`apps/server/dist/index.js`) is run **manually**, not under a watcher
 
 ## Backing infra (see [[LAN notes]])
 - LLM: llama.cpp on the Spark — `http://192.168.0.139:8014/v1`, no auth.
-  Model is **variable**, currently `qwen3.8-27b-aggressive-q5` (reasoning
-  model — thinking budget matters, see gotchas below). Historically
-  `gpt-oss-120b`.
+  Model is **variable**, currently `qwen3.6-35b-a3b-heretic-apex-i-quality`: the primary Agora model for adult-theme-capable, character-led roleplay. It runs with two 65,536-token slots and thinking off by default. The prior Qwen3.8 Aggressive package was retired to the external model library on September 29, 2026; `gpt-oss-120b` is historical.
 - Image/video: ComfyUI on the Spark — `http://192.168.0.139:8188`, no auth.
   Checkpoints: `flux1-dev-fp8`, `ltx-2.3-22b-dev-fp8/distilled-fp8`.
 
