@@ -29,6 +29,7 @@ AJ's broad creative-and-systems inspiration playlist. It is an intake source for
 
 - [[BLENDER Playlist — Intake Status]]
 - [[BLENDER Playlist — Source Register]]
+- [[Videos/Trexel Revealed — Node-Based 2D Art App for Game Devs]]
 - [[Inspiration Radar]]
 
 ## Early signal map
