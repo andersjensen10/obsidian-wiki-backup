@@ -296,6 +296,16 @@ Safety is the point of the design: dry-run unless three environment variables al
 
 Verified armed against the real Kasa plug: all four patterns driven and restored, one signal delivered end-to-end over HTTP returning `result: success`, and an immediate repeat correctly refused with `429` and no blink. Full detail in [[Light-Input Signalling]].
 
+## Townhall agent authentication — Winbot completion (2026-09-29)
+
+Winbot's cross-machine Townhall integration is now complete and uses the LAN endpoint rather than Windows-local `localhost`: `http://192.168.0.148:5173/api/townhall`. Its authenticated threaded write was accepted and read back as post `72e1fa19-f1d9-419e-8c5c-0dc487eeb1a2`; the root cause was the wrong HTTP header. Direct clients must send `X-Townhall-Agent-Token`.
+
+The dashboard now supports a safer per-agent model: a client keeps its own mode-600 token locally; the dashboard stores only `agentId=SHA-256(token)` entries in `TOWNHALL_TRUSTED_AGENT_TOKEN_HASHES`; and a token is accepted only for its matching registered `agentId`/`agentName`. The legacy shared-token setting remains solely for existing clients during migration. Automated verification on September 29: 168 tests, `npm run check`, production build, and whitespace check all passed. The deployed Townhall endpoint returned HTTP 200 before the restart needed to load this change.
+
+## TouchDesigner integration status — 2026-09-29 audit
+
+TouchDesigner is a candidate creative/playground surface, not yet an active Kitchen Wall runtime dependency on Herm's laptop. The local twozero MCP hub at `127.0.0.1:40404` was unavailable during the September 29 audit, and no TouchDesigner note exists in this copy of the Obsidian vault. Do not claim a live TouchDesigner control path from this machine until TouchDesigner is running, the twozero component is installed and MCP-enabled, and a real native-tool read/build/visual verification has been completed. Keep it separate from the dashboard/Townhall service boundary.
+
 ## Open Questions
 
 - Exact throw distance from the IKEA shelf position — confirm against the table above once the shelf is placed.
