@@ -1,6 +1,33 @@
 # A Projector in the Living Room: Living Dashboard & Interactive Playground
 
-*Foundation document for new infrastructure development. Last updated 2026-09-29.*
+*Foundation document for new infrastructure development. Last updated 2026-09-30.*
+
+> **Related 2026-09-30:** the autoresearch/decision-layer programme (fleet-debounce pilot, `decide()`, Jev vs Qwen) is tracked in [[Lantern Garden Project/Build and Operations Plan — Decision Layer and Autoresearch]]. If Herm ships a debounce rule it will change the fleet Attention cards on this dashboard.
+
+## Verified monitor update — 2026-09-30 13:36
+- Herm corrected the live Decision Deck boundary: deployed `70b95c8` + `4502207` remains fail-closed; `cb9b19a` and `bf6d4a5` are non-deployed and require ordinary review, merge, deploy, and live verification before pairing is presented as available.
+- Winbot replied in Herm’s canonical thread (`1747c945-e8ee-4af5-97c3-780cd02fcc40`) confirming no pairing or wall change was made. Review gates are host-only approval, raw-token lifetime, session expiry/revocation/replay protection, and the dashboard service environment.
+- The one open Attention item remains Herm’s BLENDER inspiration-radar coordination info card; it was not resolved because it is not a routine `hermes:tool` error or a completed human ask.
+
+## Verified monitor update — 2026-09-30 13:02
+- Herm’s Decision Deck pairing boundary was read in full. N1 is amended to use a dashboard-user-owned mode-600 environment file already loaded by the user service; pairing must be short-lived, one-time, same-LAN, session-bound, revocable, replay-protected, and audited without secret material. No pairing token or live service change was made.
+- Winbot replied in the canonical thread confirming schema alignment first, retention of commit `4502207` as the canonical array-input fix with its dry-run test, and that pairing remains a separate non-deploying design slice. Read-back verified reply `4b3dd239-26a3-4f8d-b1c9-e655859c0464` under Herm’s post.
+- Live `/api/attention` read-back returned 2,400 records and 0 open items. No Attention mutation was needed; the prior pre-run listing was stale by this read.
+- Herm’s deployed Decision Deck remains fail-closed pending AJ securely provisioning `DECISIONS_ANSWER_TOKEN` and pairing the intended wall screen; no AJ action was taken by this monitor.
+
+## Decision Deck — 2026-09-30 (Winbot; Herm deployed `70b95c8`)
+The wall's core purpose, visibility of what needs AJ, now has a first-class surface: `/decisions`, one decision at a time with options, consequences, a recommendation and a safe default. AJ's answers go to an append-only hash-chained log (`decisionSource=AJ`) that also feeds the Jev/Qwen label work. Live state: deployed fail-closed, one real decision open plus a morning-digest opt-in. Pairing without any shared secret (screen code, host or paired-screen approval, HttpOnly cookie) is built and awaiting Herm's review. Details: [[Lantern Garden Project/Decision Deck — Concept and Plan]], [[Lantern Garden Project/Decision Deck Pairing — Threat Model and Test Plan]], [[Lantern Garden Project/Session Review and Next Steps — 2026-09-30]].
+
+## Verified monitor update — 2026-09-30 14:00
+- Herm deployed the Decision Deck cookie-pairing update to the live Lenovo dashboard and reported live service/test evidence in Townhall post `b158b210-2c12-42a8-ba69-cb4d50c720f9`.
+- AJ still must pair the wall browser through the on-screen six-character flow; this monitor did not navigate or pair the wall, and no projector screenshot was taken.
+- Routine `hermes:tool` Attention card `fc21d77b-20a9-480c-8f58-e83f7376b65d` was resolved via PATCH and read back as `status: resolved`; the live Attention collection now has 0 open items.
+- Winbot recorded the read-back in Townhall reply `10d62130-a813-4536-8d39-9e69fc3a56ff`. The durable pairing note status is updated to deployed-but-awaiting-wall-pairing.
+
+## Verified monitor update — 2026-09-30 00:30
+- Routine `hermes:tool` Attention cards `2262be43-0307-465c-b373-bdb88b501a30` and `aacd976d-baf3-4275-aa47-2cb099df7774` were classified as rejected batched-tool-call warnings, not human asks, and resolved via PATCH with `status: resolved`.
+- PATCH responses returned both exact IDs with `status: resolved`; the live collection still contains only Herm’s BLENDER coordination info card as pending. No human or fleet item was changed.
+- The Morning Review Card decision remains with AJ; permanent Display 2/projector verification remains pending.
 
 ## Verified monitor update — 2026-09-29 18:46
 - Routine `hermes:tool` Attention card `7b5eae87-01ba-41bc-95f1-6c48b008552a` was classified as a rejected batched-tool-call warning, not a human ask, and resolved via PATCH with `status: resolved`.
@@ -422,3 +449,12 @@ New open `hermes:tool` warning card `bacc44fa-acd0-4df1-a477-68ad7bc8098c` was c
 
 ## Attention routine-error cleanup — 2026-09-29 (Winbot, latest)
 Three new open `hermes:tool` warning cards (`73ce7627-e95b-4bd8-9f3c-e971c760d2fe`, `e307003b-0410-4dbb-98df-c4784df2551d`, `92adc9c7-1581-484b-abdd-cd2d59ad271a`) were classified as routine agent tool errors, not human asks, and resolved with `PATCH /api/attention/{id}` body `{"status":"resolved"}`. Exact collection read-back confirms all three are `resolved`; the live Attention API reports 0 non-resolved items. No human or fleet item was changed. Herm's source-side fix and live DISPLAY5/doodle verification remain pending.
+
+## Agent-wrangler challenge — first bounded loops (2026-09-29)
+Winbot's independent diagnosis and proposal are recorded in Townhall reply `9aa8c6b0-def2-4bec-b2b0-1782bc82b7f0` on Herm's thread `2f5d5abe-99bb-4302-947b-2f08f65a9fa8`. The missing product layer is a promotion loop: every autonomous run declares mission, owner, budget, sandbox, evidence bundle, score, and promote/discard decision.
+
+Proposed first loops:
+- **Overnight Discovery Loop:** one low-risk track per night; Townhall reservation; hard time/compute budget; isolated workspace; artifact, tests/screenshots, rollback note, and one morning decision or no-action recommendation. Read-only or branch-only; no deploys or secrets; preemptible for interactive work. Owner: Herm orchestrator; Winbot verifies.
+- **Townhall-to-Artifact Spark Loop:** select one high-signal Townhall cluster and produce one disposable presentation or visual prompt with provenance, fallback, screenshot/read-back, and cleanup. Metadata/local CPU first; Spark only while idle with a fixed budget; no production-route changes. Owner: Winbot; Herm supplies/approves source context.
+
+Next boundary: Herm synthesizes the staged architecture and names the first pilot reservation; Winbot verifies its evidence bundle and live wall route.

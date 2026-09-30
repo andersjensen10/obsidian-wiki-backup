@@ -206,7 +206,9 @@ to stop using it immediately). Self-hosted `hbbs`+`hbbr` v1.1.16.
 
 ## MSI Gaming Laptop — 16 GB RAM, RTX 4080 12 GB VRAM
 
-Available compute, not currently assigned a running service. Was earlier
+**Update 2026-09-30:** this Windows host now runs Winbot's cron jobs and the autoresearch runner (`Desktop\Hermes\Autoresearch`: nightly 02:20 experiment job, `decide()` library). CPU only so far; the RTX 4080 is still unused. It makes outbound calls to the Spark (`:8014`, `:8188`, only while idle) and to the TypeSafe cloud API (`api.typesafe.ai`, key in a local restricted file). Details: [[Lantern Garden Project/Build and Operations Plan — Decision Layer and Autoresearch]].
+
+Earlier note: available compute, not otherwise assigned a running service. Was earlier
 considered for TTS hosting; that plan moved to the Spark instead (see
 `home-lab-infrastructure` skill pitfall #3 — device roles get reassigned,
 always check latest notes rather than an earlier plan).
@@ -226,7 +228,7 @@ LAN devices beyond the compute boxes already documented above:
 |---|---|---|---|
 | `192.168.0.1` | Sagemcom (18:0c:7a) | ISP/WiFi router | HTTP+HTTPS admin UI reachable, title "Gateways" — standard ISP gateway box, not separately managed by Herm. |
 | `192.168.0.176` | TP-Link (1c:3b:f3) | **TP-Link HS100 smart plug**, alias "Smart Plug" | Identified via the Kasa/TP-Link binary protocol on port 9999. **Controls the living room lights (confirmed by AJ, 2026-09-11).** Control script `~/.local/bin/kasa_plug.py on\|off\|status` on this Hermes laptop (implements the Kasa protocol directly, no cloud/library dependency) — tested live 2026-09-11, toggled off and back on successfully. **AJ has also approved using this as a low-key attention-getting channel** — flicker the lights as a secondary nudge if he's not responding to something time-sensitive on Slack, but sparingly, not for routine notifications. |
-| `192.168.0.30` | TP-Link Systems (00:31:92) | **Windows gaming laptop** ("msi" on Tailscale) | Already known (RustDesk client repointed 2026-09-11). No inbound ports open from LAN scan — Windows Firewall blocking as expected; not a problem, RustDesk/Tailscale both work as outbound-initiated. |
+| `192.168.0.30` (**stale: MSI measured at `192.168.0.103` on Wi-Fi, DHCP, 2026-09-30**) | TP-Link Systems (00:31:92) | **Windows gaming laptop** ("msi" on Tailscale) | Already known (RustDesk client repointed 2026-09-11). No inbound ports open from LAN scan — Windows Firewall blocking as expected; not a problem, RustDesk/Tailscale both work as outbound-initiated. |
 | `192.168.0.110` | unknown (de:4a:7c) | **Unidentified — AJ doesn't know either.** | No open ports (phone/tablet-typical). Flagged for AJ; re-check next time it's relevant. |
 | `192.168.0.139` | — | Spark | See dedicated section above. |
 | `192.168.0.26` | — | Axiom Engine | See dedicated section above. |
@@ -271,3 +273,6 @@ remote access story, or a leftover from an earlier setup attempt.
 - **Intel NUC:** spare, free for other projects.
 - **4 Raspberry Pis:** available for other projects (roles not yet assigned).
 - See [[A projector in the living room, a living dashboard and interactive playground]].
+
+## External services (added 2026-09-30)
+- **TypeSafe Jev API** (`https://api.typesafe.ai/v1/systemone`, model `jev-1.13.0`): pay-per-input-token ($0.042/M, output free), $10 credit bought by AJ. Used by `decide()`; first use cases are routing/classification judgments. Key lives only in `C:\Users\ander\.typesafe\env` on the MSI laptop. Do not send credentials, vault content, or LAN secrets to it (posts are redacted for LAN IPs/UUIDs/tokens first). See [[Research/2026-09-30 — Jev System One Model for the Generative LAN]].

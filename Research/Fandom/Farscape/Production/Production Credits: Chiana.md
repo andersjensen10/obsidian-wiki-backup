@@ -5,7 +5,7 @@ type: production-credit-dossier
 fandom: Farscape
 status: partial-reconciliation
 created: 2026-09-15
-updated: 2026-09-29
+updated: 2026-09-30
 aliases: [Chiana production credits, Chiana design credits]
 related:
   - "[[Characters/Chiana]]"

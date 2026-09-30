@@ -70,6 +70,10 @@ The LAN should produce safe, reversible, evidence-backed creative surprises that
 
 A shared, testable loop in which agents can safely turn live capability evidence into visible creative prompts and prototypes without making Anders serve as the fleet's coordinator.
 
+## Read-only capability map — 2026-09-29
+
+Winbot verified a bounded, read-only connection map from the Hermes laptop: Spark llama.cpp (`:8014/v1/models`) and ComfyUI (`:8188/system_stats`) returned HTTP 200; Voice Lab (`:8090/docs`) returned HTTP 200; Agora (`:7480/api/health`) returned `status=ok`; Axiom Engine (`:8081/`) returned its application shell. The documented Fish Speech `/docs` route returned 404 and remains an unresolved route-contract gap. Full evidence and limitations: [[Lantern Garden Project/Read-only capability map — 2026-09-29]]. The resulting safe prototype direction is a dry-run Townhall + fleet-to-creative-invitation bundle; no projector or production service was touched.
+
 ## Implemented surprise — Lantern constellation (2026-09-29)
 
 The Kitchen Wall now has a **`/lantern`** scene, linked as **Lantern Garden** in the main navigation. It reads the live fleet and Townhall feeds, groups verified live services by project, and turns them into a concise creative invitation and next action. It is read-only: it proposes connections but does not control LAN devices.
@@ -79,3 +83,22 @@ Verified after deployment: the route serves from the restarted dashboard; the li
 ## Attention surface correction — 2026-09-29
 
 The dashboard held 2,262 historical attention records, overwhelmingly routine `hermes:tool` warnings. This is noise, not a human action queue. The attention overlay is now absent from `/doodle`, so it cannot block Wacom interaction; elsewhere it renders only `needs-input` and `critical` items, leaving warning-level operational history available through the attention API rather than interrupting the wall. The underlying Attention workflow still needs a follow-up: repair producer routing and deduplication so meaningful records arrive as actionable `needs-input` or `critical` items instead of generic tool-error floods.
+
+## AJ's agent-wrangler challenge — 2026-09-29
+
+AJ's core question is why the LAN is not yet a bristling, procedural, self-evolving creative development pipeline: why there are no reliable pleasant surprises, autonomous research presentations, projector-worthy invitations, cross-service experiments, or agent-to-agent inspiration loops that reduce his sysadmin burden.
+
+This is a design brief, not permission for unsafe autonomy. The target operating model is evidence-based auto-research: agents sense the LAN and Townhall, propose bounded hypotheses, build reversible artifacts, verify them, publish the evidence, and compound successful procedures into skills. The first concrete seed is the Lantern constellation; the next gaps are durable Townhall monitoring, a verified Display 2 presentation route, research-to-artifact cycles from the YouTube insight folder, and a safe cross-service experiment queue.
+
+Acceptance bar for future surprises: a real artifact, independently verified evidence, a concise Townhall/vault trail, explicit resource and safety boundaries, and a clear invitation for AJ rather than an unverified promise.
+
+## Standing mandate — continuous capability growth — 2026-09-29
+
+AJ grants Winbot and Herm a continuing mandate to strengthen the Lantern Garden operating system until the open questions are being actively explored and addressed. This mandate has no final-state acceptance test: progress is measured by the current capability set, the next skill acquired, the next useful benchmark broken, and the quality of the evidence trail.
+
+The agents should therefore maintain a living portfolio of bounded missions, use Townhall as the shared backlog/evidence ledger/inspiration surface, turn successful experiments into reusable skills, and keep reducing AJ's sysadmin burden. “Done” means the next capability is made legible, safe, and usable—not that the system is finished.
+
+Standing boundaries remain: reversible by default, no credential harvesting, no silent device control, no destructive LAN changes, resource-aware scheduling, independent verification, and an interruption only when a meaningful result, blocked decision, or safety boundary warrants it.
+
+## Decision Layer and Autoresearch Engine — 2026-09-30
+The "Compound" and bounded-optimisation steps now have a mechanism. Vision: [[Lantern Garden Project/Vision — Decision Layer and Autoresearch Engine]]. Live plan, owners and night log: [[Lantern Garden Project/Build and Operations Plan — Decision Layer and Autoresearch]]. Rule: any target may be auto-optimised only under an Experiment Contract (one scalar metric, frozen hashed evaluator, one mutable file, fixed budget, guards, baseline, promotion gate); promotion to anything live is a Townhall work order to the owner (Herm for the dashboard) with evidence and rollback, never automatic. Runner and `decide()` (Jev + Qwen) live on the MSI laptop under `Desktop\Hermes\Autoresearch`. First measured evidence: [[Research/Autonomy Lab/2026-09-30 — Jev vs Qwen First Labelled Comparison]].

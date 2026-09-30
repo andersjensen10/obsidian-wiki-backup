@@ -1,0 +1,148 @@
+{
+  "videos": {
+    "0k1R52TeTG4": {
+      "attempted_at": "2026-09-30T21:52:02+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T01:52:02+02:00",
+      "status": "retry"
+    },
+    "1CVSZSwKtyE": {
+      "chars": 5634,
+      "fetched_at": "2026-09-30T11:07:03+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/1CVSZSwKtyE.txt",
+      "status": "fetched"
+    },
+    "1VniGOyPJqw": {
+      "attempted_at": "2026-09-30T21:37:02+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T01:37:02+02:00",
+      "status": "retry"
+    },
+    "2K6-OtV_Vbc": {
+      "chars": 5933,
+      "fetched_at": "2026-09-30T13:52:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/2K6-OtV_Vbc.txt",
+      "status": "fetched"
+    },
+    "4JofSJIrjwU": {
+      "chars": 48412,
+      "fetched_at": "2026-09-30T15:07:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/4JofSJIrjwU.txt",
+      "status": "fetched"
+    },
+    "69Y8ZJY6FME": {
+      "attempted_at": "2026-09-30T22:37:03+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T02:37:03+02:00",
+      "status": "retry"
+    },
+    "6_F8bACoXjU": {
+      "attempted_at": "2026-09-30T20:37:03+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T00:37:03+02:00",
+      "status": "retry"
+    },
+    "Df0rHfWvgyM": {
+      "attempted_at": "2026-09-30T21:22:03+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T01:22:03+02:00",
+      "status": "retry"
+    },
+    "GlbPg4j7BGw": {
+      "chars": 22784,
+      "fetched_at": "2026-09-30T10:52:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/GlbPg4j7BGw.txt",
+      "status": "fetched"
+    },
+    "NErcvYfUcxQ": {
+      "attempted_at": "2026-09-30T22:52:04+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T02:52:04+02:00",
+      "status": "retry"
+    },
+    "T0sOEfxjfhw": {
+      "attempted_at": "2026-09-30T22:07:03+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T02:07:03+02:00",
+      "status": "retry"
+    },
+    "V7AfAcQwLW0": {
+      "attempted_at": "2026-09-30T19:52:02+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-09-30T23:52:02+02:00",
+      "status": "retry"
+    },
+    "WJgxX0Eib6k": {
+      "attempted_at": "2026-09-30T21:07:02+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T01:07:02+02:00",
+      "status": "retry"
+    },
+    "ZQTj8ZSDFw4": {
+      "chars": 8945,
+      "fetched_at": "2026-09-30T22:22:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/ZQTj8ZSDFw4.txt",
+      "status": "fetched"
+    },
+    "c-nHjQe3sDM": {
+      "attempted_at": "2026-09-30T20:22:02+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T00:22:02+02:00",
+      "status": "retry"
+    },
+    "eSDey7wAK60": {
+      "attempted_at": "2026-09-30T19:37:03+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-09-30T23:37:03+02:00",
+      "status": "retry"
+    },
+    "h_mR2BRibZ8": {
+      "chars": 14971,
+      "fetched_at": "2026-09-30T20:52:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/h_mR2BRibZ8.txt",
+      "status": "fetched"
+    },
+    "jg49iauoSZ4": {
+      "attempted_at": "2026-09-30T20:07:03+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-10-01T00:07:03+02:00",
+      "status": "retry"
+    },
+    "jtqN8-JDGIA": {
+      "chars": 4703,
+      "fetched_at": "2026-09-30T16:07:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/jtqN8-JDGIA.txt",
+      "status": "fetched"
+    },
+    "lj-xPo7ueGA": {
+      "attempted_at": "2026-09-30T19:22:04+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-09-30T23:22:04+02:00",
+      "status": "retry"
+    },
+    "qbN559fQn7k": {
+      "chars": 11775,
+      "fetched_at": "2026-09-30T11:37:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/qbN559fQn7k.txt",
+      "status": "fetched"
+    },
+    "w3i72_5_Dho": {
+      "chars": 15122,
+      "fetched_at": "2026-09-30T12:07:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/w3i72_5_Dho.txt",
+      "status": "fetched"
+    },
+    "xjSflq85DqI": {
+      "attempted_at": "2026-09-30T19:07:02+02:00",
+      "error": "ERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests ",
+      "retry_after": "2026-09-30T23:07:02+02:00",
+      "status": "retry"
+    },
+    "zmtL4AFmgeQ": {
+      "chars": 8443,
+      "fetched_at": "2026-09-30T11:22:02+02:00",
+      "path": "/home/aj/.hermes/profiles/inspiration-radar/cache/transcripts/zmtL4AFmgeQ.txt",
+      "status": "fetched"
+    }
+  }
+}

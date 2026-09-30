@@ -11,7 +11,7 @@ fandom: Farscape
 status: first-pass
 canon_scope: television series and Farscape: The Peacekeeper Wars
 created: 2026-09-15
-updated: 2026-09-29
+updated: 2026-09-30
 sources:
   - FS-S002
   - FS-S003
@@ -20,6 +20,12 @@ sources:
   - FS-S006
   - FS-S007
   - FS-S008
+  - FS-S022 (The Companion 2022, Allison)
+  - FS-S018 (Little Review, Green)
+  - FS-S011 (Farscape Continues Part 1, "We Need To Talk About Chiana")
+  - FS-S012 (Farscape Continues Part 2, "Aeryn Is a Feminist and Chiana Is Not")
+  - FS-S028 (Bibble.org character analysis)
+  - FS-S029 (Look at the Princess trilogy — Reactor, TerraFermasCapers, Pogdesign, Snurcher)
 related:
   - "[[Character Index]]"
   - "[[Nebari]]"
@@ -35,7 +41,7 @@ related:
 
 ## Canonical identity
 
-Chiana is a female [[Nebari]] who becomes a member of [[Moya]]'s fugitive crew. She is first encountered as a young prisoner being transported by Nebari authority Salis in **1.15, “Durka Returns.”** The episode establishes her as a survivor of Nebari state control and as someone willing to use deception and violence to remain free. The production episode guide credits Gigi Edgley as Chiana in this episode and identifies the character as recurring from this point, becoming a regular by episode 21 in the guide's cast accounting. [1]
+Chiana is a female [[Nebari]] who becomes a member of [[Moya]]'s fugitive crew. She is first encountered as a young prisoner being transported by Nebari authority Salis in **1.15, “Durka Returns.”** The episode establishes her as a survivor of Nebari state control and as someone willing to use deception and violence to remain free. She was initially written to die in that episode — a bullet that "just sort of skimmed around" was meant to kill her; showrunner David Kemper later told Gigi Edgley "that was meant to get you good, girl!" — but positive fan reception (Edgley found a Chiana shrine online and cried) led to her becoming a series regular. [1][2][3][8][18]
 
 - Species: Nebari.
 - Gender: female.
@@ -47,6 +53,14 @@ Chiana is a female [[Nebari]] who becomes a member of [[Moya]]'s fugitive crew. 
 - Performer: **Gigi Edgley**. Claudia Black plays Aeryn Sun, not Chiana. [1][2][3]
 
 Age is not established here as a firm canon fact. Fan references sometimes assign ages or infer a precise chronology; those claims remain unverified in this pass.
+
+### Background and origins
+
+Chiana and her three-years-older brother Nerri fled their home on [[Nebari Prime]] in their older childhood or younger teens, seeking a different life. They received exit visas to their surprise and were unknowingly infected with the [[Nebari Contagion]] during a routine physical. [11][22]
+
+Analysis notes (Farscape Continues) identify three key aspects of her character revealed in her first episode: she is simultaneously a "tralk" (one who uses sexuality as a bargaining tool), a scoundrel/thief, and a woman with a big heart. She is described as "a little girl lost" — a "nar" (child) beneath the sex appeal. The episode also reveals that Salas, the Nebari authority who captures her, tortured her, contributing to her unstable emotional/mental state. [11][12]
+
+Chiana is distinguished on Moya as **the only character who chose exile** — every other crew member was exiled, kidnapped, or cast out by circumstance; Chiana actively rejected her authoritarian society and ran away. As one critic puts it, she is "the only totally rebellious character on the show," having "completely rejected her society's structure and morality." [11][28]
 
 ## Verified appearance roster
 
@@ -133,23 +147,27 @@ The roster below is a verification boundary, not a claim that every listed appea
 
 ### Other screen and tie-in appearances
 
-- **Farscape: D'Argo's Trial**, “Error and Trial” — flashback/tie-in appearance; not part of the 88-episode television run.
-- **Farscape: The Peacekeeper Wars** — two-part miniseries; Gigi Edgley is credited as Chiana in both parts. [3][4]
-- Post-series comics are listed by the fan index, but their continuity status, issue-level credits, and Chiana content are not verified in this first pass.
+|- **Farscape: D'Argo's Trial**, "Error and Trial" — flashback/tie-in appearance; not part of the 88-episode television run.
+|- **Farscape: The Peacekeeper Wars** — two-part miniseries; Gigi Edgley is credited as Chiana in both parts. [3][4]
+|- **Alternate versions**: Jessica (alternate identity), Chiana/Aeryn ("Unrealized Reality", "Prayer"), Chiana the Witch (*Look at the Princess* trilogy), Noranti/Chiana ("Unrealized Reality"), Unrealized Heavy Chiana, Farscape: Gone and Back comic (married to D'Argo, talented cook, weight gain), John Quixote VR pseudo-Chiana. See [[Episodes/Alternate Reality Chiana versions]].
 
 The fan index yields 67 regular-series episode entries, plus one flashback/tie-in entry, and the two-part miniseries. A future episode-by-episode audit should confirm scene presence from scripts, transcripts, or the episodes themselves rather than relying on cast listings alone.
+
+Post-series comics: BOOM! Studios (2008–2011), canon per Jim Henson Company, written by O'Bannon & DeCandido. Volume 4 *Tangled Roots* is the first post-TV arc where Chiana is explicitly co-lead with Crichton. Full issue-level presence across all volumes needs verification from the comics themselves. See [[Comics/Farscape Comics — Chiana Appearances]].
 
 ## Character arc
 
 ### From controlled prisoner to chosen family
 
-Chiana enters the story under Nebari authority, facing mental cleansing and the destruction of dissent as a threat to her identity. Her first episode with Moya is consequently both a rescue narrative and a test of whether the crew can tolerate a person whose survival ethics are opaque to them. Her refusal to answer cleanly for Salis's murder establishes the character's central ambiguity: she may be dangerous, but the narrative does not reduce danger to a stable moral essence. Rockne S. O'Bannon later described the ambiguity in the episode's closing beat as deliberate characterization rather than a puzzle with a required answer. [5]
+Chiana enters the story under Nebari authority, facing mental cleansing and the destruction of dissent as a threat to her identity. Her first episode with Moya is consequently both a rescue narrative and a test of whether the crew can tolerate a person whose survival ethics are opaque to them. Her refusal to answer cleanly for Salis's murder establishes the character's central ambiguity: she may be dangerous, but the narrative does not reduce danger to a stable moral essence. Rockne S. O'Bannon later described the ambiguity in the episode's closing beat as deliberate characterization rather than a puzzle with a required answer. [5][22]
+
+Analysis adds: Salas tortured Chiana before "Durka Returns," and her "unstable emotional and mental state" is partly attributable to that abuse. [12] The episode's sparring between Chiana and Crichton — negotiating position with subtle actions and movements as much as spoken lines — contributes to an episode that makes "sophisticated points about the nature of freedom and responsibility." [28]
 
 Over time, she moves from opportunistic passenger to emotionally invested crewmate. She remains a thief, liar, flirt, gambler, and improviser, but repeatedly risks herself for the crew, Moya, and the people she has chosen. This is an arc of attachment without domestication: Chiana does not become conventionally respectable; she becomes more capable of loyalty and of recognizing the cost of her choices.
 
 ### Grief, freedom, and self-determination
 
-[[Episodes/Taking the Stone|“Taking the Stone”]] makes the death of her brother Nerri the major early rupture in her life on Moya. Her attempt to disappear into a youth community frames grief as both a desire for oblivion and a demand to control her own response to loss. The dedicated episode note keeps its screen-derived plot evidence, interpretive reading, and unresolved scene-level questions separate. Later stories return to her fear of being defined by other people's institutions, expectations, or romantic plans.
+Taking the Stone makes the death of her brother Nerri the major early rupture in her life on Moya. Her attempt to disappear into a youth community frames grief as both a desire for oblivion and a demand to control her own response to loss. Analysis adds: "Her family's story on the episode 'Home on the Remains' provides a hint as to why Chiana can't stop screwing up." The dedicated episode note keeps its screen-derived plot evidence, interpretive reading, and unresolved scene-level questions separate. Later stories return to her fear of being defined by other people's institutions, expectations, or romantic plans.
 
 Her relationship with D'Argo exposes this conflict most clearly. Their intimacy can be read as one of the first relationships in which Chiana is not simply trading sex, information, or access for survival. Yet the relationship breaks when D'Argo's imagined future requires her to become a role—wife, farmer, and participant in his dream—rather than remain a self-determining person. Their friendship survives, and D'Argo's death and the transfer of his Qualta blade to Jothee leave Chiana carrying both grief and responsibility.
 
@@ -216,7 +234,7 @@ The strongest accessible production account is Edgley and Elsey's interview in *
 - [[Production/Chiana makeup and costume]] — planned credit and design note.
 - [[Media/Chiana makeup test provenance]] — remote-link provenance record created in this slice.
 
-## Canon versus analysis
+### Canon versus analysis
 
 ### Canon / production evidence
 
@@ -224,7 +242,38 @@ Chiana is Nebari; Gigi Edgley performs her; she first appears in “Durka Return
 
 ### Analysis
 
-Chiana's durable dramatic function is to make freedom look unruly. The series repeatedly asks whether a person can escape coercive institutions without becoming legible to a more respectable institution. Her sexuality, criminality, and mobility are not merely rebellious decoration: they are survival practices that the crew must learn to interpret without either romanticizing or disciplining her. Her arc is therefore less “becoming good” than acquiring chosen obligations while resisting possession by anyone else's story.
+Chiana's durable dramatic function is to make freedom look unruly. The series repeatedly asks whether a person can escape coercive institutions without becoming legible to a more respectable institution. Her sexuality, criminality, and mobility are not merely rebellious decoration: they are survival practices that the crew must learn to interpret without either romanticizing or disciplining her. Her arc is therefore less “becoming good” than acquiring chosen obligations while resisting possession by anyone else's story. [11][28]
+
+Farscape Continues analysis notes: Chiana has "one way of dealing with other women and a different way of dealing with men," suggesting gendered performance of identity. The series places Chiana "beside characters whose own histories are framed through military, religious, royal, or scientific institutions" — she is the "only totally rebellious character on the show." [11][12][28]
+
+#### Aeryn is a Feminist and Chiana is Not (Farscape Continues)
+
+This comparative analysis frames Aeryn's power as institutional/military and Chiana's as self-directed but rooted in survival. Chiana's sexual self-presentation as a survival tool is not romanticized or disciplined by the narrative, but it is read as distinct from Aeryn's more institutionalized femininity. [12]
+
+#### "We Need To Talk About Chiana" (Farscape Continues Part 1)
+
+The analysis identifies three sides of Chiana revealed in her first episode: tralk, scoundrel, and woman with big heart. The episode "Home on the Remains" offers "one of the deepest explorations of Chiana's past." Chiana is the only Moya inhabitant who *chose* exile. [11]
+
+### Performance and behind-the-scenes
+
+From the Little Review interview with Michelle Erica Green (c.1999):
+- Chiana required **five rounds of auditions**, grueling makeup and optometry fittings.
+- In the initial audition, Edgley "did her meditation with headphones in, hair in a mat, came in character while other actors were immaculate — worried she'd miscalculated."
+- First day makeup: **five hours** in the makeup trailer for the first appearance. Blue contact lenses ("ink blue all the way") meant she couldn't see — she "tripped over cables, shook wrong people's hands."
+- Chiana's deceased sibling was originally written as a sister. Edgley read the lines, didn't connect. Imagined it was a little brother; emotions well up. Writer Dave Kemper agreed and **changed it to a brother**. [18]
+- Ben Browder told her about Chiana's sexuality: "If you were human, you'd be a slut, but since you're an alien, you're just out there." [18]
+- Anthony Simcoe taught Edgley how to focus and stay edgy for long shooting days; they did a short film together. [18]
+- Edgley practices kung fu on Sundays for physical combat instead of gunfights. [18]
+- Edgley on Chiana's emotional range: "She goes through ten different emotions at once... sometimes I think she could be very young... sometimes her maturity comes through... there's even a maternal quality there." [18]
+- Working conditions: "I rarely see the sun." 4am call times, 3.5hr makeup, shares makeup room with Browder and Black. [18]
+- Edgley posted on internet chat rooms about the show; found a Chiana shrine online and cried at fan comments. Fans praised her interest when she posted a reply. [18]
+
+From The Companion 2022 (Peter Ray Allison):
+- **Circus background**: Father was famous circus promoter with "Edgley International." Edgley grew up with circus in her blood. Fan of Jim Henson — *The Dark Crystal* (all-time favorite film), *Labyrinth*. [22]
+- **Voice evolution**: Initial American direction, Australian by end of season 1, pressure to redub toward American, returned to her voice from season 2 onward. [22]
+- Edgley **advocated for Chiana's first-season mannerisms** to return in season four. [22][2]
+
+#### Grey/Black-and-white visual design
 
 The grey/black-and-white visual design supports a productive refusal of moral color coding. That reading is analysis, not an explicit production statement. It should be tested against costume, lighting, and makeup interviews rather than asserted as creator intent.
 
@@ -239,8 +288,11 @@ The grey/black-and-white visual design supports a productive refusal of moral co
 7. Nebari physiology, age, lifespan, language, family structure, and the scope of mind cleansing remain under-documented in primary material.
 8. The status and details of Nerri's resistance history need direct episode/transcript review.
 9. Chiana's sexual history is often summarized by fan sources in ways that may collapse coercion, survival, and agency; episode-level, scene-sensitive analysis is required.
-10. Post-series comics and alternate versions should not be folded into television canon without a continuity policy and issue-level sourcing.
+10. Post-series comics: first-pass volume-level overview completed (see [[Comics/Farscape Comics — Chiana Appearances]]); issue-by-issue verification from the actual comics needed.
 11. No image has been locally archived in this slice. Rights status for screenshots, concept art, and makeup-test frames requires a separate media review.
+12. Episode-by-episode appearance verification (scene-level presence vs. cast listing) has not been completed for the ~67 regular-series episodes.
+13. "A Clockwork Nebari" and "Losing Time" episode analyses completed (see dedicated notes), though scene-level verification from transcripts is still pending.
+14. No image has been locally archived in this slice. Rights status for screenshots, concept art, and makeup-test frames requires a separate media review.
 
 ## Sources
 
@@ -259,3 +311,13 @@ The grey/black-and-white visual design supports a productive refusal of moral co
 [7] The Jim Henson Company, “Farscape | Chiana Arrives!,” YouTube link embedded in [5], accessed 2026-09-15. https://www.youtube.com/watch?v=YyhO8ZtAKEk
 
 [8] infernalzen, “farscape chiana, Gigi Edgley Interview,” YouTube, 2008-11-30, 05:05, accessed 2026-09-15. https://www.youtube.com/watch?v=cEsVkMMW5yo
+
+[11] Farscape Continues, "We Need To Talk About Chiana" (Part 1), analysis of Chiana's three sides (tralk, scoundrel, big heart), "only character who chose exile," and "Home on the Remains" family exploration. Accessed 2026-09-30.
+
+[12] Farscape Continues, "Aeryn Is a Feminist and Chiana Is Not" (Part 2), comparative analysis of Aeryn/Chiana power structures, gendered identity performance, Salas torture, and Chiana's "one way of dealing with women, different way with men." Accessed 2026-09-30.
+
+[18] Michelle Erica Green, "Farscape: The Complete Skip It/Watch It Guide" / Little Review interview with Gigi Edgley (c.1999), on auditions, makeup, brother/sister, Ben Browder's sexuality quote, Anthony Simcoe, kung fu, emotional range, working conditions, fan shrine, circus background. http://www.littlereview.com/getcritical/interviews/edgley.htm
+
+[22] Peter Ray Allison, "Farscape | Chiana's Shades of Grey — An Interview with Gigi Edgley," *The Companion*, 2022-04-26. Circus background (Edgley International), Dark Crystal/Labyrinth fans, voice evolution, S4 mannerisms advocacy. https://thecompanion.app/farscape-chiana-gigi-edgley
+
+[28] Bibble.org, "Farscape: Chiana" character analysis. "Only totally rebellious character," rejects society's structure and morality, "sophisticated points about freedom and responsibility." https://bibble.org/farscape/chiana.html

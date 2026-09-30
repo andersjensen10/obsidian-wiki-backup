@@ -1,0 +1,14 @@
+{
+  "missionId": "unsafe-card",
+  "selectedAt": "2026-09-30T02:15:30+02:00",
+  "candidateSources": ["test source"],
+  "hypothesis": "Validation must reject missing safety information.",
+  "resourceClass": "none",
+  "admissionSnapshot": {"state": "not-required"},
+  "deferOrPreemptRule": "Not applicable.",
+  "sandboxBoundary": "Test fixture only.",
+  "measurableSignals": ["validation fails"],
+  "evidencePaths": ["test fixture"],
+  "promotionDecision": "discard",
+  "morningQuestion": "Should invalid cards render?"
+}

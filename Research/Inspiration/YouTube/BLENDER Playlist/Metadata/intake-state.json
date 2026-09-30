@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-29T22:11:32+02:00",
+  "last_success": "2026-09-30T22:45:08+02:00",
   "playlist_id": "PLBAugloIB2ULsh9L-Ny8zGvR17TV-IA4j",
   "processed_ids": {
     "-2HCxy4Kh4E": {
@@ -982,6 +982,10 @@
       "at": "2026-09-29T22:00:09+02:00",
       "status": "catalogued"
     },
+    "OBZDYDFay9o": {
+      "at": "2026-09-30T20:30:10+02:00",
+      "status": "catalogued"
+    },
     "OFPp8WMtFhU": {
       "at": "2026-09-29T22:00:09+02:00",
       "status": "catalogued"
@@ -1124,6 +1128,10 @@
     },
     "SaDB0rRAebA": {
       "at": "2026-09-29T22:09:13+02:00",
+      "status": "catalogued"
+    },
+    "SkWOrsszk0g": {
+      "at": "2026-09-30T18:15:09+02:00",
       "status": "catalogued"
     },
     "SmYNK0kqaDI": {
@@ -1630,6 +1638,10 @@
       "at": "2026-09-29T22:00:09+02:00",
       "status": "catalogued"
     },
+    "fjWeg8so8y0": {
+      "at": "2026-09-30T09:07:59+02:00",
+      "status": "catalogued"
+    },
     "fmDv81dMQ6c": {
       "at": "2026-09-29T22:06:23+02:00",
       "status": "catalogued"
@@ -2130,6 +2142,10 @@
       "at": "2026-09-29T22:06:23+02:00",
       "status": "catalogued"
     },
+    "uTzsXBqgRa8": {
+      "at": "2026-09-30T22:45:08+02:00",
+      "status": "catalogued"
+    },
     "uWWCPPg6T_g": {
       "at": "2026-09-29T22:11:32+02:00",
       "status": "catalogued"
@@ -2292,6 +2308,10 @@
     },
     "z_GpYtSbgts": {
       "at": "2026-09-29T21:45:14+02:00",
+      "status": "catalogued"
+    },
+    "zd97ZAMEjJA": {
+      "at": "2026-09-30T19:15:09+02:00",
       "status": "catalogued"
     },
     "zmtL4AFmgeQ": {

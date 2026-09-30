@@ -15,6 +15,10 @@ Living record of AJ's gear, so agents can propose creative projects that use it.
 - **Spark (192.168.0.139):** llama.cpp :8014 (Qwen 3.6 35B), ComfyUI :8188 (Z-Image Turbo, Flux 2 Klein, Qwen Image, LTX 2.5 video), Fish Speech / voice services.
 - **NUC:** spare.
 
+- **MSI audio/MIDI census (Winbot, 2026-09-30, read-only):** MOTU Pro Audio is the only external audio/MIDI interface visible (audio In 1-2, In/Out 1-24; MIDI In/Out and LTC Sync In). No other USB MIDI device is currently visible to the MSI. Camera: none yet; AJ is connecting one by USB and will notify Winbot.
+- **Budget (AJ, 2026-09-30):** Jev cap starts at $0.25/day; AJ is open to raising it for meaningful work.
+- **Programme:** full breakdown of Pis, NUC, MIDI and audio interfaces planned in [[Creative Systems/Inventory Program — Full Breakdown Plan]].
+
 ## To find out (ask AJ a few at a time)
 - MIDI interfaces: make/model, ports, which are free while Ableton is open.
 - Synths: models, MIDI/USB/CV, clock sync.

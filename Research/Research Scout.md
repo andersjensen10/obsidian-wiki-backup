@@ -48,6 +48,7 @@ It must keep research artifacts inside this tree unless AJ explicitly asks other
 - 2026-09-27: Researched the draft MCP Tasks extension as a durable async-job boundary for Agora, TTS, voice preparation, and regeneration; a local fake MCP Tasks/Agora adapter spike was recommended; report saved as `2026-09-27 — MCP Tasks for Agora Async Jobs.md`.
 - 2026-09-28: Researched A2A v1 as a peer-agent delegation boundary for Agora, compared with MCP Tasks, and recommended a local fake A2A specialist/Agora adapter; report saved as `2026-09-28 — A2A v1 for Agora Agent Delegation.md`.
 - 2026-09-29: Researched systemd resilience for Spark-dependent Hermes inference and voice pipelines, combining restart/backoff/watchdog/resource-control guidance with live user-unit observations; recommended a disposable failure-injection fixture before changing production units; report saved as `2026-09-29 — systemd Resilience for Spark-Dependent Hermes Pipelines.md`.
+- 2026-09-30: Researched llama.cpp structured outputs and safe parsing for Agora, focusing on JSON Schema/GBNF constraints, reasoning separation, backend differences, and adversarial compatibility testing; recommended a disposable live structured-output fixture before relying on `response_format`; report saved as `2026-09-30 — llama.cpp Structured Outputs and Safe Parsing for Agora.md`.
 
 ## Related notes
 - [[Research/Research Scout]] — research-hub context and curation mandate.
@@ -64,6 +65,7 @@ It must keep research artifacts inside this tree unless AJ explicitly asks other
 - [[Research/2026-09-26 — Godot 4.5 as an Agent-Facing Interaction Shell.md|2026-09-26 — Godot 4.5 as an Agent-Facing Interaction Shell]]
 - [[Research/2026-09-28 — A2A v1 for Agora Agent Delegation.md|2026-09-28 — A2A v1 for Agora Agent Delegation]]
 - [[Research/2026-09-29 — systemd Resilience for Spark-Dependent Hermes Pipelines.md|2026-09-29 — systemd Resilience for Spark-Dependent Hermes Pipelines]]
+- [[Research/2026-09-30 — llama.cpp Structured Outputs and Safe Parsing for Agora.md|2026-09-30 — llama.cpp Structured Outputs and Safe Parsing for Agora]]
 - [[Research/Backlog to be transcrbed and categorised/Youtube videos to be transcribed and categorised.md|Youtube videos to be transcribed and categorised]]
 - [[Research/Git repositories that inspire.md|Git repositories that inspire]]
 - [[Research/Research Scout.md|Research Scout]]
