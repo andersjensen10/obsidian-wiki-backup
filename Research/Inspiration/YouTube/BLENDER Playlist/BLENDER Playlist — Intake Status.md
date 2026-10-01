@@ -6,10 +6,8 @@ type: intake-status
 
 # BLENDER Playlist — Intake Status
 
-- **Playlist items observed:** 583
-- **Metadata records processed:** 581
-- **Within two-year priority window:** 188
-- **Metadata unavailable:** 10
-- **Last batch:** 1 playlist entries
-- **Last successful intake:** 2026-09-30T22:45:08+02:00
-- **Next stage:** transcript availability and local-first thematic triage for the in-window queue.
+- **Playlist items observed:** 587
+- **Metadata records processed:** 585
+- **Within two-year priority window:** 192
+- **Last checked:** 2026-10-01T22:45:06+02:00
+- **State:** current playlist index has no unprocessed video IDs. Future runs will pick up new additions.

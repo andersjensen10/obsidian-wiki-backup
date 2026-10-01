@@ -8,6 +8,29 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-10-02 — Jeremiah Crichton: Season 1 Episode 14 single-slice expansion
+
+Scope: Bounded expansion of Season 1, Episode 14 ("Jeremiah Crichton") within the Farscape knowledge base.
+
+Existing-vault check: Inspected existing Season 1 index and episode notes. Verified that `Jeremiah Crichton.md` was previously a placeholder or unrecorded in the main season index.
+
+Sources consulted:
+- Wikipedia: "List of Farscape episodes" (FS-S086)
+- TV Tropes: "Farscape S01E14 Jeremiah Crichton Recap" (FS-S087)
+- Tor.com: "Farscape Rewatch: Jeremiah Crichton" (FS-S088)
+
+Created/updated:
+- `Episodes/Jeremiah Crichton.md` — Created complete episode dossier with frontmatter, inline grounded citations, synopsis, canon lore revelations (Acquaran colony, Rygel X betrayal, energy vortex suppression), production context (Robert Redford's *Jeremiah Johnson* inspiration, Ben Browder's beard), and rendered Sources block.
+- `Episodes/Season Index` — Added link to `Jeremiah Crichton.md`.
+- `Sources/Farscape — Source Register` — Registered new citation sources.
+- This curator log.
+
+Evidence gaps carried forward: Exact script dialogue quotes and video timestamps for local beach scenes; detailed makeup and costume credits for guest cast members Lishala and Rokon.
+
+Next suggested slice: Season 1 Episode 15 ("Durka Returns") detailed canon and character note, or Season 2 Episode 18 ("A Clockwork Nebari").
+
+---
+
 ## 2026-09-29 — Scorpius, Moya, Wormhole technology, and The Peacekeeper Wars: four-slice expansion
 
 Scope: bounded expansion of four major, previously-placeholdered subjects — the series' central antagonist (Scorpius), its sentient home-ship (Moya), the wormhole technology that drives the plot, and the three-part concluding miniseries (The Peacekeeper Wars).

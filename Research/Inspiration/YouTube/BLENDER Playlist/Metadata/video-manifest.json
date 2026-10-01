@@ -1,8 +1,8 @@
 {
   "playlist_id": "PLBAugloIB2ULsh9L-Ny8zGvR17TV-IA4j",
-  "playlist_size_observed": 583,
+  "playlist_size_observed": 587,
   "playlist_title": "BLENDER",
-  "updated_at": "2026-09-30T22:45:08+02:00",
+  "updated_at": "2026-10-01T18:30:11+02:00",
   "videos": {
     "-2HCxy4Kh4E": {
       "captions_available": true,
@@ -4996,6 +4996,22 @@
       "view_count": 310304,
       "within_priority_window": false
     },
+    "WQBUncz23Zs": {
+      "captions_available": true,
+      "channel": "Caddis",
+      "channel_url": "https://www.youtube.com/channel/UCMyOcIC7i4xfFqa-4GKwMpg",
+      "description": "Caddis 1.1.0 is my biggest update yet. Here's a quick look at the new tools for building motion graphics with a timeline and node graph.\n\nIn this update:\n- A full particle system, with forces, trails, flocking, and GPU-rendered sprites\n- Animated grid layouts with the new Layout node\n- Loop, For Each, Switch, and Solver for repetition and frame-to-frame feedback\n- Cryptomatte support for mattes from your 3D renders\n- A rewritten Lens Blur, plus Measure, Twist, and Field Gradient\n- New AI models, per-model settings, and live generation costs\n- Layer locking, responsive toolbars, and timeline zoom that follows the playhead\n\nGet Caddis: https://caddis.app\nJoin the community: https://discord.gg/65D3FpA7jh\n\n0:00 - Intro\n0:05 - Layout Node\n0:13 - Particles\n0:33 - Loops, For Each, Switch\n0:49 - New Nodes\n1:12 - AI Updates\n1:33 - UI Improvements\n\nYou can keep creating for free after your trial ends. A license is only needed to export. AI generation uses Caddis Tokens separately.\n\nWhat would you like to see next? Let me know in the comments.",
+      "duration_seconds": 124,
+      "id": "WQBUncz23Zs",
+      "metadata_accessed": "2026-10-01T10:30:08+02:00",
+      "playlist_position": 584,
+      "published": "2026-09-30",
+      "thumbnail": "https://i.ytimg.com/vi_webp/WQBUncz23Zs/maxresdefault.webp",
+      "title": "Caddis 1.1.0 — Particles, Layouts, Loops & More",
+      "url": "https://www.youtube.com/watch?v=WQBUncz23Zs",
+      "view_count": 5778,
+      "within_priority_window": true
+    },
     "WX8RWSwZnng": {
       "captions_available": true,
       "channel": "Super Valid Designs",
@@ -6724,6 +6740,21 @@
       "view_count": 255349,
       "within_priority_window": true
     },
+    "huhAovoEoxk": {
+      "captions_available": true,
+      "channel": "askNK",
+      "channel_url": "https://www.youtube.com/channel/UCHx1jeKRMi_wDAwvvhaIDYA",
+      "description": "Meet Mixar: https://www.mixar.app/\nMixar is an open-source AI-native 3D editor built on Blender that uses intelligent agents to help you model, texture, retopologize, rig, animate, and create 3D content faster.\n\nMixar Features: \nAI-native 3D editor built on Blender • Integrated AI 3D Agent • AI-assisted modeling • Text-to-3D generation • Image-to-3D generation • Multi-view image-to-3D • AI scene generation • AI-assisted texturing • Layer-based texture painting • PBR material generation • AI retopology • Automatic UV workflows • Mesh cleanup • Baking workflows • AI-assisted rigging • Animation tools • Scene-aware AI automation • AI asset generation • Moodboards & reference workflows • Gaussian Splat workflows • Neural asset search • Plan Mode for reviewing AI actions • Bring Your Own Key support • OpenRouter support • Open-source desktop application • Blender-compatible workflows • Windows, macOS & Linux\n\n✨ *Get Premium Blender Addons* : https://superhivemarket.com/?ref=110\n🔗 *Find Hidden Treasures Here* : https://humblebundleinc.sjv.io/kOyQMx\n👨‍👩‍👧‍👦 *Get Character Creator 5* - https://bit.ly/3b16Wcw\n🦿 *Get IClone 8.5* - https://bit.ly/38QDfbb\n🎓 *Learn to Animate in Blender* : https://bit.ly/3A1NWac\n🪮 *FiberShop - Realtime Hair Tool* : https://tinyurl.com/2hd2t5v\n📂 *Big Ref Database* : https://bit.ly/3PLtaQ8\n🆓 *Find Awesome Free 3D Models* : https://3dexport.com/3d-models?a=askNK\n----------------\n00:00 Meet Mixar Overview\n00:31 Download and Setup\n00:48 Interface and Modes\n01:25 Engine Mode Tour\n02:21 UV Editing Upgrades\n03:10 Texturing Workflow Basics\n04:06 Layers, Masks, and Channels\n07:22 Zen Mode and Mixie\n08:21 Node Graph 3D Generation\n09:44 Scene Building with Mixie\n11:01 Sketch to Build\n12:13 Add Mesh and Auto Rig\n13:50 Multitasking and Gaussian Splatting\n15:07 Cinema Mode Cameras\n16:35 Export Blender and Wrap Up\n\n*Learning*\n🎓🥇Blender Tutorials #1: https://bit.ly/3nbfTEu\n🎓🥈Blender Tutorials #2: https://tinyurl.com/yeyrkreh\nLearn Motion Graphics: https://www.bit.ly/49irMjp\nStylised Characters Course: https://www.bit.ly/3B9QV3l\n3D Cars Building, Rigging & Animation: https://www.bit.ly/4h5HXEq\nCinematic Car Animation Course: https://www.bit.ly/3ORFccG\nHuman – Realistic Portrait Creation: https://www.bit.ly/2XvMT1j\nAlive! - Animation Course: https://bit.ly/3AEFvyA\n-----------------\n✉️ Join Weekly Newsletter: https://bit.ly/3lpfvSm\n❤️Patreon: https://www.patreon.com/asknk \n🔔Discord: https://discord.gg/G2kmTjUFGm \n🐣Twitter: https://bit.ly/3a0tADG\n-----------------\n\n#asknk #Mixar #Mixar3D #MixarAI #Blender #Blender3D #BlenderAI #AIAgent #AIAgents #AI3D #3DAI #GenerativeAI #AIArt #AIModeling #3DModeling #ImageTo3D #TextTo3D #BlenderAgent #BlenderAutomation #BlenderTools #3DAnimation #CharacterAnimation #3DTexturing #PBR #Retopology #GameDev #GameDevelopment #3DArtist #CGI #VFX #OpenSource #free3D #free3Dmodels #free3Dresources #freetextures #freematerials #freefriday #premium #b3d #blender3d #free #addons #blenderaddons #new #3dnews #release #update #blender \nMixar, Mixar 3D, Mixar AI, Mixar app, Mixar 3D app, Mixar Blender, Mixar AI 3D, Mixar tutorial, AI Blender, Blender AI, Blender AI tools, Blender AI agent, AI agent for Blender, Blender agent, 3D AI agent, AI 3D agent, agentic AI 3D, AI 3D, AI 3D tools, AI 3D software, AI 3D editor, AI 3D generator, AI 3D modeling, AI 3D model generator, AI 3D animation, AI texturing, AI texture generator, AI retopology, AI rigging, AI animation, text to 3D, image to 3D, photo to 3D, image to 3D model, AI mesh generator, Blender 3D, Blender 5, Blender 5.2, Blender modeling, Blender texturing, Blender animation, Blender rigging, Blender retopology, Blender UV unwrap, Blender automation, Blender MCP, Blender MCP alternative, AI agent Blender, 3D modeling AI, generative AI 3D, open source AI, open source 3D software, open source Blender, AI game assets, AI character creation, AI product visualization, 3D generation, PBR materials, automatic UV unwrap, automatic retopology, 3D workflow, 3D artist, CGI, VFX, game development, askNK,",
+      "duration_seconds": 1043,
+      "id": "huhAovoEoxk",
+      "metadata_accessed": "2026-10-01T18:30:11+02:00",
+      "published": "2026-10-01",
+      "thumbnail": "https://i.ytimg.com/vi_webp/huhAovoEoxk/maxresdefault.webp",
+      "title": "Mixar 4.1 - A Blender Variant With Spatial & AI Upgrade!",
+      "url": "https://www.youtube.com/watch?v=huhAovoEoxk",
+      "view_count": 2655,
+      "within_priority_window": true
+    },
     "iFnTqZmsRIc": {
       "captions_available": true,
       "channel": "Vantage with AI",
@@ -7684,6 +7715,22 @@
       "view_count": 51379,
       "within_priority_window": false
     },
+    "p779LRtmuYo": {
+      "captions_available": true,
+      "channel": "CG stuff",
+      "channel_url": "https://www.youtube.com/channel/UCX36fVquEhGJSkl0cznZhvQ",
+      "description": "Actionforge just got its biggest update: you can now bring your own character, auto-rig it with markers, and animate it, all free, in your browser, no install.\n\n🔗 Try it: https://actionforge.app (desktop browser)\n\nWhat's new:\n• Custom characters: place markers, adjust the skeleton, bind, done\n• Custom characters are saved in your browser, and you can re-rig without re-uploading\n• Skeleton template .blend: build your character on the skeleton and import it pre-weighted\n• New export presets: Unreal Engine 5 (Manny / Quinn), UE4, Character Creator, and a fixed Mixamo export\n• Advanced mode: keyframe adjustments and IK over time, Blender-style\n• Pose mode: pose and keyframe any bone (R, RR trackball, axis locks, local/global)\n• GLB and FBX export\n\nA free Mixamo alternative for game devs using Godot, Unity, Unreal or Blender.\n\nBase animations: Quaternius Universal Animation Library (CC0), quaternius.com\n\n0:00 What's new in Actionforge\n0:15 Add your own character\n0:25 Placing auto-rig markers\n0:50 Adjusting the skeleton\n1:30 Finger bones\n2:05 Bind & test animations\n2:30 Saved custom characters\n2:55 New export presets (UE5, UE4, CC, Mixamo)\n3:20 Advanced mode: keyframing adjustments\n4:10 Keyframing IK\n4:35 Pose mode & FK animation\n5:25 Compose layers\n6:05 Re-rig without re-uploading\n6:35 Skeleton template .blend\n7:15 Outro",
+      "duration_seconds": 442,
+      "id": "p779LRtmuYo",
+      "metadata_accessed": "2026-10-01T12:15:08+02:00",
+      "playlist_position": 585,
+      "published": "2026-09-30",
+      "thumbnail": "https://i.ytimg.com/vi_webp/p779LRtmuYo/maxresdefault.webp",
+      "title": "Rig and Animate Your Own Character in the Browser for Free (Keyframes, IK, Pose Mode)",
+      "url": "https://www.youtube.com/watch?v=p779LRtmuYo",
+      "view_count": 4174,
+      "within_priority_window": true
+    },
     "pHpTSLZKIC4": {
       "captions_available": true,
       "channel": "Ryuu - Blender Bros",
@@ -7939,6 +7986,22 @@
       "url": "https://www.youtube.com/watch?v=qvRK8l2oS5Q",
       "view_count": 98013,
       "within_priority_window": false
+    },
+    "qyNWDzO6kKQ": {
+      "captions_available": true,
+      "channel": "Sebastian Lague",
+      "channel_url": "https://www.youtube.com/channel/UCmtyQOKKmrMVaKuRXz02jbQ",
+      "description": "My attempt at a little pen plotter for drawing spiral cats and contour maps.\n\nSupport my work and get early access to new projects on Patreon: https://www.patreon.com/SebastianLague\n\nChapters:\n00:00 The Moon\n02:49 Some Crater Contours\n04:30 Building the Base\n07:40 Belt Assembly\n09:39 Stepper Inspection\n11:58 Motor Driver\n14:40 Pen Holder\n17:25 Drawing a Line!\n18:16 Random Walks and Spiral Cat\n19:53 Marching Square Contours\n22:25 Fixing Pen Smudges\n24:00 Path Optimization\n24:58 Moon Plots\n26:43 Mars Plots\n29:38 Earth Plots\n30:12 Result and Outro",
+      "duration_seconds": 1855,
+      "id": "qyNWDzO6kKQ",
+      "metadata_accessed": "2026-10-01T14:00:08+02:00",
+      "playlist_position": 586,
+      "published": "2026-10-01",
+      "thumbnail": "https://i.ytimg.com/vi_webp/qyNWDzO6kKQ/maxresdefault.webp",
+      "title": "I Tried Making a Pen Plotter to Draw Maps of the Moon",
+      "url": "https://www.youtube.com/watch?v=qyNWDzO6kKQ",
+      "view_count": 6529,
+      "within_priority_window": true
     },
     "qzcIMJsWVow": {
       "captions_available": true,
@@ -8428,6 +8491,7 @@
       "duration_seconds": 401,
       "id": "uTzsXBqgRa8",
       "metadata_accessed": "2026-09-30T22:45:08+02:00",
+      "playlist_position": 583,
       "published": "2026-09-03",
       "thumbnail": "https://i.ytimg.com/vi/uTzsXBqgRa8/maxresdefault.jpg",
       "title": "I Finally Set My Game Engine Free",

@@ -55,3 +55,5 @@ Only AJ can create a label. An answer written to `answers.jsonl` must come from 
 ## Update 2026-09-30 14:03 (Winbot)
 - Herm deployed cookie pairing (`f4314d4`, `d28cde3`, `d9925d1`, harness `cb79b5d`); live `/api/decisions/session` returns `paired:false`. Trusted-screen approval (`2bc04e4`) is **not** deployed; Herm's scheduled monitor cannot verify the wall address or service environment.
 - **Correction:** the MSI wall host's address is **192.168.0.103** (Wi-Fi, DHCP), measured as the source address the dashboard sees. The `192.168.0.30` in earlier notes and in my first handoff was stale. A trusted address that changes silently stops matching and pairing falls back to the code flow (fail closed). Recommendation: DHCP reservation for the MSI.
+
+- 2026-10-01 11:45: Trusted one-tap pairing verified live from the MSI (pair/start autoApproved=true, left unclaimed). /api/decisions chain ok (count 0). DISPLAY5 wall shows /decisions with 1 of 2 open ("outage alert delay"), banner "This screen can't record answers yet" - awaiting AJ to press Pair this screen once.
