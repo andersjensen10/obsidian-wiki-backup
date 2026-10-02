@@ -13,6 +13,10 @@ A local-first, source-traceable creative and systems reference layer built from 
 
 - [[YouTube/BLENDER Playlist/BLENDER Playlist — Home|BLENDER YouTube playlist]]
 
+## Syntheses
+
+- 2026-10-02 — [[YouTube/BLENDER Playlist/Synthesis — 2026-10-02 — Local Tool-Call Model and Code-First AV Sequencer|Needle 3 (local tool calls) + nw_wrld (code-first AV sequencer)]]
+
 ## Operating model
 
 - Metadata intake and deduplication run without consuming Spark inference capacity.
@@ -39,3 +43,7 @@ A local-first, source-traceable creative and systems reference layer built from 
 ## Guardrails
 
 A playlist item is a lead, not evidence of a fact. Notes distinguish source facts, technical claims requiring verification, and AJ-specific interpretations or experiments.
+
+## Leads tested end-to-end
+
+- 2026-10-02 — **nw_wrld** (YT-BL-004): installed, run with one of AJ's own loops, output verified on the projector. AJ: "I like the sequencer aspect and the visuals looked great… could be incorporated at some later point." No immediate use case; full findings and cleanup record in [[Research/Inspiration/YouTube/BLENDER Playlist/nw_wrld — First Run Findings — 2026-10-02]].

@@ -1,8 +1,8 @@
 {
   "playlist_id": "PLBAugloIB2ULsh9L-Ny8zGvR17TV-IA4j",
-  "playlist_size_observed": 587,
+  "playlist_size_observed": 592,
   "playlist_title": "BLENDER",
-  "updated_at": "2026-10-01T18:30:11+02:00",
+  "updated_at": "2026-10-02T20:15:10+02:00",
   "videos": {
     "-2HCxy4Kh4E": {
       "captions_available": true,
@@ -1924,6 +1924,22 @@
       "view_count": 11799,
       "within_priority_window": false
     },
+    "A53fIhsyTm8": {
+      "captions_available": true,
+      "channel": "SatoDive",
+      "channel_url": "https://www.youtube.com/channel/UC-K0Gak3BEbboXIFWI50bKg",
+      "description": "🎬 ABOUT THIS VIDEO\nCan MiniMax-H3 actually generate stunning images and consistent character sheets in ComfyUI? Today, we’re putting this powerful video model to the test for image generation! \nUsing my all-in-one custom sampler node and a streamlined workflow, we turn single reference photos and pure text prompts into flawless, multi-angle character sheets with incredible detail across realistic, and anime..\n\nIn this video, you'll learn:\n✅ Full step-by-step walkthrough of my custom MiniMax-H3 all-in-one sampler node\n✅ Image-to-Sheet: Turning a single close-up face into a complete multi-pose character sheet\n✅ Style Transfer: Transforming a realistic human photo into a stylized 2D anime turnaround\n✅ Pure Text-to-Image: Creating a detailed Anime Style female samurai warrior from scratch\n✅ How MiniMax-H3 intelligently expands outfits, jewelry, and accessories from small visual hints\n✅ Hardware & VRAM breakdown\n✅ Optimal settings\n\n📥 Download ComfyUI Workflow (.json) + Upscalling model 100%  FREE below :\nhttps://www.patreon.com/SatoDive/posts/minimax-h3-is-171110570\n\n📥 Download Custom Node 100% FREE below:\nhttps://github.com/SatoDive/ComfyUI-H3-IMG-Gen-SatoDive/\n\n📥 MiniMax-H3 Models & Setup:\n• Model: MiniMax-H3 (Ref2V or FL2V version)\n• Text Encoder: Standard text encoder\n• VAE: Video VAE only (audio VAE is not needed!)\n\nSupport & Download extra presets, workflows & updates:\n⭐ Patreon : https://www.patreon.com/SatoDive\n\n🎨 Civitai : https://civitai.com/user/SatoDive\n\n❤️ If you found this workflow helpful, please make sure to LIKE, SUBSCRIBE, and drop a comment below with what AI workflows you want to see next!\n👉 https://www.youtube.com/@SatoDive?sub_confirmation=1\n\n\n#MiniMax #MiniMaxH3 #ComfyUI #ComfyUIWorkflow #ComfyUITutorial #CharacterSheet #CharacterTurnaround #ConsistentCharacters #ImageGeneration #TextToImage #ImageToImage #ConceptArt #AICharacterDesign #OpenSourceAI #GenerativeAI #AIArt #SatoDive",
+      "duration_seconds": 755,
+      "id": "A53fIhsyTm8",
+      "metadata_accessed": "2026-10-02T10:00:09+02:00",
+      "playlist_position": 588,
+      "published": "2026-10-01",
+      "thumbnail": "https://i.ytimg.com/vi/A53fIhsyTm8/maxresdefault.jpg",
+      "title": "MiniMax-H3 is Secretly an INCREDIBLE Image Generator! [ComfyUI Free Custom Node + Workflow]",
+      "url": "https://www.youtube.com/watch?v=A53fIhsyTm8",
+      "view_count": 6766,
+      "within_priority_window": true
+    },
     "AHeeMhFQeW0": {
       "captions_available": true,
       "channel": "Joey Carlino",
@@ -3668,6 +3684,22 @@
       "view_count": 53481,
       "within_priority_window": false
     },
+    "M2J_fQNLDfg": {
+      "captions_available": true,
+      "channel": "Blender",
+      "channel_url": "https://www.youtube.com/channel/UCSMOQeBJ2RAnuFungnQOxLg",
+      "description": "\"Motion Sculpting: A New Animation Paradigm\" by Nacho de Andrés at Blender Conference 2026\n\nRigging has always been a tax you pay before animation can begin: build the controllers, wire the constraints, then hope the setup survives the next revision. What if the rig were disposable? This talk introduces a stateless, motion-path-driven approach where lightweight rigging is generated on the fly driving a dense animation FK rig. The result is a near-realtime workflow that collapses the boundary between setting things up and actually moving them. I'll cover where the idea came from, how it works, and what it changes about how we animate.\n\n–\n\nLearn more about Blender Conference 2026 at https://conference.blender.org/2026/\n\n\n#b3d #BCON26",
+      "duration_seconds": 3288,
+      "id": "M2J_fQNLDfg",
+      "metadata_accessed": "2026-10-02T10:00:09+02:00",
+      "playlist_position": 589,
+      "published": "2026-09-23",
+      "thumbnail": "https://i.ytimg.com/vi/M2J_fQNLDfg/maxresdefault.jpg",
+      "title": "Motion Sculpting: A New Animation Paradigm — BCON26",
+      "url": "https://www.youtube.com/watch?v=M2J_fQNLDfg",
+      "view_count": 55895,
+      "within_priority_window": true
+    },
     "M2mygxQUd90": {
       "captions_available": true,
       "channel": "askNK",
@@ -4771,6 +4803,22 @@
       "url": "https://www.youtube.com/watch?v=UOJ8LiNr1_c",
       "view_count": 5378,
       "within_priority_window": false
+    },
+    "UTtuFIMrvHE": {
+      "captions_available": true,
+      "channel": "Guy Michelmore",
+      "channel_url": "https://www.youtube.com/channel/UCMHG0rJtVF1LohiP63FJakw",
+      "description": "AI that actually HELPS composers? Is that possible? It should be. Up to now in music most AI has tried to replace songwriters producers and composers. Now a new instrument might change that and use the power of AI to help not hinder the workflow of people who create music. For many of you AI is simply a no-go area and nothing associated with it can ever be good or useful. I get that and respect that opinion.  But I think this instrument from Lunacy Audio, a US software company, deserve a closer look. See what you think. \nCheck it out: https://nova.lunacy.audio/ @lunacyaudio \n\nI’m not paid to promote anything, never do sponsorship or any of that. I just use stuff I think you might like.",
+      "duration_seconds": 813,
+      "id": "UTtuFIMrvHE",
+      "metadata_accessed": "2026-10-02T16:30:09+02:00",
+      "playlist_position": 591,
+      "published": "2026-10-02",
+      "thumbnail": "https://i.ytimg.com/vi_webp/UTtuFIMrvHE/maxresdefault.webp",
+      "title": "AI that actually HELPS composers?",
+      "url": "https://www.youtube.com/watch?v=UTtuFIMrvHE",
+      "view_count": 294,
+      "within_priority_window": true
     },
     "UngVdAsQEiU": {
       "captions_available": true,
@@ -6116,6 +6164,21 @@
       "view_count": 374099,
       "within_priority_window": false
     },
+    "dKbT0x9Se-s": {
+      "captions_available": true,
+      "channel": "Alex Villabon",
+      "channel_url": "https://www.youtube.com/channel/UC6SjKKNsyFLeL-IbtQzxXPA",
+      "description": "LTX 2.5 Alpha Gen (Beta) is here and it's amazing!!\n\nI'll walk you through how to get up and running, and then I'll spend some time going into a bunch of different examples showing you what it can do.\n\n🔗 RESOURCES\n\nLTX VFX page: https://ltx.io/solution/vfx\nTry on LTX Explore: https://app.ltx.io/workflows/96d13cde-772a-4b78-a65c-d91c4b144b18\nLoRA: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen\nMy workflow: https://github.com/avillabon/Tutorial_Files/blob/main/LTX%202.5%20Alpha%20Gen%20Beta/LTX%202.5%20Alpha%20Gen%20Beta.json\n\n☕ Support the channel: buymeacoffee.com/alexvillabon\n\n📬 Subscribe to my newsletter: alexvillabon.substack.com\n\n⏱️ TIMECODES\n00:00 Introducing LTX 2.5 Alpha Gen\n00:30 Workflow overview\n01:00 Loading models and the Alpha Generation LoRA\n01:20 Adding footage and setting the frame range\n02:07 Resolution, duration and VRAM\n03:51 Fur and motion blur: first results\n05:04 Matte quality and edge cleanup\n06:01 Green screen, transparency and spill\n08:07 Higher resolutions and longer clips\n09:30 Limitations: focus changes and ghosting\n11:36 Challenging hair and changing backgrounds\n13:27 Horses, splashes and complex shapes\n15:54 Fine fur detail against busy backgrounds\n17:08 Reflective materials and motion-blurred edges\n18:30 Fine hair, fabric fuzz and temporal stability\n20:00 Changing lighting and overlapping subjects\n21:33 Extracting smoke\n22:01 Water and translucent glass\n22:44 White-on-white hair and snow\n23:33 Production use, final thoughts and workflow links\n\n#LTX #ComfyUI #VFX #aivfx #DellProPrecision #DellProMax #DellTech #NVIDIA",
+      "duration_seconds": 1517,
+      "id": "dKbT0x9Se-s",
+      "metadata_accessed": "2026-10-02T20:15:10+02:00",
+      "published": "2026-10-02",
+      "thumbnail": "https://i.ytimg.com/vi_webp/dKbT0x9Se-s/maxresdefault.webp",
+      "title": "LTX 2.5 Alpha Gen is Amazing!",
+      "url": "https://www.youtube.com/watch?v=dKbT0x9Se-s",
+      "view_count": 1690,
+      "within_priority_window": true
+    },
     "dPWJVKUgEFg": {
       "captions_available": true,
       "channel": "JeanYan 3D",
@@ -6748,6 +6811,7 @@
       "duration_seconds": 1043,
       "id": "huhAovoEoxk",
       "metadata_accessed": "2026-10-01T18:30:11+02:00",
+      "playlist_position": 587,
       "published": "2026-10-01",
       "thumbnail": "https://i.ytimg.com/vi_webp/huhAovoEoxk/maxresdefault.webp",
       "title": "Mixar 4.1 - A Blender Variant With Spatial & AI Upgrade!",
@@ -8818,6 +8882,22 @@
       "url": "https://www.youtube.com/watch?v=xEpVyEi1Hts",
       "view_count": 253149,
       "within_priority_window": false
+    },
+    "xH9U6XyUrO8": {
+      "captions_available": true,
+      "channel": "CodeTrading",
+      "channel_url": "https://www.youtube.com/channel/UC2KjldN8pnX4FCNfVOlXUeA",
+      "description": "Can an AI trained on 12 billion candles really trade gold? Kronos is an open-source transformer foundation model for candlestick charts: a \"ChatGPT for candles\" from Tsinghua University that predicts the next price candles. In this video I explain how it works, what goes in and out, and test it on six years of XAUUSD data across 5 timeframes with almost 100,000 forecasts.\n\nYou'll learn:\n• How Kronos turns candles into tokens and forecasts the future\n• A simple AI trading strategy with realistic costs\n• How to test for a real edge: the lazy forecast and the 100-monkey test\n• Why one great backtest number can fool you\n\nLearn Algorithmic Trading: https://studio.youtube.com/channel/UC2KjldN8pnX4FCNfVOlXUeA/content/courses\nNo Code AI Backtesting Platform: https://app.coinquant.ai/?utm_source=ziad\n📄 Kronos paper (arXiv): https://arxiv.org/abs/2508.02739\n💻 Kronos code: https://github.com/shiyu-coder/Kronos\n🤗 Models: https://huggingface.co/NeoQuasar\n\nChapters:\n0:00 Intro\n1:00 How Kronos works\n2:00 Inputs and outputs\n2:30 Testing on gold\n3:15 The trading rule\n4:00 How to judge an edge\n4:40 Results\n7:00 Verdict and lessons\n\n⚠️ Educational content only. Not financial advice.\n#AITrading #Kronos #Gold #XAUUSD #MachineLearning #AlgorithmicTrading #Transformer #Backtesting",
+      "duration_seconds": 763,
+      "id": "xH9U6XyUrO8",
+      "metadata_accessed": "2026-10-02T14:15:10+02:00",
+      "playlist_position": 590,
+      "published": "2026-10-01",
+      "thumbnail": "https://i.ytimg.com/vi_webp/xH9U6XyUrO8/maxresdefault.webp",
+      "title": "This AI Learned from 12 Billion Candles. Can It Trade Gold?",
+      "url": "https://www.youtube.com/watch?v=xH9U6XyUrO8",
+      "view_count": 33712,
+      "within_priority_window": true
     },
     "xI-7KO1UmgE": {
       "captions_available": true,

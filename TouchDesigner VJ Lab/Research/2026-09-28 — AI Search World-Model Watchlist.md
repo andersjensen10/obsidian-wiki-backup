@@ -41,3 +41,7 @@ A generated-world model should be benchmarked as an **asynchronous visual collab
 ## Research instruction
 
 Future VJ Lab research should consider Blender, Krea, Ableton/Push, TD, camera, Spark ComfyUI, and AI Search's Sunday roundups as one ecosystem. Prefer experiments that combine at least two tools and can still produce a coherent live set when the generative service is unavailable.
+
+## See also
+
+- [[2026-10-02 — Realtime World Models — Laptop vs Spark]] — which playable world models actually run on the MSI laptop (RTX 4080 Laptop, 12 GB) vs the Spark, with measured Spark throughput evidence, licences, and next tests.

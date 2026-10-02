@@ -5,6 +5,35 @@ Growing nightly. Job description: [[Voice Sample Archive — Nightly Research Jo
 Each entry: title · Archive.org ID · licence · clip window · transcript · cleanup notes. Newest first.
 
 <!-- ENTRIES BELOW: the nightly job inserts new dated sections directly under this line -->
+
+## 2026-10-02 (night 4)
+
+### This Nation's Power (age of mechanical power)
+- Archive.org: [ThisNationsP](https://archive.org/details/ThisNationsP) — licence: Public Domain Mark (http://creativecommons.org/licenses/publicdomain/); Handy (Jam) Organization (Chevrolet film, 1940)
+- Clip window: 40.2–66.4 s (26.2 s); file `01-this-nations-power-age-of-power.wav`
+- Measured pause noise floor: -58.8 dBFS (median of pause frames; worst pause frame about -42 dBFS)
+- Transcript: Hundreds of thousands of manufacturing plants in these United States of America are enduring monuments to this epoch which man has created, the age of mechanical power, the age in which we live. In this century of American life the hum of power-driven wheels is a sign of progress toward a higher standard of living, a better and a freer life.
+- Cleanup: Voice Lab download->separate->denoise->transcribe (job deleted afterwards); local ffmpeg: highpass 90 Hz, lowpass 12 kHz, afftdn nr=20, gentle agate on pauses, 10 ms fades, peak-normalised to -1 dBFS, 48 kHz 24-bit mono. Clip starts at first word of a sentence with ~0.3 s margin, ends on a sentence end. Single speaker; SRT shows no music tags in window; spectrogram pauses empty.
+- Push idea: Grand 'age of mechanical power' opener; chop 'the age of mechanical power' as a stinger and 'a better and a freer life' as a closing phrase.
+
+### Television Tomorrow (Army-Navy Screen Magazine, "Tomorrow")
+- Archive.org: [tomorrow_television](https://archive.org/details/tomorrow_television) — licence: Public Domain Mark (http://creativecommons.org/licenses/publicdomain/); Army-Navy Screen Magazine (WWII film; no creator in metadata)
+- Clip window: 13.25–54.35 s (41.1 s); file `02-tomorrow-television.wav`
+- Measured pause noise floor: -77.7 dBFS (median of pause frames; worst pause frame about -42 dBFS)
+- Transcript: What's tomorrow going to be like? What kind of world are we going to live in when we get our permanent furloughs? Super speed highways, plastic Packards, streamlined cities? What does the future hold in store for us? To get a glimpse of that future, Army-Navy Screen Magazine presents a new department, Previewing our post-war world, the job opportunities, the new fields ahead. For the first in our tomorrow series, let's look into a brand new development. Television.
+- Cleanup: Voice Lab download->separate->denoise->transcribe (job deleted afterwards); local ffmpeg: highpass 90 Hz, lowpass 12 kHz, afftdn nr=20, gentle agate on pauses, 10 ms fades, peak-normalised to -1 dBFS, 48 kHz 24-bit mono. Clip starts at first word of a sentence with ~0.3 s margin, ends on a sentence end. Single speaker; SRT shows no music tags in window; spectrogram pauses empty.
+- Push idea: Question-and-answer rhythm: loop 'What's tomorrow going to be like?' as a rhetorical hook, land the final 'Television.' as a drop word.
+
+### More Power to You (oil film, narrator Lowell Thomas)
+- Archive.org: [MorePowe1930](https://archive.org/details/MorePowe1930) — licence: Public Domain Mark (http://creativecommons.org/licenses/publicdomain/); Handy (Jam) Organization; narrator Lowell Thomas
+- Clip window: 25.3–66.95 s (41.65 s); file `03-more-power-to-you-oil.wav`
+- Measured pause noise floor: -200.0 dBFS (median of pause frames; worst pause frame about -42 dBFS)
+- Transcript: The flash of power, the gleam of oil, in the sky, the power of oil conquering the heights. On the sea, the might of petroleum pulsing in great engines of the liners that traverse the deep. On land, oil feeds the fiery furnace or drives the diesel engines along far-flung rails of steel. And on the open road, well, you know what makes your auto run. For millions of years, this source of power slept peacefully in the dark recesses of the earth until modern magic loosed the liquid energy from its subterranean prison.
+- Cleanup: Voice Lab download->separate->denoise->transcribe (job deleted afterwards); local ffmpeg: highpass 90 Hz, lowpass 12 kHz, afftdn nr=20, gentle agate on pauses, 10 ms fades, peak-normalised to -1 dBFS, 48 kHz 24-bit mono. Clip starts at first word of a sentence with ~0.3 s margin, ends on a sentence end. Single speaker; SRT shows no music tags in window; spectrogram pauses empty.
+- Push idea: Rhythmic triplet 'in the sky / on the sea / on land' is made for slicing across pads; 'power slept peacefully' for a slow-build breakdown.
+
+Dropped: ThisNationsP 437–495 s (57 s) — ended mid-sentence on whisper cut-off ('the most…'), pauses not cleaner than kept clips; Telegram1956/OurShrin1946/DayCalle1955/NewsMaga1950_2 — music/noise bed or dry/dark content (pauses above -45 dBFS).
+
 ## 2026-09-30
 
 1. **Frontiers of the Future (A Screen Editorial With Lowell Thomas)** · [Frontier1937](https://archive.org/details/Frontier1937) · licence: [Public Domain Mark](http://creativecommons.org/licenses/publicdomain/) · 57.14–84.76 s (27.62 s)
