@@ -11,7 +11,7 @@ fandom: Farscape
 status: first-pass
 canon_scope: television series and Farscape: The Peacekeeper Wars
 created: 2026-09-15
-updated: 2026-09-30
+updated: 2026-10-03
 sources:
   - FS-S002
   - FS-S003
@@ -33,6 +33,7 @@ related:
   - "[[Ka D'Argo]]"
   - "[[Gigi Edgley]]"
   - "[[Durka Returns]]"
+  - "[[../Media/Chiana screenshots — provenance]]"
 ---
 
 # Chiana
@@ -233,6 +234,20 @@ The strongest accessible production account is Edgley and Elsey's interview in *
 - [[Interviews/Gigi Edgley — Chiana production interview]] — planned transcript and timestamp note.
 - [[Production/Chiana makeup and costume]] — planned credit and design note.
 - [[Media/Chiana makeup test provenance]] — remote-link provenance record created in this slice.
+- [[../Media/Chiana screenshots — provenance]] — **28 locally archived screenshots** of Chiana, with episode timecodes, drawn from 1.15, 2.01, 2.03, 2.18, 4.08 and 4.14.
+
+### Screen appearance reference set
+
+A set of 28 verified stills of Chiana is now archived locally with per-image timecodes; see [[../Media/Chiana screenshots — provenance]]. The set is a viewing reference for the appearance, makeup and costume claims in this dossier, not a scene-by-scene appearance audit.
+
+What the selected frames show, stated as observation from those images rather than as production fact:
+
+- **Hair reads silver-white or platinum** in 1.15, 2.18, 4.08 and 4.14; in 2.03 it reads with a **red/pink cast**. Whether that is a wig, a dye choice or a lighting/colour-grade effect is not settled by the frames.
+- **Skin is desaturated grey to blue-white** throughout, with heavy dark eye make-up and dark lips; 2.18 shows a stronger grey-green cast and a **gold ornate collar** with a silver-blue bodice.
+- **Costume changes by season**: the 2.18 frames show the collared bodice and harness of the mind-cleansing sequence; the 4.08 frames show a black armoured catsuit with metal thigh plating; 4.14 shows a dark high-necked outfit.
+- The 2.18 frames cluster in a **single chained/collared sequence** and should not be counted as separate appearances.
+
+Because the source is standard-definition broadcast capture (634–854 × 480), these stills are suitable for reference and comparison, not for print-quality reproduction. Higher-grade captures would require the DVD or Blu-ray releases directly.
 
 ### Canon versus analysis
 
@@ -289,10 +304,10 @@ The grey/black-and-white visual design supports a productive refusal of moral co
 8. The status and details of Nerri's resistance history need direct episode/transcript review.
 9. Chiana's sexual history is often summarized by fan sources in ways that may collapse coercion, survival, and agency; episode-level, scene-sensitive analysis is required.
 10. Post-series comics: first-pass volume-level overview completed (see [[Comics/Farscape Comics — Chiana Appearances]]); issue-by-issue verification from the actual comics needed.
-11. No image has been locally archived in this slice. Rights status for screenshots, concept art, and makeup-test frames requires a separate media review.
+11. Screenshots are now archived locally — 28 Chiana stills with episode timecodes, see [[../Media/Chiana screenshots — provenance]]. Rights status remains **unresolved**: the source is a third-party Internet Archive upload of copyrighted episodes, so the images are cleared for internal research reference only, and concept art and makeup-test frames remain link-only.
 12. Episode-by-episode appearance verification (scene-level presence vs. cast listing) has not been completed for the ~67 regular-series episodes.
 13. "A Clockwork Nebari" and "Losing Time" episode analyses completed (see dedicated notes), though scene-level verification from transcripts is still pending.
-14. No image has been locally archived in this slice. Rights status for screenshots, concept art, and makeup-test frames requires a separate media review.
+14. The archived still set covers only six episodes (1.15, 2.01, 2.03, 2.18, 4.08, 4.14). It is a reference set, not a scene-level appearance audit, and it does not prove absence of Chiana from other episodes or from the ~61 other episodes in her appearance roster.
 
 ## Sources
 

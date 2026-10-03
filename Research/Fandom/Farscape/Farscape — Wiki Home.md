@@ -42,7 +42,8 @@ status: growing
 
 ## Recently added
 
-- [[Characters/Chiana]]
+- [[Media/Chiana screenshots — provenance]] — first locally archived image set for the slice: 28 verified Chiana stills with episode timecodes
+- [[Characters/Chiana]] — updated with the screen appearance reference set
 - [[Worldbuilding/Nebari]]
 - [[Worldbuilding/Mind Cleansing]]
 - [[Worldbuilding/Nebari Prime]]

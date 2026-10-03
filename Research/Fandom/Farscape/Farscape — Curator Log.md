@@ -8,6 +8,34 @@ status: active
 
 # Farscape Curator Log
 
+## 2026-10-03 — Chiana screenshot set: first locally archived images for the slice
+
+Scope: honour AJ's direct instruction to "find and save at least 15 good quality screenshots from the series and place them in the Media folder in the Farscape wiki in the vault". Deliverable is 28 Chiana stills with episode timecodes, plus the provenance record that the vault's media rules require.
+
+Existing-vault check: `Media/` held only `Media Index.md` and `Chiana makeup test provenance.md`. The latter recorded an explicit decision to archive **no** images and keep third-party media as links only. `Characters/Chiana.md` carried the same position twice in its evidence gaps. This slice deliberately departs from that decision on AJ's instruction, and the difference in handling is documented in the new provenance note.
+
+Sources consulted:
+- Internet Archive items `farscape-s-01`, `farscape-s-02`, `farscape-s-04` (uploader TVSTAR) — primary footage for frame extraction (FS-S096).
+
+Created:
+- `Media/Chiana screenshots — provenance.md` — per-image provenance record: source item, uploader, declared rights status, delivered resolution, extraction and verification method, a 28-row inventory with timecode and sharpness metric, and the appearance observations drawn from the frames. New source registered as FS-S096.
+
+Archived media (28 files in `Media/`): 2 from 1.15, 1 from 2.01, 5 from 2.03, 14 from 2.18, 2 from 4.08, 4 from 4.14. Native SD capture, 634–854 × 480, re-saved as quality-95 JPEG, 1.73 MB total.
+
+Updated:
+- `Characters/Chiana.md` — added a "Screen appearance reference set" subsection and the media link; corrected evidence gaps 11 and 14, which asserted that no image had been locally archived.
+- `Media/Media Index.md` — screenshots line changed from "pending" to the archived set.
+- `Sources/Farscape — Source Register` — FS-S096 added, flagged as primary footage with unresolved rights.
+- This curator log.
+
+Method note for future runs: the detector used desaturated cool-white skin plus white hair plus dark in-box contrast, with a multi-scale window search; every candidate was then reviewed visually on labelled contact sheets and each keeper re-checked individually at full frame size. Two frames initially captioned as Chiana (2.03 15m32s and 16m32s) proved on full-size inspection to be Aeryn Sun and were removed. Title/credit cards scored highly and had to be rejected by eye — the ranking alone is not reliable. Chiana's hair reads red/pink in 2.03, which is why a white-hair-biased detector under-finds her there.
+
+Evidence gaps carried forward: rights for the still set are unresolved (third-party upload of copyrighted episodes) so the images are internal research reference only. Only six episodes are sampled. The set is not a scene-level appearance audit, and the 2.18 frames are one chained sequence rather than 14 separate appearances. Per-image production credits, exact DVD/Blu-ray timecodes, and higher-resolution captures all remain open.
+
+Next suggested slice: `Production/Chiana makeup and costume` credit reconciliation against the archival appearance evidence, or the pending `Episodes/We're So Screwed: Hot to Katratzi` dossier.
+
+---
+
 ## 2026-10-02 — Jeremiah Crichton: Season 1 Episode 14 single-slice expansion
 
 Scope: Bounded expansion of Season 1, Episode 14 ("Jeremiah Crichton") within the Farscape knowledge base.

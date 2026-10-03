@@ -6,6 +6,35 @@ Each entry: title · Archive.org ID · licence · clip window · transcript · c
 
 <!-- ENTRIES BELOW: the nightly job inserts new dated sections directly under this line -->
 
+## 2026-10-03 (night 5)
+
+Theme change: space race. All three clips are from one speech: JFK, Special Message to Congress on Urgent National Needs (25 May 1961), in the NASA Audio Highlight Reels item.
+
+### JFK — Now it is time to take longer strides
+- Archive.org: [NasaAudioHighlightReels](https://archive.org/details/NasaAudioHighlightReels) (file JFK-Budget-Speech.mp3) — licence: Public Domain Mark (http://creativecommons.org/publicdomain/mark/1.0/); NASA JSC Houston Audio Control Room; US government work
+- Clip window: 49.35–96.58 s (47.23 s); file `01-jfk-longer-strides.wav`
+- Measured pause noise floor: -76.1 dBFS (median pause frames, final level, after gating). Raw source room tone was about -49 dBFS.
+- Transcript: Now, it is time to take longer strides, time for a great new American enterprise, time for this nation to take a clearly leading role in space achievement, which in many ways may hold the key to our future on Earth. I believe we possess all the resources and talents necessary, but the facts of the matter are that we have never made the national decisions or marshaled the national resources required for such leadership. We have never specified long range goals on an urgent time schedule or managed our resources and our time so as to ensure their fulfillment.
+- Cleanup: local ffmpeg only (no music bed, so Voice Lab separation was not needed; its download/transcribe job was deleted): highpass 90 Hz, lowpass 12 kHz, afftdn nr=20, gate on pauses, 10 ms fades, peak -1 dBFS, 48 kHz 24-bit mono. Starts on the first word of a sentence and ends on a sentence end. Transcript re-checked with Whisper on the cleaned clip. Single speaker, but there is room tone and reverb from the original recording.
+- Push idea: 'time for a great new American enterprise' as a looped riser phrase over a slow arpeggio; slice 'longer strides' as a rhythmic hit.
+
+### JFK — We can guarantee that any failure will make us last
+- Archive.org: [NasaAudioHighlightReels](https://archive.org/details/NasaAudioHighlightReels) (file JFK-Budget-Speech.mp3) — licence: Public Domain Mark (http://creativecommons.org/publicdomain/mark/1.0/); NASA JSC Houston Audio Control Room; US government work
+- Clip window: 96.65–130.8 s (34.15 s); file `02-jfk-make-us-last.wav`
+- Measured pause noise floor: -76.9 dBFS (median pause frames, final level, after gating). Raw source room tone was about -49 dBFS.
+- Transcript: Recognizing the head start obtained by the Soviets with their large rocket engines which gives them many months of lead time, and recognizing the likelihood that they will exploit this lead for some time to come in still more impressive successes, we nevertheless are required to make new efforts on our own. For while we cannot guarantee that we shall one day be first, we can guarantee that any failure to make this effort will make us last.
+- Cleanup: local ffmpeg only (no music bed, so Voice Lab separation was not needed; its download/transcribe job was deleted): highpass 90 Hz, lowpass 12 kHz, afftdn nr=20, gate on pauses, 10 ms fades, peak -1 dBFS, 48 kHz 24-bit mono. Starts on the first word of a sentence and ends on a sentence end. Transcript re-checked with Whisper on the cleaned clip. Single speaker, but there is room tone and reverb from the original recording.
+- Push idea: The closing line 'we can guarantee that any failure to make this effort will make us last' as a one-shot drop before a beat switch; 'first' and 'last' as a pitched pair.
+
+### JFK — Landing a man on the moon before this decade is out
+- Archive.org: [NasaAudioHighlightReels](https://archive.org/details/NasaAudioHighlightReels) (file JFK-Budget-Speech.mp3) — licence: Public Domain Mark (http://creativecommons.org/publicdomain/mark/1.0/); NASA JSC Houston Audio Control Room; US government work
+- Clip window: 184.5–209.9 s (25.4 s); file `03-jfk-man-on-the-moon.wav`
+- Measured pause noise floor: -75.7 dBFS (median pause frames, final level, after gating). Raw source room tone was about -49 dBFS.
+- Transcript: I believe that this nation should commit itself to achieving the goal, before this decade is out, of landing a man on the moon and returning him safely to the earth. No single space project in this period will be more impressive to mankind, or more important for the long-range exploration of space, and none will be so difficult or expensive to accomplish.
+- Cleanup: local ffmpeg only (no music bed, so Voice Lab separation was not needed; its download/transcribe job was deleted): highpass 90 Hz, lowpass 12 kHz, afftdn nr=20, gate on pauses, 10 ms fades, peak -1 dBFS, 48 kHz 24-bit mono. Starts on the first word of a sentence and ends on a sentence end. Transcript re-checked with Whisper on the cleaned clip. Single speaker, but there is room tone and reverb from the original recording.
+- Push idea: 'landing a man on the moon' chopped across pads with a delay tail; 'before this decade is out' as a countdown motif.
+
+
 ## 2026-10-02 (night 4)
 
 ### This Nation's Power (age of mechanical power)

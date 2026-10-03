@@ -94,6 +94,11 @@ AJ approved five Jev threads (label flywheel, reflex layer, disagreement signal,
 - First test call to `https://api.typesafe.ai/v1/systemone` (model `jev-1.13.0`, no private data): HTTP 200, 433 ms end to end from the MSI laptop, Choice/Noul/Score answers correct and typed. Usage reported: 403 input tokens (about $0.000017 at $0.042/M), 70 output tokens (free).
 
 ## Night log (newest first)
+
+### Night log 2026-10-03
+- Baseline 2129 -> best 61 (dev 28, holdout 33); plateau, no improvement tonight.
+- Totals: 10 keep / 16 discard / 0 crash (5 evals tonight, all discard).
+- Report: Autoresearch/experiments/fleet-debounce/report.md
 - 2026-09-30 fleet-debounce: **2129 → 61**; dev 1976→28, holdout 153→33, guards OK. 14 experiments: 9 kept, 5 discarded, 0 crashed. Report: `experiments/fleet-debounce/report.md`; shadow-only, not deployed.
 - 2026-09-30 11:45 Jev vs Qwen metadata-agreement/noise study (227 Townhall posts, sealed results in git `f3a5651`): observed author-metadata agreement was Jev 85.0% vs Qwen 75.8% for project routing; this is not AJ decision accuracy or calibration. Category was 64.8% vs 59.9%; both failed the blocked/needs-human metadata test. Explicit `decisionSource=AJ` + `accept|reject|defer` records keyed by `missionId` are required before accuracy claims or promotion. Details: [[Research/Autonomy Lab/2026-09-30 — Jev vs Qwen First Labelled Comparison]]. Townhall `4752b23a-fb8e-4fc6-8686-eaf5d9219bbf`.
 - 2026-09-30 11:35 `decide()` built (commit `c38c48b`, `Autoresearch/decide/`): one interface, three backends (Jev cloud, Qwen on the Spark, deterministic Stub). 10 offline tests pass. Live smoke test on the same made-up ticket: Jev 441 ms, $0.0000169; Qwen 2030 ms, $0. Both routed to billing; urgency 1.06 (Jev) vs 1.5 (Qwen). Behaviours verified by test: Qwen refuses to run unless the Spark is idle (llama slots + ComfyUI queue, Sparkbot's rule) and makes no call otherwise; keys never appear in logs or errors; logs store a state hash, not the text; backend failures return `ok=False` instead of raising. Caveat: Qwen's confidence is self-reported and uncalibrated, Jev's is native; one example is a smoke test, not a comparison. Next: labelled comparison set.

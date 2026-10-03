@@ -1,8 +1,8 @@
 {
   "playlist_id": "PLBAugloIB2ULsh9L-Ny8zGvR17TV-IA4j",
-  "playlist_size_observed": 592,
+  "playlist_size_observed": 595,
   "playlist_title": "BLENDER",
-  "updated_at": "2026-10-02T20:15:10+02:00",
+  "updated_at": "2026-10-03T19:45:09+02:00",
   "videos": {
     "-2HCxy4Kh4E": {
       "captions_available": true,
@@ -3508,6 +3508,22 @@
       "view_count": 23123,
       "within_priority_window": true
     },
+    "L-PNQi1nBSA": {
+      "captions_available": true,
+      "channel": "William Candillon",
+      "channel_url": "https://www.youtube.com/channel/UC806fwFWpiLQV5y-qifzHnA",
+      "description": "https://github.com/wcandillon/react-native-skia",
+      "duration_seconds": 1029,
+      "id": "L-PNQi1nBSA",
+      "metadata_accessed": "2026-10-03T10:00:09+02:00",
+      "playlist_position": 593,
+      "published": "2026-10-02",
+      "thumbnail": "https://i.ytimg.com/vi_webp/L-PNQi1nBSA/maxresdefault.webp",
+      "title": "Hello Graphite",
+      "url": "https://www.youtube.com/watch?v=L-PNQi1nBSA",
+      "view_count": 28871,
+      "within_priority_window": true
+    },
     "L0752ooFmU0": {
       "captions_available": true,
       "channel": "Artisans of Vaul",
@@ -6172,6 +6188,7 @@
       "duration_seconds": 1517,
       "id": "dKbT0x9Se-s",
       "metadata_accessed": "2026-10-02T20:15:10+02:00",
+      "playlist_position": 592,
       "published": "2026-10-02",
       "thumbnail": "https://i.ytimg.com/vi_webp/dKbT0x9Se-s/maxresdefault.webp",
       "title": "LTX 2.5 Alpha Gen is Amazing!",
@@ -6706,6 +6723,22 @@
       "url": "https://www.youtube.com/watch?v=gzrAWjgzZWA",
       "view_count": 7630,
       "within_priority_window": false
+    },
+    "hHSlQNaw5C8": {
+      "captions_available": true,
+      "channel": "Cloud Codes",
+      "channel_url": "https://www.youtube.com/channel/UC0DZj1PNa_Fp0MU6uPSKv5w",
+      "description": "Paste an 8,000-token document into a local AI model, and you can wait over 12 seconds before the cursor produces its first word. Standard quantization advice tells you to shrink weights down to 1 or 2 bits to fit memory—but that only speeds up token generation while destroying accuracy.\n\n\n\n🔔 Subscribe: https://www.youtube.com/channel/UC0DZj1PNa_Fp0MU6uPSKv5w?sub_confirmation=1\n\n💙 Become a Member: https://www.youtube.com/channel/UC0DZj1PNa_Fp0MU6uPSKv5w/join\n\n🐦 Twitter/X:\n https://x.com/cloud_codes\n\n💬 Discord: \nhttps://discord.gg/mhgXXmhrh\n\n\n\nIn this breakdown, Cloud Codes explores \"Disaggregated Quantization\" (from ISTA and NVIDIA)—a technique that optimizes reading and writing as two completely separate jobs:\n• Prefill vs. Decode: Reading your prompt reuses weights across thousands of tokens (compute-bound), while writing an answer re-fetches every weight once per token (memory-bandwidth-bound).\n• Two Formats, One Model: Keeping a compact 1-bit decoder resident in memory for token generation, while streaming a specialized 4-bit (NVFP4) prefiller directly from the SSD for reading.\n• Zero Extra VRAM: Using two alternating buffers carved out of the output head's existing memory allocation to overlap SSD loading with GPU compute.\n• The Speed & Accuracy Payoff: On Qwen3.8-27B, Time to First Token fell from 12.27s to 6.90s (1.78x faster), while MMLU-Pro accuracy jumped from 29.04% to 61.54% on an untouched 1-bit decoder.\n• The Real Catches: Prompts under 4K tokens can run slower because compute cannot hide SSD streaming; the released prefiller requires Blackwell GPUs (GB10 / RTX 50-series); and multi-turn chat cache drift remains untested.\n\n\n\n🔗 Verified Sources:\n• Disaggregated Quantization Paper (arXiv:2609.26333): https://arxiv.org/html/2609.26333v1\n• Official Code Repository: https://github.com/IST-DASLab/disaggregated-quantization\n• Qwen3.8-27B NVFP4 Prefiller Model Card: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller\n• NVIDIA DGX Spark Hardware Architecture: https://docs.nvidia.com/dgx/dgx-spark/hardware.html\n• Qwen3.8-27B Base Model: https://huggingface.co/Qwen/Qwen3.8-27B\n\n\n\n⏱️ Chapters:\n0:00 - The 12-Second Wait on Long Prompts\n0:46 - The Quantization Flaw: One Model, Two Different Jobs\n1:12 - Prefill vs. Decode (The Kitchen Metaphor)\n2:27 - Why Low-Precision Math Fixes Reading, Not Writing\n3:19 - Disaggregated Quantization & SSD Buffer Streaming\n4:51 - Benchmark Results: 1.78x Faster First Token\n5:30 - How a Frozen 1-Bit Model Doubled Its Accuracy\n6:45 - The Catch: Why Short Prompts Run Slower\n7:48 - Hardware Limits: SSD Speeds & Blackwell GPUs\n8:31 - The Unknowns: Multi-Turn Chats & MoE Models\n9:05 - Final Verdict: Who Should Actually Try This?\n\n#localai #llm #quantization #nvidia #llamacpp #qwen #machinelearning #cloudcodes\n\n\n\n\n\n\nUser Queries:\nhow to make local llm start answering faster\nreduce time to first token local ai\nwhat is disaggregated quantization\ndifference between prefill and decode llm\nwhy are long prompts so slow in ollama llama cpp\nstream weights from ssd llama cpp\nnvfp4 prefiller 1 bit decoder qwen\nhow to speed up prompt evaluation time llm\niq1_s accuracy boost disaggregated prefill\nnvidia dgx spark local llm benchmarks\ndoes ssd streaming make short prompts slower\nmulti turn chat kv cache drift disaggregated quantization",
+      "duration_seconds": 591,
+      "id": "hHSlQNaw5C8",
+      "metadata_accessed": "2026-10-03T13:30:08+02:00",
+      "playlist_position": 594,
+      "published": "2026-10-03",
+      "thumbnail": "https://i.ytimg.com/vi/hHSlQNaw5C8/hqdefault.jpg",
+      "title": "Qwen 3.8 27B Starts Answering 1.78× Faster With One Trick",
+      "url": "https://www.youtube.com/watch?v=hHSlQNaw5C8",
+      "view_count": 476,
+      "within_priority_window": true
     },
     "hL8qxVf9ViM": {
       "captions_available": true,
@@ -8082,6 +8115,21 @@
       "url": "https://www.youtube.com/watch?v=qzcIMJsWVow",
       "view_count": 31812,
       "within_priority_window": false
+    },
+    "r0Mm_79yKso": {
+      "captions_available": true,
+      "channel": "y8y.systems",
+      "channel_url": "https://www.youtube.com/channel/UCKc0YsRJRQZCZbA-REaK4DA",
+      "description": "i gave my hermes agent long-term memory with hindsight, and for a while, it felt like ai memory had finally become useful.\nthen it started confidently remembering things i never actually did.\nthis is my real-world experience with hindsight, agent memory, and the strange problem of giving an ai a memory that may eventually know you a little too well.",
+      "duration_seconds": 721,
+      "id": "r0Mm_79yKso",
+      "metadata_accessed": "2026-10-03T19:45:09+02:00",
+      "published": "2026-10-03",
+      "thumbnail": "https://i.ytimg.com/vi/r0Mm_79yKso/maxresdefault.jpg",
+      "title": "i gave AI a memory upgrade—and found a serious problem | HINDSIGHT review",
+      "url": "https://www.youtube.com/watch?v=r0Mm_79yKso",
+      "view_count": 555,
+      "within_priority_window": true
     },
     "r305-aQTaU0": {
       "captions_available": true,

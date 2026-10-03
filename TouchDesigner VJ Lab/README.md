@@ -6,7 +6,18 @@ tags: [touchdesigner, vj, creative-technology]
 
 A durable home for AJ and Winbot's live-visual practice: experiments, performance notes, research, reusable patches, and integration decisions.
 
-## Latest win — 2026-09-28
+## Latest win — 2026-10-03
+
+Live Push jam session produced **BerlinSet** — a new audio-reactive look with an **LLM
+typography layer**. The crystal-geode raymarch, spectrum halo, feedback trails and post-FX
+run at 60 FPS on the projector (second monitor, exclusive fullscreen), driven by the live
+MOTU Pro Audio ASIO 9/10 pair. Words come from the Spark llama.cpp endpoint every ~30 s and
+land in TD through a polled file, so an LLM or network outage cannot break the show. Looks
+are now recallable presets inside the patch, and whole stages accumulate as numbered `.toe`
+saves. Saved project: `C:/Users/ander/Desktop/TouchD-2025/BerlinSet.toe`.
+Full notes: [[TouchDesigner VJ Lab/2026-10-03 — BerlinSet live session (typography + look library)]].
+
+## Earlier win — 2026-09-28
 
 AJ performed a solo living-room concert with live VJing. The current TouchDesigner patch is now driven by **MOTU Pro Audio via ASIO**, using the physical 9/10 input pair for Ableton Push. The live chain was verified with stereo signal at 48 kHz and the existing low/mid/high control drives were nonzero; the patch ran at 60 FPS with no warnings. Saved project: `C:/Users/ander/Desktop/TouchD2025/psychedelic_demo/FirstdemowithHermes1.7.toe`.
 

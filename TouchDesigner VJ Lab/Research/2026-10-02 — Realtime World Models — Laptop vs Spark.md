@@ -133,9 +133,66 @@ Practical consequence for live use: record the RNG seed with any take so it can 
 - **2026-10-02 — laptop test executed** (360p numbers above), crash diagnosed (Windows bugcheck `0xD1`, NVIDIA 595.79, minidump `100226-19453-01.dmp`, no WHEA), steering surfaces verified, and the headless harnesses written: `soak.py`, `verbs.py`, `guards.py` in `C:\Users\ander\worldmodels\waypoint` (all self-guarding: idle preflight, temperature/commit-charge/VRAM aborts, wall-clock cap).
 - **2026-10-02 — Townhall**: posted finding `da416393-6813-49f3-8b73-a32da5ac6cf6` (project `home-lan`) with the numbers, the crash class and the verb-sweep plan; asks to Herm and Sparkbot for any prior keycode probing, a Spout/NDI handoff for a Python frame source, or a view on the crash class. Replies to be folded in here.
 - **2026-10-02 — harness smoke-tested** (3 min, clean, no crash): the sweep method is validated and already reproduces the control mapping — 87 = W = **move-forward** (radial divergence +0.65), 83 = S = **move-back** (−0.75), 65 = A = **turn-left** (image dx +1.15), 68 = D = **turn-right** (−1.61), 32 = space = **look-up** (the upstream sample's "jump"), 1 = LMB = action/mixed (weak camera response). Keys are ASCII code points; my first viewer had mapped W to 32, which is why it jumped instead of walking. Mouse is a velocity whose turn rate rises ~linearly to ≈0.4 then saturates.
-- **2026-10-03 01:30 — scheduled (cron `0247a6d09295`, "waypoint-world-model-soak+verbs")**: 12-minute stability soak (drift, throughput sag, thermals) plus a **256-code control-vocabulary sweep** — each code branched from one shared world state and measured by optical-flow direction (camera-space), radial divergence (dolly in/out), activity, and visual response versus an idle baseline, with a mouse-magnitude curve and pairwise combos of the six strongest codes. It appends a `## Stability soak` and a `## Control vocabulary sweep` section to this note and replies in the Townhall thread. **Results: pending.**
+- **2026-10-03 01:30 — scheduled (cron `0247a6d09295`, "waypoint-world-model-soak+verbs")**: 12-minute stability soak (drift, throughput sag, thermals) plus a **256-code control-vocabulary sweep** — each code branched from one shared world state and measured by optical-flow direction (camera-space), radial divergence (dolly in/out), activity, and visual response versus an idle baseline, with a mouse-magnitude curve and pairwise combos of the six strongest codes. It appends a `## Stability soak` and a `## Control vocabulary sweep` section to this note and replies in the Townhall thread. **Results landed 2026-10-03 02:10; see the Stability soak and Control vocabulary sweep sections below.**
 
 - **2026-10-03 09:00 — reminder scheduled (cron `f715c4d3326d`, "waypoint-world-model reminder", 3 mornings)**: AJ asked to revisit and evaluate on 2026-10-03 and to be reminded if he forgets. The reminder reports last night's soak + sweep results and puts three decisions to him: (a) chase the NVIDIA driver / bugcheck question or stay headless-only; (b) wire the world into TouchDesigner via a Spout frame source, or try the official Biome client first; (c) build a corrected interactive viewer (right key map 87/65/83/68, space = look-up, image-prompt box for start frames). It self-silences once this note records a revisit.
+
+- **2026-10-03 02:10 - nightly run complete (cron 0247a6d09295)**: soak clean (66.7 fps sustained for 12 min, 84 C plateau, no bugcheck), 256-code sweep done in 5.4 min, crash module unreadable without admin, stable-tool verdict recorded. Reply posted into Townhall thread da416393; Sparkbot reply cbd1b60a (no prior keycode probe, no Spout/NDI handoff on the LAN, crash class not transferable to the Linux GB10) folded in; Herm had not replied.
+
+## Stability soak — 2026-10-03
+
+Headless `soak.py` on the laptop (RTX 4080 Laptop 12 GB, driver 595.79, torch 2.11.0+cu130), started 01:46 after 52 min of user idle, GPU idle (252 MiB). **Completed, no aborts, no crash** (18.3 min total). A first attempt at 01:30 was killed at ~9 min by a tooling timeout on my side (not by a guard or a fault) and was re-run clean.
+
+- **bf16 smoke:** 62.6 fps (p50 55.2 ms / p95 57.4 ms per 4-frame call), 7.43 GB allocated / 8.12 GB reserved, load 8.0 s.
+- **fp8w8a8 smoke:** 91.1 fps (p50 40.5 / p95 71.8 ms, one slow outlier call), 7.43 / 7.67 GB, load 10.7 s.
+- **bf16 12-minute soak:** 13,320 calls, 53,280 frames in 798.5 s = **66.7 fps sustained**, p50 58.4 ms / p95 61.3 ms, VRAM 7.43 allocated / 8.20 reserved (flat). No throughput sag across the run.
+- **Thermals/power:** GPU temp climbed 72 to 84 C over the first ~8 min then plateaued at 84 C (abort threshold 88 C); power 127 to 136 W (max 137 W); SM clock 2475 MHz steady; commit charge 52% max; process RSS 2.0-2.2 GB (the 1.07 GB smoke figure was the bare model; the soak process holds two engines worth of state).
+- Prior known-good smoke numbers reproduced (bf16 61-74, fp8 87-99, 7.4 GB alloc). Reading: the model path is stable under 12 min of sustained ~95% GPU load **in a headless process**. The `drift_to_start` series in the summary is frame difference from the opening frame while idling (35-125/255, noisy): it measures the world wandering, not a fault, and is not a stability signal.
+
+## Control vocabulary sweep — 2026-10-03
+
+`verbs.py`, headless, 5.4 min, no aborts. One shared world rolled and KV-snapshotted, then branched once per keycode (all 256), each measured by optical-flow direction (dx positive = image moves right = camera turns left; dy; radial divergence `div`, positive = dolly in), magnitude and frame activity versus an idle baseline (baseline mag 0.045, activity 1.35). Raw data: `worldmodels/waypoint/soak/verbs.json`; montage `soak/verb_montage.png`; per-code frames `soak/verbs/<code>.png` (167 saved: those above the visual-response threshold).
+
+**Headline: the vocabulary is not a clean WASD map. 44 codes are true no-ops, 99 are weak/mixed, and 113 produce a directional response**: 22 move-forward, 12 move-back, 46 turn-left, 22 turn-right, 9 look-up, 2 look-down.
+
+Verified core (matches the 2026-10-02 smoke test): **87 = W** move-forward (div +0.65, mag 0.69), **83 = S** move-back (div -0.72, mag 0.89), **65 = A** turn-left (dx +1.14, mag 1.22), **68 = D** turn-right (dx -1.61, mag 1.85), **32 = space** look-up (mag 1.20). E/R/F (69/82/70) are no-ops (mag about 0.1): no interact/reload response from a still frame.
+
+Verb table (family: codes: character):
+- **Strong turners (mag > 4):** 59 `;` (turn-left, dx +6.2, mag 7.5), 130 (turn-left, +3.2, mag 7.3), 171 (turn-right, -4.9, mag 6.7), 47 `/` (turn-right, -4.6), 184 (turn-left, +4.8), 202 (turn-right, -3.8), 129 (turn-left, +4.1). These are 3-6x stronger than the WASD-class codes.
+- **Look up/down:** 148 (look-up, dy +2.3, mag 3.9), 26 (look-down, dx/dy -1.55/-1.56, mag 3.8); 17, 62, 67, 167, 239, 242, 244 are weaker look-up codes; 186 is the other look-down.
+- **Dolly:** the forward family is the weakest by magnitude (median mag 0.60: 2, 5, 6, 15, 31, 38, 63, 64, 87, 90, 127, 136, 139, 141, 142, 146, 168, 178, 223, 227, 241, 248; strongest div 1.56 on code 2, 1.0 on 136). The back family median is 0.81, and **230** is the strongest (div -2.04, mag 5.3): a real fast reverse.
+- **Mixed/violent (mag > 3.5, no clean direction):** 61 `=` (mag 5.97, activity 48.8, the highest in the sweep; the frame contrast jumps versus the seed: looks like a hard scene cut, not camera motion), 137 (div +0.76, mag 4.8), 236, 197.
+- **Visual-response codes (large change, almost no camera motion):** **198** and **224** collapse the frame to near-black (mean RGB about 23, and a deep blue 11/10/70); **158**, **128**, **165** shift to a dark teal cast (165: mean 8/42/56); 133, 137, 197 push a blue cast. The seed frame mean is 103/122/124. These look like atmosphere/grade switches inside the model (night, dark, water-type states): candidates for "mood" verbs, not movement. Ranked by visual response vs idle: 61 (102.9), 198 (101.4), 224 (94.7), 158 (89.9), 206 (88.1), 127 (87.1).
+- **No-ops (44):** 0, 8, 19, 20, 34, 35, 36, 46, 58, 76, 92, 93, 97-107, 110, 111, 115-123, 145, 174-177, 211, 212, 220-222. This covers most lowercase ASCII letters: the typing range does nothing.
+- **Pairwise combos of the six strongest codes:** 15 combos; only 61+127 produced a clean label (turn-right, dx -0.43). Everything else was mixed with mag 0.3-1.2, so combining mood/cut codes does not add up; they interfere. Treat visual-response codes as exclusive states.
+
+**Pattern worth knowing:** codes 128 and up hold 25 of the 38 codes with mag > 1.5 (13 for 0-127), so the high half of the keycode space is where the strongest camera verbs live; ASCII is the weak half apart from the WASD/space core and `;` `/`.
+
+**Mouse velocity curve** (+x = turn-right, +y = look-down; value is flow mag; idle baseline 0.045):
+- Positive x: 0.05 gives 0.046 (**dead zone, identical to idle**), 0.10 gives 0.20, 0.20 gives 0.44, 0.40 gives 0.49, 0.80 gives 0.50: roughly linear to about 0.2, **saturating near 0.5 from 0.4 up**.
+- Negative x (turn-left): -0.05 gives 0.12 (no dead zone), -0.10 gives 0.25, -0.20 gives 0.37, -0.40 gives 0.36, -0.80 gives 0.36. Saturates near 0.36, earlier than positive.
+- Y: +0.10 gives 0.28, +0.20 gives 0.49, +0.40/+0.80 give 0.55/0.57 (look-down); -0.10 gives 0.31, -0.20 gives 0.41, -0.40/-0.80 give 0.46/0.47 (look-up).
+- So the mouse is a **small-angle fine-steer channel**: the useful range is 0.05-0.3 and sending more buys nothing. It is asymmetric (positive x has a dead zone below 0.1). Keycodes are the big-motion channel: the strongest turn codes give mag 5-7, about 10x the mouse ceiling.
+
+Caveat: labels come from thresholds on flow. I checked frame colour statistics for the visual-response codes but did not eyeball each PNG, so ambiguous codes (61, 137, 197, 236) need a human look at the montage before being named in a performance map.
+
+## Crash and driver verdict — 2026-10-03
+
+- **Crash record:** the System log shows Kernel-Power 41 at 17:04:31, "previous shutdown at 4:47 PM was unexpected", and WER-SystemErrorReporting 1001 "rebooted from a bugcheck 0xD1 (0xffffaa07e9685c48, 0x2, 0x0, 0xfffff80538a4cfc0)". Arg2 = IRQL 2, arg3 = 0 (read): a driver read pageable memory at DISPATCH_LEVEL. Since 17:00 on 2026-10-02 there is **no second bugcheck**, no WHEA event, and none during tonight's 18-minute soak or 5-minute sweep. One nvlddmkm event 153 at 17:11 (after the reboot; the same event id also appears on 24 Sep, so it predates the crash).
+- **Faulting module: not recoverable without admin.** The Kernel_d1 WER report folder in ReportQueue and the minidump C:/Windows/Minidump/100226-19453-01.dmp return Access Denied to this unelevated cron session. To close it: open the dump in WinDbg or BlueScreenView as admin and read the "Probably caused by" line. Until then the module is **unconfirmed**; nvlddmkm is the working suspect on timing, not proof.
+- **Driver 595.79 (released 2026-03-10):** NVIDIA's feedback thread has reports of freezes, black screens and auto-restarts on 595.79, and the guru3D thread cites many TDRs with nvlddmkm 153/14 [24][23]. That signature is mostly TDR/black-screen rather than 0xD1, so a match is plausible but not established. Newer WHQL drivers exist: 596.x in April-May and **610.88 (2026-07-28)**, whose notes list stability fixes but none for this symptom [25][26]. The laptop OEM channel (MSI) may lag these. A driver change is a real action on AJ's daily-use machine: **not done**; it is a Decision Deck candidate.
+- **Working verdict:** the crash correlates with the interactive viewer path (pygame window + mouse grab + sustained load); the headless path has now run 23 minutes of sustained GPU load with no fault; the driver is a plausible but unconfirmed contributor. Stay headless until the dump is read.
+
+## Stable-tool verdict — 2026-10-03
+
+- **Our headless harness:** stable for measurement and offline capture (verified above); it has no window, so it is not a live instrument by itself.
+- **Biome (official desktop client):** the README states **one NVIDIA GPU with 16GB+ VRAM** [5]; latest release v1.1.1 (2026-06-17), Windows installer plus AppImage [27]. Our card has 12 GB, so Biome is outside its stated spec. Our harness shows the 360p model fits in 8.2 GB reserved, so it might run, but unsupported. Biome also has a remote-server mode (server-components, FastAPI/WebSocket, port 7987) [28], so the model server can run on another machine with the client over LAN, keeping the GPU process out of the display session.
+- **Overworld Stream (hosted):** browser option for machines below spec, no local GPU [29]. No Spout/MIDI hooks, and frames live outside the house.
+- **Verdict:** a *stable* live tool is **not possible yet on this laptop under supported conditions**: the official client assumes 16 GB and the one interactive path we tried crashed the host. Possible now: (1) headless captures for baked material (this harness); (2) a windowless live feed, our engine rendering into a Spout sender with no pygame and no mouse grab. That is the next build and deserves a plan before coding. Try Biome only after the dump is read or the driver is updated, and with AJ present.
+
+## Synergies — 2026-10-03
+
+The verb table turns the world model into a playable instrument: keycodes 87/83/65/68 for the walk, 59/47/130/171 as fast turns, mouse values 0.05-0.3 for fine steering, 198/224/158 as mood switches. A Python engine with no window can publish frames to **TouchDesigner via Spout** (Spout out, TD Spout In TOP, the existing chain to the projector on DISPLAY5), and **Ableton/Push MIDI to CtrlInput**: pads map to keycodes, encoders to mouse velocity clamped to the useful 0.05-0.3 range, so the sequencer drives where the camera goes. The **Spark** stays the offline bake machine: long paths rendered there with **HY-World 2.0** persistent assets and ComfyUI polish, fed back as TD clips or start-frame images (the start image is the prompt). **Dreamer-MC 1.7B (about 9 GB)** is the lighter alternative if the 8.2 GB Waypoint footprint leaves too little headroom beside TD on a 12 GB card.
 
 ## Sources
 
@@ -160,3 +217,10 @@ Practical consequence for live use: record the RNG seed with any take so it can 
 [20] https://atlasworldmodel.com/blog/gwm-worlds-2-vs-genie-3
 [21] https://arxiv.org/html/2604.08995v2
 [22] https://huggingface.co/blog/waypoint-1
+[23] https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/583254/geforce-grd-59579-feedback-thread-released-31026
+[24] https://forums.guru3d.com/threads/nvidia-geforce-595-79-whql-driver.459646/page-8
+[25] https://www.nvidia.com/en-us/geforce/drivers/details/274392
+[26] https://www.tweaktown.com/news/112888/nvidia-geforce-driver-610-88-launches-without-a-resolution-for-battlefield-6-season-4s-crashing-issues/index.html
+[27] https://github.com/Overworldai/Biome/releases/latest
+[28] https://github.com/Overworldai/Biome/blob/main/server-components/README.md
+[29] https://nexairi.com/article/Technology/waypoint-1-5-interactive-ai-worlds-consumer-gpu
